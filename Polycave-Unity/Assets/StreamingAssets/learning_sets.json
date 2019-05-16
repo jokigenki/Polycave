@@ -1,0 +1,3289 @@
+{
+    "5Jbooy6KYhRh1mrvBjRz": {
+        "name": "top_100",
+        "numberOfItems": 93,
+        "items": {
+            "MdeEl5yYtRitvKW9Wvy4": {
+                "data": {
+                    "JMdict:1160790": {
+                        "id": "1160790",
+                        "kanji": [
+                            {
+                                "kanji": "一"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "いち",
+                                "priority": "ichi1, news2, nf33"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "one",
+                                "partOfSpeech": "&num;, &pref;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 1,
+                "sources": [
+                    "JMdict:1160790"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl1"
+                ]
+            },
+            "I8x8bQMVDr3sNju5a08R": {
+                "data": {
+                    "JMdict:1461140": {
+                        "id": "1461140",
+                        "kanji": [
+                            {
+                                "kanji": "二"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "に",
+                                "priority": "ichi1, news1, nf01"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "two",
+                                "partOfSpeech": "&num;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 2,
+                "sources": [
+                    "JMdict:1461140"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl1"
+                ]
+            },
+            "oqmhTiSgjAy9buAUVtzh": {
+                "data": {
+                    "JMdict:1579350": {
+                        "id": "1579350",
+                        "kanji": [
+                            {
+                                "kanji": "三"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "さん",
+                                "priority": "ichi1, news1, nf01"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "three",
+                                "partOfSpeech": "&num;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 3,
+                "sources": [
+                    "JMdict:1579350"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl1"
+                ]
+            },
+            "oPtZE3nZw2CiSOhuAPAX": {
+                "data": {
+                    "JMdict:1579470": {
+                        "id": "1579470",
+                        "kanji": [
+                            {
+                                "kanji": "四"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "し",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "four",
+                                "partOfSpeech": "&num;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 4,
+                "sources": [
+                    "JMdict:1579470"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl1"
+                ]
+            },
+            "68NEqKEaomwk1V9sXiGn": {
+                "data": {
+                    "JMdict:1268060": {
+                        "id": "1268060",
+                        "kanji": [
+                            {
+                                "kanji": "五"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "ご"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "five",
+                                "partOfSpeech": "&num;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 5,
+                "sources": [
+                    "JMdict:1268060"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl1"
+                ]
+            },
+            "ZvXUopUiHIRDFOSpX5WV": {
+                "data": {
+                    "JMdict:1585310": {
+                        "id": "1585310",
+                        "kanji": [
+                            {
+                                "kanji": "六"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "ろく"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "six",
+                                "partOfSpeech": "&num;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 6,
+                "sources": [
+                    "JMdict:1585310"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl2"
+                ]
+            },
+            "hA1Xws4jQxckzHdE05pU": {
+                "data": {
+                    "JMdict:1319210": {
+                        "id": "1319210",
+                        "kanji": [
+                            {
+                                "kanji": "七"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "しち",
+                                "priority": "ichi1, news1, nf01"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "seven",
+                                "partOfSpeech": "&num;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 7,
+                "sources": [
+                    "JMdict:1319210"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl2"
+                ]
+            },
+            "HVsVcjjGNXk4rDuOsChO": {
+                "data": {
+                    "JMdict:1583090": {
+                        "id": "1583090",
+                        "kanji": [
+                            {
+                                "kanji": "八"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "はち",
+                                "priority": "ichi1, news1, nf01"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "eight",
+                                "partOfSpeech": "&num;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 8,
+                "sources": [
+                    "JMdict:1583090"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl2"
+                ]
+            },
+            "A1q6wrk4eKJ99tuFUlJc": {
+                "data": {
+                    "JMdict:1578150": {
+                        "id": "1578150",
+                        "kanji": [
+                            {
+                                "kanji": "九"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "きゅう",
+                                "priority": "ichi1, news1, nf01"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "nine",
+                                "partOfSpeech": "&num;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 9,
+                "sources": [
+                    "JMdict:1578150"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl2"
+                ]
+            },
+            "ZB6SZ2FMtsB2kYU1xBb0": {
+                "data": {
+                    "JMdict:1579840": {
+                        "id": "1579840",
+                        "kanji": [
+                            {
+                                "kanji": "十"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "じゅう",
+                                "priority": "ichi1, news1, nf01"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "ten",
+                                "partOfSpeech": "&num;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 10,
+                "sources": [
+                    "JMdict:1579840"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl2"
+                ]
+            },
+            "xQLprLDEO1HFKNgdbMZw": {
+                "data": {
+                    "JMdict:1557630": {
+                        "id": "1557630",
+                        "kanji": [
+                            {
+                                "kanji": "零"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "ぜろ"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "zero",
+                                "partOfSpeech": "&n;, &adj-no;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 11,
+                "sources": [
+                    "JMdict:1557630"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl3"
+                ]
+            },
+            "Hke52w4jx0Kdog2Vp1Q8": {
+                "data": {
+                    "JMdict:1333450": {
+                        "id": "1333450",
+                        "kanji": [
+                            {
+                                "kanji": "週"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "しゅう",
+                                "priority": "ichi1, news1, nf04"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "week",
+                                "partOfSpeech": "&n;, &n-suf;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 12,
+                "sources": [
+                    "JMdict:1333450"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl3"
+                ]
+            },
+            "wMinXBTJfJlACUUQ5zXG": {
+                "data": {
+                    "JMdict:1468060": {
+                        "id": "1468060",
+                        "kanji": [
+                            {
+                                "kanji": "年"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "とし",
+                                "priority": "ichi1, news1, nf02"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "year",
+                                "partOfSpeech": "&n-adv;, &n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 13,
+                "sources": [
+                    "JMdict:1468060"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl3"
+                ]
+            },
+            "4ERyJuvqKV6R4C9JSu6g": {
+                "data": {
+                    "JMdict:1579110": {
+                        "id": "1579110",
+                        "kanji": [
+                            {
+                                "kanji": "今日"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "きょう",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "today, this day",
+                                "partOfSpeech": "&n-t;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 14,
+                "sources": [
+                    "JMdict:1579110"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl3"
+                ]
+            },
+            "NOCKCHXtOjDx1ZBP03yW": {
+                "data": {
+                    "JMdict:1584660": {
+                        "id": "1584660",
+                        "kanji": [
+                            {
+                                "kanji": "明日"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "あした",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "tomorrow",
+                                "partOfSpeech": "&n-t;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 15,
+                "sources": [
+                    "JMdict:1584660"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl3"
+                ]
+            },
+            "mPA7BJ5p4xnozloU7cp3": {
+                "data": {
+                    "JMdict:1579260": {
+                        "id": "1579260",
+                        "kanji": [
+                            {
+                                "kanji": "昨日"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "きのう",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "yesterday",
+                                "partOfSpeech": "&n-adv;, &n-t;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 16,
+                "sources": [
+                    "JMdict:1579260"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl4"
+                ]
+            },
+            "JDnwRL9ml2aWGMhICfl3": {
+                "data": {
+                    "JMdict:1255890": {
+                        "id": "1255890",
+                        "kanji": [
+                            {
+                                "kanji": "月曜日"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "げつようび",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "Monday",
+                                "partOfSpeech": "&n-adv;, &n-t;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 17,
+                "sources": [
+                    "JMdict:1255890"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl4"
+                ]
+            },
+            "wH4k7lFq3HFQ2oymNKRd": {
+                "data": {
+                    "JMdict:1194290": {
+                        "id": "1194290",
+                        "kanji": [
+                            {
+                                "kanji": "火曜日"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "かようび",
+                                "priority": "ichi1, news1, nf17"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "Tuesday",
+                                "partOfSpeech": "&n-adv;, &n-t;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 18,
+                "sources": [
+                    "JMdict:1194290"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl4"
+                ]
+            },
+            "5KUgBDm3b0vVsoN34WuG": {
+                "data": {
+                    "JMdict:1372190": {
+                        "id": "1372190",
+                        "kanji": [
+                            {
+                                "kanji": "水曜日"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "すいようび",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "Wednesday",
+                                "partOfSpeech": "&n-adv;, &n-t;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 19,
+                "sources": [
+                    "JMdict:1372190"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl4"
+                ]
+            },
+            "a5M0Wgj9Baa4O0bDwJAz": {
+                "data": {
+                    "JMdict:1534890": {
+                        "id": "1534890",
+                        "kanji": [
+                            {
+                                "kanji": "木曜日"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "もくようび",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "Thursday",
+                                "partOfSpeech": "&n-adv;, &n-t;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 20,
+                "sources": [
+                    "JMdict:1534890"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl4"
+                ]
+            },
+            "T53EAAbrJJ7qdeF7R8wo": {
+                "data": {
+                    "JMdict:1243320": {
+                        "id": "1243320",
+                        "kanji": [
+                            {
+                                "kanji": "金曜日"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "きんようび",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "Friday",
+                                "partOfSpeech": "&n-adv;, &n-t;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 21,
+                "sources": [
+                    "JMdict:1243320"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl5"
+                ]
+            },
+            "8RamtPm8Cnf5rhJELUli": {
+                "data": {
+                    "JMdict:1445590": {
+                        "id": "1445590",
+                        "kanji": [
+                            {
+                                "kanji": "土曜日"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "どようび",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "Saturday",
+                                "partOfSpeech": "&n-adv;, &n-t;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 22,
+                "sources": [
+                    "JMdict:1445590"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl5"
+                ]
+            },
+            "rFnACfk9h2AptfpzP4qw": {
+                "data": {
+                    "JMdict:1464900": {
+                        "id": "1464900",
+                        "kanji": [
+                            {
+                                "kanji": "日曜日"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "にちようび",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "Sunday",
+                                "partOfSpeech": "&n-adv;, &n-t;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 23,
+                "sources": [
+                    "JMdict:1464900"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl5"
+                ]
+            },
+            "UdaB0elbn9bVW0Ol6Bsm": {
+                "data": {
+                    "JMdict:1490430": {
+                        "id": "1490430",
+                        "kanji": [
+                            {
+                                "kanji": "秒"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "びょう",
+                                "priority": "ichi1, news2, nf33"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "second (60th min)",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 24,
+                "sources": [
+                    "JMdict:1490430"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl5"
+                ]
+            },
+            "3syOjXC8pBBXs0Eux0gz": {
+                "data": {
+                    "JMdict:1315920": {
+                        "id": "1315920",
+                        "kanji": [
+                            {
+                                "kanji": "時間"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "じかん",
+                                "priority": "ichi1, news1, nf01"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "time",
+                                "partOfSpeech": "&n-adv;, &n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 25,
+                "sources": [
+                    "JMdict:1315920"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl5"
+                ]
+            },
+            "Au5XAhU14wxhAUPXvqMQ": {
+                "data": {
+                    "JMdict:1502840": {
+                        "id": "1502840",
+                        "kanji": [
+                            {
+                                "kanji": "分"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "ふん",
+                                "priority": "spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "minute",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 26,
+                "sources": [
+                    "JMdict:1502840"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl6"
+                ]
+            },
+            "rXh6ToFEAO7fZ6eq0z2v": {
+                "data": {
+                    "JMdict:1315840": {
+                        "id": "1315840",
+                        "kanji": [
+                            {
+                                "kanji": "時"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "とき",
+                                "priority": "ichi1, news1, nf04"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "time, hour, moment",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 27,
+                "sources": [
+                    "JMdict:1315840"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl6"
+                ]
+            },
+            "OCsXZdANWrJYDJImZd0w": {
+                "data": {
+                    "JMdict:1316140": {
+                        "id": "1316140",
+                        "kanji": [
+                            {
+                                "kanji": "時計"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "とけい"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "watch, clock, timepiece",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 28,
+                "sources": [
+                    "JMdict:1316140"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl6"
+                ]
+            },
+            "hGiYjOo7vRf2ekLCJg8L": {
+                "data": {
+                    "JMdict:1162120": {
+                        "id": "1162120",
+                        "kanji": [
+                            {
+                                "kanji": "一月"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "いちがつ",
+                                "priority": "news1, nf01, spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "January",
+                                "partOfSpeech": "&n-adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 29,
+                "sources": [
+                    "JMdict:1162120"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl6"
+                ]
+            },
+            "DDCGvKvDtfiUv9XHahTb": {
+                "data": {
+                    "JMdict:1461560": {
+                        "id": "1461560",
+                        "kanji": [
+                            {
+                                "kanji": "二月"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "にがつ",
+                                "priority": "news1, nf01, spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "February",
+                                "partOfSpeech": "&n-adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 30,
+                "sources": [
+                    "JMdict:1461560"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl6"
+                ]
+            },
+            "d67RPqs00k2Ru6WkumSQ": {
+                "data": {
+                    "JMdict:1300250": {
+                        "id": "1300250",
+                        "kanji": [
+                            {
+                                "kanji": "三月"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "さんがつ",
+                                "priority": "news1, nf01, spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "March",
+                                "partOfSpeech": "&n-adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 31,
+                "sources": [
+                    "JMdict:1300250"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl7"
+                ]
+            },
+            "v3LCgo2xelpscxsYLWOL": {
+                "data": {
+                    "JMdict:1307180": {
+                        "id": "1307180",
+                        "kanji": [
+                            {
+                                "kanji": "四月"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "しがつ",
+                                "priority": "news1, nf01, spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "April",
+                                "partOfSpeech": "&n-adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 32,
+                "sources": [
+                    "JMdict:1307180"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl7"
+                ]
+            },
+            "pW3MbAiX0AOJCQLzpWjn": {
+                "data": {
+                    "JMdict:1268170": {
+                        "id": "1268170",
+                        "kanji": [
+                            {
+                                "kanji": "五月"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "ごがつ",
+                                "priority": "news1, nf01, spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "May",
+                                "partOfSpeech": "&n-adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 33,
+                "sources": [
+                    "JMdict:1268170"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl7"
+                ]
+            },
+            "nbyoKvOWE40sE7j9Vq7k": {
+                "data": {
+                    "JMdict:1561330": {
+                        "id": "1561330",
+                        "kanji": [
+                            {
+                                "kanji": "六月"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "ろくがつ",
+                                "priority": "news1, nf01, spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "June",
+                                "partOfSpeech": "&n-adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 34,
+                "sources": [
+                    "JMdict:1561330"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl7"
+                ]
+            },
+            "amd9Z8KBNmuDKARhGMFf": {
+                "data": {
+                    "JMdict:1319280": {
+                        "id": "1319280",
+                        "kanji": [
+                            {
+                                "kanji": "七月"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "しちがつ",
+                                "priority": "news1, nf01, spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "July",
+                                "partOfSpeech": "&n-adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 35,
+                "sources": [
+                    "JMdict:1319280"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl7"
+                ]
+            },
+            "KaWwW1oAnUnYOutaHqcd": {
+                "data": {
+                    "JMdict:1476730": {
+                        "id": "1476730",
+                        "kanji": [
+                            {
+                                "kanji": "八月"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "はちがつ",
+                                "priority": "news1, nf01, spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "August",
+                                "partOfSpeech": "&n-adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 36,
+                "sources": [
+                    "JMdict:1476730"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl8"
+                ]
+            },
+            "pl5HqWa8RWjb7r7WZVVr": {
+                "data": {
+                    "JMdict:1243660": {
+                        "id": "1243660",
+                        "kanji": [
+                            {
+                                "kanji": "九月"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "くがつ",
+                                "priority": "news1, nf01, spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "September",
+                                "partOfSpeech": "&n-adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 37,
+                "sources": [
+                    "JMdict:1243660"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl8"
+                ]
+            },
+            "oUb6hzcKhMUxqHlHxLpg": {
+                "data": {
+                    "JMdict:1334570": {
+                        "id": "1334570",
+                        "kanji": [
+                            {
+                                "kanji": "十月"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "じゅうがつ",
+                                "priority": "news1, nf01, spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "October",
+                                "partOfSpeech": "&n-adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 38,
+                "sources": [
+                    "JMdict:1334570"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl8"
+                ]
+            },
+            "tHYbBEQ1IXwusjR1VaFz": {
+                "data": {
+                    "JMdict:1334480": {
+                        "id": "1334480",
+                        "kanji": [
+                            {
+                                "kanji": "十一月"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "じゅういちがつ",
+                                "priority": "news1, nf01, spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "November",
+                                "partOfSpeech": "&n-adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 39,
+                "sources": [
+                    "JMdict:1334480"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl8"
+                ]
+            },
+            "g0EBFBjRK3mG5xduwr1p": {
+                "data": {
+                    "JMdict:1334910": {
+                        "id": "1334910",
+                        "kanji": [
+                            {
+                                "kanji": "十二月"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "じゅうにがつ",
+                                "priority": "news1, nf01, spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "December",
+                                "partOfSpeech": "&n-adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 40,
+                "sources": [
+                    "JMdict:1334910"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl8"
+                ]
+            },
+            "XqDHlxyji7gD2niagK2C": {
+                "data": {
+                    "JMdict:1404630": {
+                        "id": "1404630",
+                        "kanji": [
+                            {
+                                "kanji": "足"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "あし",
+                                "priority": "ichi1, news1, nf01, nf10"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "foot",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 41,
+                "sources": [
+                    "JMdict:1404630"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl9"
+                ]
+            },
+            "1w9DgmGIyPJAl6BKfgGD": {
+                "data": {
+                    "JMdict:1450690": {
+                        "id": "1450690",
+                        "kanji": [
+                            {
+                                "kanji": "頭"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "あたま",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "head",
+                                "partOfSpeech": "&ctr;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 42,
+                "sources": [
+                    "JMdict:1450690"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl9"
+                ]
+            },
+            "U8UeA79tyylfw3hOsibK": {
+                "data": {
+                    "JMdict:1562850": {
+                        "id": "1562850",
+                        "kanji": [
+                            {
+                                "kanji": "腕"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "うで",
+                                "priority": "ichi1, news1, nf05"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "arm",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 43,
+                "sources": [
+                    "JMdict:1562850"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl9"
+                ]
+            },
+            "gLnbyBVubthV2e2VC9xl": {
+                "data": {
+                    "JMdict:1327190": {
+                        "id": "1327190",
+                        "kanji": [
+                            {
+                                "kanji": "手"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "て",
+                                "priority": "ichi1, news1, nf01"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "hand, arm",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 44,
+                "sources": [
+                    "JMdict:1327190"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl9"
+                ]
+            },
+            "5ENvdyRTvHmcVuWXDGOJ": {
+                "data": {
+                    "JMdict:1309650": {
+                        "id": "1309650",
+                        "kanji": [
+                            {
+                                "kanji": "指"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "ゆび"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "finger, toe, digit",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 45,
+                "sources": [
+                    "JMdict:1309650"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl9"
+                ]
+            },
+            "jMdOJKevJWkgav9ZzWkW": {
+                "data": {
+                    "JMdict:1409140": {
+                        "id": "1409140",
+                        "kanji": [
+                            {
+                                "kanji": "体"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "からだ",
+                                "priority": "ichi1, news1, nf02"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "body",
+                                "partOfSpeech": "&n;, &adj-no;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 46,
+                "sources": [
+                    "JMdict:1409140"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl10"
+                ]
+            },
+            "ln84IpIR2eFcEw2qUalH": {
+                "data": {
+                    "JMdict:1158500": {
+                        "id": "1158500",
+                        "kanji": [
+                            {
+                                "kanji": "胃"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "い",
+                                "priority": "ichi1, news1, nf07"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "stomach",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 47,
+                "sources": [
+                    "JMdict:1158500"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl10"
+                ]
+            },
+            "8Z39yg4aO2jXEKC6gvh2": {
+                "data": {
+                    "JMdict:1237820": {
+                        "id": "1237820",
+                        "kanji": [
+                            {
+                                "kanji": "胸"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "むね"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "chest, breast",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 48,
+                "sources": [
+                    "JMdict:1237820"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl10"
+                ]
+            },
+            "H8hYlYXLQUSin4f40KW2": {
+                "data": {
+                    "JMdict:1472800": {
+                        "id": "1472800",
+                        "kanji": [
+                            {
+                                "kanji": "背中"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "せなか",
+                                "priority": "ichi1, news1, nf07"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "back (of body)",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 49,
+                "sources": [
+                    "JMdict:1472800"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl10"
+                ]
+            },
+            "eQYltpxCuvfOXRSHOlCa": {
+                "data": {
+                    "top100:53": {
+                        "id": "53",
+                        "reading": [
+                            {
+                                "kana": "コーヒー"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "coffee",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 50,
+                "sources": [
+                    "top100:53"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl10"
+                ]
+            },
+            "eQYltpxCuvfOXRSHOlCb": {
+                "data": {
+                    "top100:54": {
+                        "id": "54",
+                        "reading": [
+                            {
+                                "kana": "ビール"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "beer",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 51,
+                "sources": [
+                    "top100:54"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl11"
+                ]
+            },
+            "eQYltpxCuvfOXRSHOlCZ": {
+                "data": {
+                    "JMdict:1002430": {
+                        "id": "1002430",
+                        "kanji": [
+                            {
+                                "kanji": "お茶"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "おちゃ",
+                                "priority": "ichi1, news1, nf06"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "tea (usu. green)",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 52,
+                "sources": [
+                    "JMdict:1002430"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl11"
+                ]
+            },
+            "eQYltpxCuvfOXRSHOlCc": {
+                "data": {
+                    "top100:56": {
+                        "id": "56",
+                        "reading": [
+                            {
+                                "kana": "ワイン"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "wine",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 53,
+                "sources": [
+                    "top100:56"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl11"
+                ]
+            },
+            "TiCeTnto399bAHfY5tF4": {
+                "data": {
+                    "JMdict:1371260": {
+                        "id": "1371260",
+                        "kanji": [
+                            {
+                                "kanji": "水"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "み"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "water (esp. cool, fresh water, e.g. drinking water)",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 54,
+                "sources": [
+                    "JMdict:1371260"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl11"
+                ]
+            },
+            "GIsm1YwAq05i7CYqnns3": {
+                "data": {
+                    "JMdict:1578010": {
+                        "id": "1578010",
+                        "kanji": [
+                            {
+                                "kanji": "魚"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "さかな",
+                                "priority": "ichi2"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "fish",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 55,
+                "sources": [
+                    "JMdict:1578010"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl11"
+                ]
+            },
+            "qKu17dr1h5u3dwquhRee": {
+                "data": {
+                    "JMdict:1231580": {
+                        "id": "1231580",
+                        "kanji": [
+                            {
+                                "kanji": "牛肉"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "ぎゅうにく",
+                                "priority": "ichi1, news1, nf08"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "beef",
+                                "partOfSpeech": "&n;, &adj-no;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 56,
+                "sources": [
+                    "JMdict:1231580"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl12"
+                ]
+            },
+            "cQExpxS2mnQc0SXZgOzn": {
+                "data": {
+                    "JMdict:1457440": {
+                        "id": "1457440",
+                        "kanji": [
+                            {
+                                "kanji": "豚肉"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "ぶたにく"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "pork",
+                                "partOfSpeech": "&n;, &adj-no;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 57,
+                "sources": [
+                    "JMdict:1457440"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl12"
+                ]
+            },
+            "ENrSgAQfiJr8JBXDTFLT": {
+                "data": {
+                    "JMdict:1253020": {
+                        "id": "1253020",
+                        "kanji": [
+                            {
+                                "kanji": "鶏肉"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "とりにく",
+                                "priority": "news1, nf23"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "chicken meat",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 58,
+                "sources": [
+                    "JMdict:1253020"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl12"
+                ]
+            },
+            "ENrSgAQfiJr8JBXDTFLu": {
+                "data": {
+                    "JMdict:1253021": {
+                        "id": "1253021",
+                        "kanji": [
+                            {
+                                "kanji": "ラム肉"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "らむにく",
+                                "priority": "news1, nf23"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "lamb meat",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 59,
+                "sources": [
+                    "JMdict:1253021"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl12"
+                ]
+            },
+            "FHkggb0ahCxK4IyGbfI3": {
+                "data": {
+                    "JMdict:1335251": {
+                        "id": "1335251",
+                        "kanji": [
+                            {
+                                "kanji": "看護者"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "かんごし",
+                                "priority": "ichi1, news1, nf03"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "nurse",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 60,
+                "sources": [
+                    "JMdict:1335251"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl12"
+                ]
+            },
+            "FHkggb0ahCxK4IyGbfI2": {
+                "data": {
+                    "JMdict:1335250": {
+                        "id": "1335250",
+                        "kanji": [
+                            {
+                                "kanji": "従業員"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "じゅうぎょういん",
+                                "priority": "ichi1, news1, nf03"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "employee, worker",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 61,
+                "sources": [
+                    "JMdict:1335250"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl13"
+                ]
+            },
+            "PW6QYaRGO4XfnNGRLHy2": {
+                "data": {
+                    "JMdict:1252400": {
+                        "id": "1252400",
+                        "kanji": [
+                            {
+                                "kanji": "警察官"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "けいさつかん"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "policeman, policewoman, police officer",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 62,
+                "sources": [
+                    "JMdict:1252400"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl13"
+                ]
+            },
+            "f7hoN8JSRkpU4SWKE82q": {
+                "data": {
+                    "JMdict:1644930": {
+                        "id": "1644930",
+                        "kanji": [
+                            {
+                                "kanji": "料理人"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "りょうりにん",
+                                "priority": "news2, nf27"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "cook, chef",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 63,
+                "sources": [
+                    "JMdict:1644930"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl13"
+                ]
+            },
+            "8Vaw7wiYlE5frkn7OgjR": {
+                "data": {
+                    "JMdict:1159980": {
+                        "id": "1159980",
+                        "kanji": [
+                            {
+                                "kanji": "医者"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "いしゃ",
+                                "priority": "ichi1, news1, nf06"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "(medical) doctor, physician",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 64,
+                "sources": [
+                    "JMdict:1159980"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl13"
+                ]
+            },
+            "OtaNqIOJqyhC8BnSUFJx": {
+                "data": {
+                    "JMdict:1387990": {
+                        "id": "1387990",
+                        "kanji": [
+                            {
+                                "kanji": "先生"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "せんじょう"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "teacher, master, doctor",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 65,
+                "sources": [
+                    "JMdict:1387990"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl13"
+                ]
+            },
+            "CZ4ccdrnC2v4C94tpCto": {
+                "data": {
+                    "JMdict:1002650": {
+                        "id": "1002650",
+                        "kanji": [
+                            {
+                                "kanji": "お母さん"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "おかあさん",
+                                "priority": "ichi1, news1, nf05"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "mother",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 66,
+                "sources": [
+                    "JMdict:1002650"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl14"
+                ]
+            },
+            "Mk6Zvb8it7J1cmJtEVOA": {
+                "data": {
+                    "JMdict:1002590": {
+                        "id": "1002590",
+                        "kanji": [
+                            {
+                                "kanji": "お父さん"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "おとうさん",
+                                "priority": "ichi1, news1, nf07"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "father, dad, papa, pa, pop, daddy, dada",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 67,
+                "sources": [
+                    "JMdict:1002590"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl14"
+                ]
+            },
+            "jmbcqA8ILPZDXXXdIvLq": {
+                "data": {
+                    "JMdict:1581930": {
+                        "id": "1581930",
+                        "kanji": [
+                            {
+                                "kanji": "弟"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "おと"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "younger brother",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 68,
+                "sources": [
+                    "JMdict:1581930"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl14"
+                ]
+            },
+            "dKKaXz6aZC3keFwSqasd": {
+                "data": {
+                    "JMdict:1524590": {
+                        "id": "1524590",
+                        "kanji": [
+                            {
+                                "kanji": "妹"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "いもうと",
+                                "priority": "ichi1, news1, nf06"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "younger sister",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 69,
+                "sources": [
+                    "JMdict:1524590"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl14"
+                ]
+            },
+            "OJB1gUI5vfsLkdY5sZjs": {
+                "data": {
+                    "JMdict:1001990": {
+                        "id": "1001990",
+                        "kanji": [
+                            {
+                                "kanji": "お姉さん"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "おねえさん",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "elder sister",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 70,
+                "sources": [
+                    "JMdict:1001990"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl14"
+                ]
+            },
+            "unagUZd2RtwpKT6sOPbe": {
+                "data": {
+                    "JMdict:1001830": {
+                        "id": "1001830",
+                        "kanji": [
+                            {
+                                "kanji": "お兄さん"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "おにいさん",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "older brother, elder brother",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 71,
+                "sources": [
+                    "JMdict:1001830"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl15"
+                ]
+            },
+            "UVcCmYGeajVZLexdUMlA": {
+                "data": {
+                    "JMdict:1540170": {
+                        "id": "1540170",
+                        "kanji": [
+                            {
+                                "kanji": "友達"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "ともだち",
+                                "priority": "ichi1, news1, nf05"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "friend, companion",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 72,
+                "sources": [
+                    "JMdict:1540170"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl15"
+                ]
+            },
+            "Isn7XyWsaYpKJvycixrc": {
+                "data": {
+                    "JMdict:1388410": {
+                        "id": "1388410",
+                        "kanji": [
+                            {
+                                "kanji": "先輩"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "せんぱい",
+                                "priority": "ichi1, news1, nf05"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "senior (at work or school), superior, elder, older graduate, progenitor, old-timer",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 73,
+                "sources": [
+                    "JMdict:1388410"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl15"
+                ]
+            },
+            "tXa14EAbso9rP36xGvNx": {
+                "data": {
+                    "JMdict:1270010": {
+                        "id": "1270010",
+                        "kanji": [
+                            {
+                                "kanji": "後輩"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "こうはい",
+                                "priority": "ichi1, news1, nf08"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "junior (at work, school, etc.), younger people, younger student",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 74,
+                "sources": [
+                    "JMdict:1270010"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl15"
+                ]
+            },
+            "RzlvuxBgvGEvJWcAFk57": {
+                "data": {
+                    "JMdict:1311110": {
+                        "id": "1311110",
+                        "kanji": [
+                            {
+                                "kanji": "私"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "わたくし",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "I, me",
+                                "partOfSpeech": "&pn;, &adj-no;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 75,
+                "sources": [
+                    "JMdict:1311110"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl15"
+                ]
+            },
+            "vVWT3AKOthqNHjGvmLfv": {
+                "data": {
+                    "JMdict:1223610": {
+                        "id": "1223610",
+                        "kanji": [
+                            {
+                                "kanji": "貴方"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "きほう"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "your home, your residence",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 76,
+                "sources": [
+                    "JMdict:1223610"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl16"
+                ]
+            },
+            "6hGZqDr3fLvxBHngXdFE": {
+                "data": {
+                    "JMdict:1000580": {
+                        "id": "1000580",
+                        "kanji": [
+                            {
+                                "kanji": "彼"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "あ"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "that (indicating something distant from both speaker and listener (in space, time or psychologically), or something understood without naming it directly)",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 77,
+                "sources": [
+                    "JMdict:1000580"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl16"
+                ]
+            },
+            "JdrwxXudd4kmaZBjlAjX": {
+                "data": {
+                    "JMdict:1483150": {
+                        "id": "1483150",
+                        "kanji": [
+                            {
+                                "kanji": "彼女"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "かのじょ",
+                                "priority": "ichi1, news1, nf02"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "she, her",
+                                "partOfSpeech": "&pn;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 78,
+                "sources": [
+                    "JMdict:1483150"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl16"
+                ]
+            },
+            "i9s5rAYRT1rtO26fwPa9": {
+                "data": {
+                    "JMdict:1340450": {
+                        "id": "1340450",
+                        "kanji": [
+                            {
+                                "kanji": "出來る"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "できる",
+                                "priority": "ichi1, news1, nf15"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "to be able (in a position) to do, to be up to the task",
+                                "partOfSpeech": "&v1;, &vi;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 79,
+                "sources": [
+                    "JMdict:1340450"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl16"
+                ]
+            },
+            "vyI47ZicOYcP6427cFlh": {
+                "data": {
+                    "JMdict:1305990": {
+                        "id": "1305990",
+                        "kanji": [
+                            {
+                                "kanji": "使う"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "つかう",
+                                "priority": "ichi1, news1, nf02"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "to use (a thing, method, etc.), to make use of, to put to use",
+                                "partOfSpeech": "&v5u;, &vt;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 80,
+                "sources": [
+                    "JMdict:1305990"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl16"
+                ]
+            },
+            "vyI47ZicOYcP6427cFli": {
+                "data": {
+                    "top100:84": {
+                        "id": "84",
+                        "reading": [
+                            {
+                                "kana": "する",
+                                "priority": "ichi1, news1, nf02"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "to do",
+                                "partOfSpeech": "&v5u;, &vt;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 81,
+                "sources": [
+                    "top100:84"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl17"
+                ]
+            },
+            "qsOru4l3G6X5AcaXDrPU": {
+                "data": {
+                    "JMdict:1578850": {
+                        "id": "1578850",
+                        "kanji": [
+                            {
+                                "kanji": "行く"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "いく",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "to go, to move (in a direction or towards a specific location), to head (towards), to be transported (towards), to reach",
+                                "partOfSpeech": "&v5k-s;, &vi;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 82,
+                "sources": [
+                    "JMdict:1578850"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl17"
+                ]
+            },
+            "ieZ0mnwrU21CJI7P42wd": {
+                "data": {
+                    "JMdict:1547720": {
+                        "id": "1547720",
+                        "kanji": [
+                            {
+                                "kanji": "來る"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "くる",
+                                "priority": "ichi1, news1, nf16"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "to come (spatially or temporally), to approach, to arrive",
+                                "partOfSpeech": "&vk;, &vi;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 83,
+                "sources": [
+                    "JMdict:1547720"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl17"
+                ]
+            },
+            "5Yw0xwN83QP31vcUxOoD": {
+                "data": {
+                    "JMdict:1351360": {
+                        "id": "1351360",
+                        "kanji": [
+                            {
+                                "kanji": "笑う"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "わらう",
+                                "priority": "ichi1, news1, nf22"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "to laugh",
+                                "partOfSpeech": "&v5u;, &vi;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 84,
+                "sources": [
+                    "JMdict:1351360"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl17"
+                ]
+            },
+            "dPbq8K4M4J4JCT8xRw1l": {
+                "data": {
+                    "JMdict:1597890": {
+                        "id": "1597890",
+                        "kanji": [
+                            {
+                                "kanji": "作る"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "つくる",
+                                "priority": "ichi1, news1, nf04, spec1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "to make, to produce, to manufacture, to build, to construct",
+                                "partOfSpeech": "&v5r;, &vt;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 85,
+                "sources": [
+                    "JMdict:1597890"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl17"
+                ]
+            },
+            "sqwpGRfOuoRjxUglINj9": {
+                "data": {
+                    "JMdict:1259290": {
+                        "id": "1259290",
+                        "kanji": [
+                            {
+                                "kanji": "見る"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "みる",
+                                "priority": "ichi1, news1, nf14"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "to see, to look, to watch, to view, to observe",
+                                "partOfSpeech": "&v1;, &vt;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 86,
+                "sources": [
+                    "JMdict:1259290"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl18"
+                ]
+            },
+            "LnNzNGizI6qw1am8HC5s": {
+                "data": {
+                    "JMdict:1358280": {
+                        "id": "1358280",
+                        "kanji": [
+                            {
+                                "kanji": "食べる"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "たべる",
+                                "priority": "ichi1, news2, nf25"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "to eat",
+                                "partOfSpeech": "&v1;, &vt;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 87,
+                "sources": [
+                    "JMdict:1358280"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl18"
+                ]
+            },
+            "O7HHoBmHXGAFugDvfH12": {
+                "data": {
+                    "JMdict:1169870": {
+                        "id": "1169870",
+                        "kanji": [
+                            {
+                                "kanji": "飲む"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "のむ",
+                                "priority": "ichi1, news2, nf35, nf40"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "to drink, to gulp, to swallow, to take (medicine)",
+                                "partOfSpeech": "&v5m;, &vt;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 88,
+                "sources": [
+                    "JMdict:1169870"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl18"
+                ]
+            },
+            "GG7CcQHygqjkbRquqUud": {
+                "data": {
+                    "JMdict:1562350": {
+                        "id": "1562350",
+                        "kanji": [
+                            {
+                                "kanji": "話す"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "はなす",
+                                "priority": "ichi1, news1, nf21"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "to talk, to speak, to converse, to chat",
+                                "partOfSpeech": "&v5s;, &vt;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 89,
+                "sources": [
+                    "JMdict:1562350"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl18"
+                ]
+            },
+            "sMnlI6Af1T8LsE8sMILm": {
+                "data": {
+                    "JMdict:1177800": {
+                        "id": "1177800",
+                        "kanji": [
+                            {
+                                "kanji": "遠い"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "とおい",
+                                "priority": "ichi1, news2, nf34"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "far, distant",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 90,
+                "sources": [
+                    "JMdict:1177800"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl18"
+                ]
+            },
+            "upwHGROMOdmn4DuMMRss": {
+                "data": {
+                    "JMdict:1347750": {
+                        "id": "1347750",
+                        "kanji": [
+                            {
+                                "kanji": "小さい"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "ちいさい",
+                                "priority": "ichi1, news1, nf24"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "small, little, tiny",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 91,
+                "sources": [
+                    "JMdict:1347750"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl19"
+                ]
+            },
+            "zaD8IRVWjhkRHQpa8ngv": {
+                "data": {
+                    "JMdict:1605820": {
+                        "id": "1605820",
+                        "kanji": [
+                            {
+                                "kanji": "良い"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "よい",
+                                "priority": "ichi1, news1, nf08"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "good, excellent, fine, nice, pleasant, agreeable",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 92,
+                "sources": [
+                    "JMdict:1605820"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl19"
+                ]
+            },
+            "zaD8IRVWjhkRHQpa8ngw": {
+                "data": {
+                    "JMdict:1591900": {
+                        "id": "1591900",
+                        "kanji": [
+                            {
+                                "kanji": "綺麗"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "きれい",
+                                "priority": "ichi1, news1, nf08"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "pretty, lovely, beautiful, fair",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 93,
+                "sources": [
+                    "JMdict:1591900"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl19"
+                ]
+            },
+            "y9hzHRAY3rBKxuZ1WI62": {
+                "data": {
+                    "JMdict:1333810": {
+                        "id": "1333810",
+                        "kanji": [
+                            {
+                                "kanji": "醜い"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "みにくい",
+                                "priority": "ichi1, news2, nf26"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "ugly, unattractive",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 94,
+                "sources": [
+                    "JMdict:1333810"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl19"
+                ]
+            },
+            "1PHZqs2jWndQEFXpd9iG": {
+                "data": {
+                    "JMdict:1460850": {
+                        "id": "1460850",
+                        "kanji": [
+                            {
+                                "kanji": "難しい"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "むずかしい",
+                                "priority": "ichi1, news1, nf07"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "difficult, hard, troublesome, complicated, serious (disease, problem, etc.)",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 95,
+                "sources": [
+                    "JMdict:1460850"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl19"
+                ]
+            },
+            "JAGFnetUVnvzCgCdvQs5": {
+                "data": {
+                    "JMdict:1156990": {
+                        "id": "1156990",
+                        "kanji": [
+                            {
+                                "kanji": "易い"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "やすい",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "easy",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 96,
+                "sources": [
+                    "JMdict:1156990"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl20"
+                ]
+            },
+            "KnNBBs0OWbmeZPRtKKsq": {
+                "data": {
+                    "JMdict:1242130": {
+                        "id": "1242130",
+                        "kanji": [
+                            {
+                                "kanji": "近い"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "ちかい",
+                                "priority": "ichi1, news1, nf20"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "near, close, short (distance)",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 97,
+                "sources": [
+                    "JMdict:1242130"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl20"
+                ]
+            },
+            "9z687J5HKb5PERdujRo4": {
+                "data": {
+                    "JMdict:1151260": {
+                        "id": "1151260",
+                        "kanji": [
+                            {
+                                "kanji": "悪い"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "わるい",
+                                "priority": "ichi1, news2, nf48"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "bad, poor, inferior",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 98,
+                "sources": [
+                    "JMdict:1151260"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl20"
+                ]
+            },
+            "pDS8zazCw0FG9PTUTcLV": {
+                "data": {
+                    "JMdict:1171010": {
+                        "id": "1171010",
+                        "kanji": [
+                            {
+                                "kanji": "右"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "みぎ",
+                                "priority": "ichi1, news1, nf01"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "right, right hand side",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 99,
+                "sources": [
+                    "JMdict:1171010"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl20"
+                ]
+            },
+            "tzRcKxGwNovXESUEet2K": {
+                "data": {
+                    "JMdict:1290800": {
+                        "id": "1290800",
+                        "kanji": [
+                            {
+                                "kanji": "左"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "ひだり",
+                                "priority": "ichi1, news1, nf01"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "left, left hand side",
+                                "partOfSpeech": "&n;, &adj-no;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 100,
+                "sources": [
+                    "JMdict:1290800"
+                ],
+                "tags": [
+                    "kanji",
+                    "lvl20"
+                ]
+            }
+        }
+    },
+    "mUAnq6lxE3Nnx4yYBrwM": {
+        "name": "test",
+        "numberOfItems": 4,
+        "items": {
+            "TRjqLUhTH17GwKrSNOCi": {
+                "data": {
+                    "JMdictTest:1000260": {
+                        "id": "1000260",
+                        "kanji": [
+                            {
+                                "kanji": "悪どい"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "あくどい"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "gaudy, showy, excessive"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 1,
+                "sources": [
+                    "JMdictTest:1000260"
+                ],
+                "tags": [
+                    "test"
+                ]
+            },
+            "AgswWOhmjc95LiStJlIO": {
+                "data": {
+                    "JMdictTest:1000000": {
+                        "id": "1000000",
+                        "reading": [
+                            {
+                                "kana": "くりかえし"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "repetition mark in katakana"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 2,
+                "sources": [
+                    "JMdictTest:1000000"
+                ],
+                "tags": [
+                    "test"
+                ]
+            },
+            "ufBxTaHSbugkTf9v9bOi": {
+                "data": {
+                    "JMdictTest:1000320": {
+                        "id": "1000320",
+                        "kanji": [
+                            {
+                                "kanji": "彼処"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "あこ"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "there (place physically distant from both speaker and listener), over there, that place, yonder"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 3,
+                "sources": [
+                    "JMdictTest:1000320"
+                ],
+                "tags": [
+                    "test"
+                ]
+            },
+            "ZS1NZnxfb9agVWoJ8zSi": {
+                "data": {
+                    "JMdictTest:1000280": {
+                        "id": "1000280",
+                        "kanji": [
+                            {
+                                "kanji": "論う"
+                            }
+                        ],
+                        "reading": [
+                            {
+                                "kana": "あげつらう"
+                            }
+                        ],
+                        "sense": [
+                            {
+                                "gloss": "to discuss"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 4,
+                "sources": [
+                    "JMdictTest:1000280"
+                ],
+                "tags": [
+                    "test"
+                ]
+            }
+        }
+    }
+}

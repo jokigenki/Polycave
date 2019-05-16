@@ -1,14 +1,10 @@
-Create test scene and test Oculus GO works
-
 Create TMP based component to display characters as a set of selectable items
 
 Setup controller to allow selection of character items
 
 Data sets
 - Output from PBP top 100 as compounds
-- Example sentences
-- Kanji based on top 100 compounds
-- Radicals
+- Example sentences - Who?
 
 Build data layer to use json files to display items
 

@@ -1,0 +1,491 @@
+[
+    {
+        "kanji": "頭",
+        "radicals": [
+            "⾴",
+            "⾖"
+        ]
+    },
+    {
+        "kanji": "腕",
+        "radicals": [
+            "⽉",
+            "⼧",
+            "⼣",
+            "⺒"
+        ]
+    },
+    {
+        "kanji": "手",
+        "radicals": [
+            "⼿"
+        ]
+    },
+    {
+        "kanji": "指",
+        "radicals": [
+            "⺘",
+            "⼿",
+            "⼔",
+            "⽇"
+        ]
+    },
+    {
+        "kanji": "体",
+        "radicals": [
+            "⺅",
+            "⼈",
+            "⽊",
+            "⼀"
+        ]
+    },
+    {
+        "kanji": "胃",
+        "radicals": [
+            "⽥",
+            "⽉"
+        ]
+    },
+    {
+        "kanji": "胸",
+        "radicals": [
+            "⽉",
+            "⼓",
+            "⼐"
+        ]
+    },
+    {
+        "kanji": "背",
+        "radicals": [
+            "⽙",
+            "⽉",
+            "⼔"
+        ]
+    },
+    {
+        "kanji": "中",
+        "radicals": [
+            "⼝",
+            "⼁"
+        ]
+    },
+    {
+        "kanji": "茶",
+        "radicals": [
+            "⺾",
+            "⼍",
+            "⽊"
+        ]
+    },
+    {
+        "kanji": "魚",
+        "radicals": [
+            "⼓",
+            "⽥",
+            "⺣"
+        ]
+    },
+    {
+        "kanji": "牛",
+        "radicals": [
+            "⽜"
+        ]
+    },
+    {
+        "kanji": "肉",
+        "radicals": [
+            "⾁"
+        ]
+    },
+    {
+        "kanji": "豚",
+        "radicals": [
+            "⽉",
+            "⾗"
+        ]
+    },
+    {
+        "kanji": "鶏",
+        "radicals": [
+            "⺤",
+            "⿃",
+            "⼈",
+            "⼆",
+            "⼟"
+        ]
+    },
+    {
+        "kanji": "看",
+        "radicals": [
+            "⽬",
+            "⼿",
+            "⼆"
+        ]
+    },
+    {
+        "kanji": "護",
+        "radicals": [
+            "⾫",
+            "⾔",
+            "⺾",
+            "⼜",
+            "⼝"
+        ]
+    },
+    {
+        "kanji": "者",
+        "radicals": [
+            "⽇",
+            "⺹"
+        ]
+    },
+    {
+        "kanji": "従",
+        "radicals": [
+            "⼻",
+            "⽦"
+        ]
+    },
+    {
+        "kanji": "業",
+        "radicals": [
+            "⽾",
+            "⽺"
+        ]
+    },
+    {
+        "kanji": "員",
+        "radicals": [
+            "⾙",
+            "⼝"
+        ]
+    },
+    {
+        "kanji": "警",
+        "radicals": [
+            "⾔",
+            "⺙",
+            "⺾",
+            "⼝",
+            "⼓"
+        ]
+    },
+    {
+        "kanji": "察",
+        "radicals": [
+            "⼧",
+            "⽨",
+            "⽰"
+        ]
+    },
+    {
+        "kanji": "官",
+        "radicals": [
+            "⼧",
+            "⼝"
+        ]
+    },
+    {
+        "kanji": "料",
+        "radicals": [
+            "⽶",
+            "⽃"
+        ]
+    },
+    {
+        "kanji": "理",
+        "radicals": [
+            "⺩",
+            "⽥",
+            "⼟"
+        ]
+    },
+    {
+        "kanji": "人",
+        "radicals": [
+            "⼈"
+        ]
+    },
+    {
+        "kanji": "医",
+        "radicals": [
+            "⽮",
+            "⼕"
+        ]
+    },
+    {
+        "kanji": "先",
+        "radicals": [
+            "⼟",
+            "⼃",
+            "⼉"
+        ]
+    },
+    {
+        "kanji": "生",
+        "radicals": [
+            "⽣"
+        ]
+    },
+    {
+        "kanji": "母",
+        "radicals": [
+            "⽏"
+        ]
+    },
+    {
+        "kanji": "父",
+        "radicals": [
+            "⽗"
+        ]
+    },
+    {
+        "kanji": "弟",
+        "radicals": [
+            "⼸"
+        ]
+    },
+    {
+        "kanji": "妹",
+        "radicals": [
+            "⼥",
+            "⽊",
+            "⼇"
+        ]
+    },
+    {
+        "kanji": "姉",
+        "radicals": [
+            "⼥",
+            "⼱",
+            "⼇"
+        ]
+    },
+    {
+        "kanji": "兄",
+        "radicals": [
+            "⼝",
+            "⼉"
+        ]
+    },
+    {
+        "kanji": "友",
+        "radicals": [
+            "⼜"
+        ]
+    },
+    {
+        "kanji": "達",
+        "radicals": [
+            "⻌",
+            "⼟",
+            "⽺"
+        ]
+    },
+    {
+        "kanji": "先",
+        "radicals": [
+            "⼟",
+            "⼉"
+        ]
+    },
+    {
+        "kanji": "輩",
+        "radicals": [
+            "⾮",
+            "⾞"
+        ]
+    },
+    {
+        "kanji": "後",
+        "radicals": [
+            "⺙",
+            "⼻",
+            "⺓"
+        ]
+    },
+    {
+        "kanji": "私",
+        "radicals": [
+            "⽲",
+            "⼛"
+        ]
+    },
+    {
+        "kanji": "貴",
+        "radicals": [
+            "⾙",
+            "⼀",
+            "⼝",
+            "⼁"
+        ]
+    },
+    {
+        "kanji": "方",
+        "radicals": [
+            "⽅"
+        ]
+    },
+    {
+        "kanji": "彼",
+        "radicals": [
+            "⼻",
+            "⽪"
+        ]
+    },
+    {
+        "kanji": "女",
+        "radicals": [
+            "⼥"
+        ]
+    },
+    {
+        "kanji": "出",
+        "radicals": [
+            "⼭"
+        ]
+    },
+    {
+        "kanji": "来",
+        "radicals": [
+            "⽶",
+            "⼇"
+        ]
+    },
+    {
+        "kanji": "使",
+        "radicals": [
+            "⺅",
+            "⼝"
+        ]
+    },
+    {
+        "kanji": "行",
+        "radicals": [
+            "⾏"
+        ]
+    },
+    {
+        "kanji": "笑",
+        "radicals": [
+            "⽲",
+            "⽵"
+        ]
+    },
+    {
+        "kanji": "作",
+        "radicals": [
+            "⺅"
+        ]
+    },
+    {
+        "kanji": "見",
+        "radicals": [
+            "⽬",
+            "⾒"
+        ]
+    },
+    {
+        "kanji": "食",
+        "radicals": [
+            "⾷"
+        ]
+    },
+    {
+        "kanji": "飲",
+        "radicals": [
+            "⾷",
+            "⽋"
+        ]
+    },
+    {
+        "kanji": "話",
+        "radicals": [
+            "⾔",
+            "⾆"
+        ]
+    },
+    {
+        "kanji": "遠",
+        "radicals": [
+            "⻌",
+            "⼟",
+            "⾐",
+            "⼝"
+        ]
+    },
+    {
+        "kanji": "小",
+        "radicals": [
+            "⼩"
+        ]
+    },
+    {
+        "kanji": "良",
+        "radicals": [
+            "⾉"
+        ]
+    },
+    {
+        "kanji": "綺",
+        "radicals": [
+            "⽷",
+            "⼤",
+            "⼝"
+        ]
+    },
+    {
+        "kanji": "麗",
+        "radicals": [
+            "⿅",
+            "⼌"
+        ]
+    },
+    {
+        "kanji": "醜",
+        "radicals": [
+            "⾣",
+            "⿁"
+        ]
+    },
+    {
+        "kanji": "難",
+        "radicals": [
+            "⾫",
+            "⼤",
+            "⾰"
+        ]
+    },
+    {
+        "kanji": "易",
+        "radicals": [
+            "⽇",
+            "⽻"
+        ]
+    },
+    {
+        "kanji": "近",
+        "radicals": [
+            "⻌",
+            "⽄"
+        ]
+    },
+    {
+        "kanji": "悪",
+        "radicals": [
+            "⼼"
+        ]
+    },
+    {
+        "kanji": "右",
+        "radicals": [
+            "⼝"
+        ]
+    },
+    {
+        "kanji": "左",
+        "radicals": [
+            "⼯"
+        ]
+    }
+]

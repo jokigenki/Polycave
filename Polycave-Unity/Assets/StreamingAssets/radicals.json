@@ -1,0 +1,507 @@
+[
+    {
+        "id": "1",
+        "radical": "⼀",
+        "sense": "one"
+    },
+    {
+        "id": "2",
+        "radical": "⼆",
+        "sense": "two"
+    },
+    {
+        "id": "3",
+        "radical": "⼝",
+        "sense": "mouth"
+    },
+    {
+        "id": "4",
+        "radical": "⼉",
+        "sense": "legs"
+    },
+    {
+        "id": "5",
+        "radical": "⺔",
+        "sense": "pig's head"
+    },
+    {
+        "id": "6",
+        "radical": "⼇",
+        "sense": "lid"
+    },
+    {
+        "id": "7",
+        "radical": "⼍",
+        "sense": "cover"
+    },
+    {
+        "id": "8",
+        "radical": "⼧",
+        "sense": "roof"
+    },
+    {
+        "id": "9",
+        "radical": "⼔",
+        "sense": "spoon"
+    },
+    {
+        "id": "10",
+        "radical": "⼋",
+        "sense": "eight"
+    },
+    {
+        "id": "11",
+        "radical": "⼃",
+        "sense": "slope"
+    },
+    {
+        "id": "12",
+        "radical": "⼄",
+        "sense": "the second"
+    },
+    {
+        "id": "13",
+        "radical": "⼗",
+        "sense": "ten"
+    },
+    {
+        "id": "14",
+        "radical": "⾬",
+        "sense": "rain"
+    },
+    {
+        "id": "15",
+        "radical": "⼙",
+        "sense": "seal"
+    },
+    {
+        "id": "16",
+        "radical": "⼱",
+        "sense": "cloth"
+    },
+    {
+        "id": "17",
+        "radical": "⼌",
+        "sense": "enclose"
+    },
+    {
+        "id": "18",
+        "radical": "⼟",
+        "sense": "ground"
+    },
+    {
+        "id": "19",
+        "radical": "⻌",
+        "sense": "road"
+    },
+    {
+        "id": "20",
+        "radical": "⼲",
+        "sense": "dry"
+    },
+    {
+        "id": "21",
+        "radical": "⽇",
+        "sense": "sun"
+    },
+    {
+        "id": "22",
+        "radical": "⽉",
+        "sense": "moon"
+    },
+    {
+        "id": "23",
+        "radical": "⾫",
+        "sense": "old bird"
+    },
+    {
+        "id": "24",
+        "radical": "⽕",
+        "sense": "fire"
+    },
+    {
+        "id": "25",
+        "radical": "⽔",
+        "sense": "water"
+    },
+    {
+        "id": "26",
+        "radical": "⽊",
+        "sense": "wood"
+    },
+    {
+        "id": "27",
+        "radical": "⾦",
+        "sense": "gold"
+    },
+    {
+        "id": "28",
+        "radical": "⽲",
+        "sense": "grain"
+    },
+    {
+        "id": "29",
+        "radical": "⼩",
+        "sense": "small"
+    },
+    {
+        "id": "30",
+        "radical": "⼨",
+        "sense": "inch"
+    },
+    {
+        "id": "31",
+        "radical": "⾨",
+        "sense": "gate"
+    },
+    {
+        "id": "32",
+        "radical": "⼑",
+        "sense": "sword"
+    },
+    {
+        "id": "33",
+        "radical": "⾔",
+        "sense": "words"
+    },
+    {
+        "id": "34",
+        "radical": "⾜",
+        "sense": "foot"
+    },
+    {
+        "id": "35",
+        "radical": "⾴",
+        "sense": "page"
+    },
+    {
+        "id": "36",
+        "radical": "⾖",
+        "sense": "bean"
+    },
+    {
+        "id": "37",
+        "radical": "⼣",
+        "sense": "evening"
+    },
+    {
+        "id": "38",
+        "radical": "⺒",
+        "sense": "snake"
+    },
+    {
+        "id": "39",
+        "radical": "⼿",
+        "sense": "hand"
+    },
+    {
+        "id": "40",
+        "radical": "⺘",
+        "sense": "fingers"
+    },
+    {
+        "id": "41",
+        "radical": "⺅",
+        "sense": "person"
+    },
+    {
+        "id": "42",
+        "radical": "⼈",
+        "sense": "person"
+    },
+    {
+        "id": "43",
+        "radical": "⼻",
+        "sense": "step"
+    },
+    {
+        "id": "44",
+        "radical": "⽥",
+        "sense": "field"
+    },
+    {
+        "id": "45",
+        "radical": "⼓",
+        "sense": "wrap"
+    },
+    {
+        "id": "46",
+        "radical": "⼐",
+        "sense": "container"
+    },
+    {
+        "id": "47",
+        "radical": "⽙",
+        "sense": "split wood"
+    },
+    {
+        "id": "48",
+        "radical": "⼁",
+        "sense": "vertical stroke"
+    },
+    {
+        "id": "49",
+        "radical": "⺾",
+        "sense": "grass"
+    },
+    {
+        "id": "50",
+        "radical": "⺣",
+        "sense": "fire"
+    },
+    {
+        "id": "51",
+        "radical": "⽜",
+        "sense": "cow"
+    },
+    {
+        "id": "52",
+        "radical": "⾁",
+        "sense": "meat"
+    },
+    {
+        "id": "53",
+        "radical": "⾗",
+        "sense": "pig"
+    },
+    {
+        "id": "54",
+        "radical": "⺤",
+        "sense": "claw"
+    },
+    {
+        "id": "55",
+        "radical": "⿃",
+        "sense": "bird"
+    },
+    {
+        "id": "56",
+        "radical": "⽬",
+        "sense": "eye"
+    },
+    {
+        "id": "57",
+        "radical": "⼜",
+        "sense": "again"
+    },
+    {
+        "id": "58",
+        "radical": "⺹",
+        "sense": "old"
+    },
+    {
+        "id": "59",
+        "radical": "⽦",
+        "sense": "bolt of cloth"
+    },
+    {
+        "id": "60",
+        "radical": "⽾",
+        "sense": "plow"
+    },
+    {
+        "id": "61",
+        "radical": "⽺",
+        "sense": "sheep"
+    },
+    {
+        "id": "62",
+        "radical": "⾙",
+        "sense": "shell"
+    },
+    {
+        "id": "63",
+        "radical": "⺙",
+        "sense": "strike"
+    },
+    {
+        "id": "64",
+        "radical": "⽨",
+        "sense": "departure"
+    },
+    {
+        "id": "65",
+        "radical": "⽰",
+        "sense": "altar"
+    },
+    {
+        "id": "66",
+        "radical": "⽶",
+        "sense": "rice"
+    },
+    {
+        "id": "67",
+        "radical": "⽃",
+        "sense": "ladle"
+    },
+    {
+        "id": "68",
+        "radical": "⺩",
+        "sense": "ball"
+    },
+    {
+        "id": "69",
+        "radical": "⼕",
+        "sense": "box"
+    },
+    {
+        "id": "70",
+        "radical": "⽮",
+        "sense": "arrow"
+    },
+    {
+        "id": "71",
+        "radical": "⽣",
+        "sense": "birth"
+    },
+    {
+        "id": "72",
+        "radical": "⽏",
+        "sense": "mother"
+    },
+    {
+        "id": "73",
+        "radical": "⽗",
+        "sense": "father"
+    },
+    {
+        "id": "74",
+        "radical": "⼸",
+        "sense": "bow"
+    },
+    {
+        "id": "75",
+        "radical": "⼥",
+        "sense": "woman"
+    },
+    {
+        "id": "76",
+        "radical": "⾮",
+        "sense": "wrong"
+    },
+    {
+        "id": "77",
+        "radical": "⾞",
+        "sense": "car"
+    },
+    {
+        "id": "78",
+        "radical": "⺓",
+        "sense": "young"
+    },
+    {
+        "id": "79",
+        "radical": "⼛",
+        "sense": "private"
+    },
+    {
+        "id": "80",
+        "radical": "⽅",
+        "sense": "direction"
+    },
+    {
+        "id": "81",
+        "radical": "⽪",
+        "sense": "skin"
+    },
+    {
+        "id": "82",
+        "radical": "⼭",
+        "sense": "mountain"
+    },
+    {
+        "id": "83",
+        "radical": "⽶",
+        "sense": "rice"
+    },
+    {
+        "id": "84",
+        "radical": "⾏",
+        "sense": "to go"
+    },
+    {
+        "id": "85",
+        "radical": "⽵",
+        "sense": "bamboo"
+    },
+    {
+        "id": "86",
+        "radical": "⾒",
+        "sense": "to see"
+    },
+    {
+        "id": "87",
+        "radical": "⾷",
+        "sense": "food"
+    },
+    {
+        "id": "88",
+        "radical": "⽋",
+        "sense": "to lack"
+    },
+    {
+        "id": "89",
+        "radical": "⾆",
+        "sense": "tongue"
+    },
+    {
+        "id": "90",
+        "radical": "⾐",
+        "sense": "clothing"
+    },
+    {
+        "id": "91",
+        "radical": "⾉",
+        "sense": "boundary"
+    },
+    {
+        "id": "92",
+        "radical": "⽷",
+        "sense": "thread"
+    },
+    {
+        "id": "93",
+        "radical": "⿅",
+        "sense": "deer"
+    },
+    {
+        "id": "94",
+        "radical": "⾣",
+        "sense": "alcohol"
+    },
+    {
+        "id": "95",
+        "radical": "⿁",
+        "sense": "demon"
+    },
+    {
+        "id": "96",
+        "radical": "⾰",
+        "sense": "leather"
+    },
+    {
+        "id": "97",
+        "radical": "⽻",
+        "sense": "feather"
+    },
+    {
+        "id": "98",
+        "radical": "⽄",
+        "sense": "axe"
+    },
+    {
+        "id": "99",
+        "radical": "⼼",
+        "sense": "heart"
+    },
+    {
+        "id": "100",
+        "radical": "⼯",
+        "sense": "work"
+    },
+    {
+        "id": "101",
+        "radical": "⼤",
+        "sense": "big"
+    }
+]
