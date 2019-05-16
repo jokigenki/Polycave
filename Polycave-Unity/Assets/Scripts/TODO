@@ -3,10 +3,7 @@ Create TMP based component to display characters as a set of selectable items
 Setup controller to allow selection of character items
 
 Data sets
-- Output from PBP top 100 as compounds
 - Example sentences - Who?
-
-Build data layer to use json files to display items
 
 Links between items
 - Sentence -> Compound - Example sentences should be marked up with compounds so we know where they are. Take this list and check whether we have the compounds stored in data
