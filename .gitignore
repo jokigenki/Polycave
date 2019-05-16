@@ -38,4 +38,6 @@ sysinfo.txt
 # Various plugin bits
 Polycave-Unity/StreamingAssets/
 Polycave-Unity/Assets/Oculus/
+Polycave-Unity/Assets/Oculus.meta
 Polycave-Unity/Assets/JsonDotNet/
+Polycave-Unity/Assets/JsonDotNet.meta
