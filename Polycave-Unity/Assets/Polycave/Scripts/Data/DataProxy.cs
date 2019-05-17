@@ -74,4 +74,11 @@ public class DataProxy : MonoBehaviour
     {
         return sentences.Where (s => s.links.Contains (kanji)).FirstOrDefault ();
     }
+
+    public List<Source> GetSiblingsForSource (Source source)
+    {
+        List<Source> siblings = new List<Source> ();
+
+        return siblings;
+    }
 }

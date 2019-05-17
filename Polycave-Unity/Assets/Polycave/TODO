@@ -1,0 +1,35 @@
+Get Oculus controller working with bubbles
+
+Fix positioning of laser
+
+Create TMP based component to display characters as a set of selectable items
+
+Setup controller to allow selection of character items
+
+Popup system
+
+Text for various popups - decide where these will be and what they will say
+
+StateMachine?
+
+Runes
+
+Data sets
+- Example sentences - Who?
+
+Links between items
+- Sentence -> Compound - Example sentences should be marked up with compounds so we know where they are. Take this list and check whether we have the compounds stored in data
+- Compound -> Sentence - Each compound should be linked to a single sentences
+- Compound -> Kanji - Search the kanji data set for the kanji in the compound (they should all be present)
+- Kanji -> Compound - Search the compound data set for the kanji
+- Kanji -> Radical - Each kanji should contain a list of the radicals it contains
+- Radical -> Kanji - Search the kanji data set for any kanji containing this radical 
+
+1 Intro
+2 User is placed in Kanji room
+3 They "play" a game (just a popup for now)
+4 They can then move up, down or across (i.e. up to a compound, down to radicals, across to another kanji)
+5 This is done by choosing a rune from their bag (for now just buttons)
+6 This makes the choices appear as bubbles
+7 Selecting a bubble warps the user into that bubble, and the cycle repeats from 2.
+8 The user can select a different rune to see a different choice, or cancel to remove all the choices.
