@@ -10,7 +10,6 @@ public class Billboard : MonoBehaviour
     void Start ()
     {
         if (lookAtCamera == null) lookAtCamera = Camera.main;
-        Debug.Log (lookAtCamera.name);
     }
 
     void Update ()

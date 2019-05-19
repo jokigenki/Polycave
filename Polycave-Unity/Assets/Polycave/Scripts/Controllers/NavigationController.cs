@@ -6,7 +6,7 @@ using UnityEngine;
 public class NavigationController : MonoBehaviour
 {
     public float fadeTime = 0.5f;
-    public OVRScreenFade fader;
+    private OVRScreenFade _fader;
 
     private Texture _originalTexture;
     private float _originalFadeTime;
@@ -14,9 +14,9 @@ public class NavigationController : MonoBehaviour
     void Start ()
     {
         EventBus.Instance.AddListener<BubbleEvent> (OnBubbleEvent);
-        fader = Camera.main.GetComponent<OVRScreenFade> ();
+        _fader = Camera.main.GetComponent<OVRScreenFade> ();
         _originalTexture = RenderSettings.skybox.mainTexture;
-        _originalFadeTime = fader.fadeTime;
+        _originalFadeTime = _fader.fadeTime;
     }
 
     void OnDestroy ()
@@ -32,10 +32,10 @@ public class NavigationController : MonoBehaviour
 
     private IEnumerator ChangeSkybox (Texture texture)
     {
-        fader.fadeTime = fadeTime;
-        yield return fader.Fade (0, 1);
+        _fader.fadeTime = fadeTime;
+        yield return _fader.Fade (0, 1);
         RenderSettings.skybox.mainTexture = texture;
-        yield return fader.Fade (1, 0);
-        fader.fadeTime = _originalFadeTime;
+        yield return _fader.Fade (1, 0);
+        _fader.fadeTime = _originalFadeTime;
     }
 }
