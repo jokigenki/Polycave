@@ -2,22 +2,29 @@ using UnityEngine;
 
 public class OVRSelector : MonoBehaviour
 {
-    public Transform rayOrigin;
+    public LaserPointer pointer;
 
-    void Start () { }
+    void Start ()
+    {
+        pointer = FindObjectOfType<LaserPointer> ();
+    }
 
     void Update ()
     {
-        Vector3 cameraForward = Camera.main.transform.forward;
-        if (OVRInput.Get (OVRInput.Button.PrimaryHandTrigger, OVRInput.Controller.RTrackedRemote))
+        if (pointer == null) return;
+
+        if (OVRInput.Get (OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTrackedRemote))
         {
-            Ray ray = new Ray (rayOrigin.position, rayOrigin.forward);
+            Debug.Log ("Button pressed");
+            Ray ray = new Ray (pointer.StartPoint, pointer.Forward);
             RaycastHit[] hits = Physics.RaycastAll (ray, 100f);
             foreach (RaycastHit hit in hits)
             {
+                Debug.Log ($"Hit {hit.transform.name}");
                 SelectionReactor reactor = GetReactorForHit (hit);
                 if (reactor != null)
                 {
+                    Debug.Log ("Perform action");
                     reactor.PerformAction ();
                     if (!reactor.propogateHit) break;
                 }

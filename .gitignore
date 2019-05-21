@@ -4,6 +4,7 @@
 [Bb]uild/
 [Bb]uilds/
 Polycave-Unity/Assets/AssetStoreTools*
+Polycave-SRP/Assets/AssetStoreTools*
 
 # Visual Studio cache directory
 .vs/
@@ -37,3 +38,4 @@ sysinfo.txt
 
 # Various plugin bits
 Polycave-Unity/StreamingAssets/
+Polycave-SRP/StreamingAssets/

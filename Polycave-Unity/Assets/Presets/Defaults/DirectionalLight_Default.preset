@@ -101,7 +101,7 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_Lightmapping
-    value: 4
+    value: 1
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_LightShadowCasterMode
@@ -133,5 +133,5 @@ Preset:
     objectReference: {fileID: 0}
   - target: {fileID: 0}
     propertyPath: m_ShadowAngle
-    value: 1
+    value: 0
     objectReference: {fileID: 0}
