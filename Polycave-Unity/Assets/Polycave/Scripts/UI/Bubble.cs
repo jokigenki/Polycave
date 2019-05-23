@@ -34,6 +34,10 @@ public class Bubble : MonoBehaviour
 
     private void SetTextureOnSurface (GameObject target, Texture texture)
     {
+        _inside.SetActive (texture != null);
+        _outside.SetActive (texture != null);
+        if (texture == null) return;
+
         Renderer renderer = target.GetComponent<Renderer> ();
         renderer.material.SetTexture ("_MainTex", texture);
     }
