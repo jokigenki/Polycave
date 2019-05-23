@@ -3,25 +3,25 @@
 Copyright (c) Facebook Technologies, LLC and its affiliates. All rights reserved.  
 
 See SampleFramework license.txt for license terms.  Unless required by applicable law 
-or agreed to in writing, the sample code is provided “AS IS” WITHOUT WARRANTIES OR 
+or agreed to in writing, the sample code is provided ï¿½AS ISï¿½ WITHOUT WARRANTIES OR 
 CONDITIONS OF ANY KIND, either express or implied.  See the license for specific 
 language governing permissions and limitations under the license.
 
 ************************************************************************************/
 
-using UnityEngine;
+using System;
 using System.Collections;
+using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using System;
 
 public class LaserPointer : OVRCursor
 {
     public enum LaserBeamBehavior
     {
-        On,        // laser beam always on
-        Off,        // laser beam always off
-        OnWhenHitTarget,  // laser beam only activates when hit valid target
+        On, // laser beam always on
+        Off, // laser beam always off
+        OnWhenHitTarget, // laser beam only activates when hit valid target
     }
 
     public GameObject cursorVisual;
@@ -31,9 +31,10 @@ public class LaserPointer : OVRCursor
 
     public LaserBeamBehavior laserBeamBehavior
     {
-        set {
+        set
+        {
             _laserBeamBehavior = value;
-            if(laserBeamBehavior == LaserBeamBehavior.Off || laserBeamBehavior == LaserBeamBehavior.OnWhenHitTarget)
+            if (laserBeamBehavior == LaserBeamBehavior.Off || laserBeamBehavior == LaserBeamBehavior.OnWhenHitTarget)
             {
                 lineRenderer.enabled = false;
             }
@@ -53,77 +54,80 @@ public class LaserPointer : OVRCursor
     private bool _hitTarget;
     private LineRenderer lineRenderer;
 
-    private void Awake()
+    public Vector3 StartPoint { get { return _startPoint; } }
+    public Vector3 Forward { get { return _forward; } }
+
+    private void Awake ()
     {
-        lineRenderer = GetComponent<LineRenderer>();
+        lineRenderer = GetComponent<LineRenderer> ();
     }
 
-    private void Start()
+    private void Start ()
     {
-        if (cursorVisual) cursorVisual.SetActive(false);
+        if (cursorVisual) cursorVisual.SetActive (false);
     }
 
-    public override void SetCursorStartDest(Vector3 start, Vector3 dest, Vector3 normal)
+    public override void SetCursorStartDest (Vector3 start, Vector3 dest, Vector3 normal)
     {
         _startPoint = start;
         _endPoint = dest;
         _hitTarget = true;
     }
 
-    public override void SetCursorRay(Transform t)
+    public override void SetCursorRay (Transform t)
     {
         _startPoint = t.position;
         _forward = t.forward;
         _hitTarget = false;
     }
 
-    private void LateUpdate()
+    private void LateUpdate ()
     {
-        lineRenderer.SetPosition(0, _startPoint);
+        lineRenderer.SetPosition (0, _startPoint);
         if (_hitTarget)
         {
-            lineRenderer.SetPosition(1, _endPoint);
-            UpdateLaserBeam(_startPoint, _endPoint);
+            lineRenderer.SetPosition (1, _endPoint);
+            UpdateLaserBeam (_startPoint, _endPoint);
             if (cursorVisual)
             {
                 cursorVisual.transform.position = _endPoint;
-                cursorVisual.SetActive(true);
+                cursorVisual.SetActive (true);
             }
         }
         else
         {
-            UpdateLaserBeam(_startPoint, _startPoint + maxLength * _forward);
-            lineRenderer.SetPosition(1, _startPoint + maxLength * _forward);
-            if (cursorVisual) cursorVisual.SetActive(false);
+            UpdateLaserBeam (_startPoint, _startPoint + maxLength * _forward);
+            lineRenderer.SetPosition (1, _startPoint + maxLength * _forward);
+            if (cursorVisual) cursorVisual.SetActive (false);
         }
     }
 
     // make laser beam a behavior with a prop that enables or disables
-    private void UpdateLaserBeam(Vector3 start, Vector3 end)
+    private void UpdateLaserBeam (Vector3 start, Vector3 end)
     {
-        if(laserBeamBehavior == LaserBeamBehavior.Off)
+        if (laserBeamBehavior == LaserBeamBehavior.Off)
         {
             return;
         }
-        else if(laserBeamBehavior == LaserBeamBehavior.On)
+        else if (laserBeamBehavior == LaserBeamBehavior.On)
         {
-            lineRenderer.SetPosition(0, start);
-            lineRenderer.SetPosition(1, end);
+            lineRenderer.SetPosition (0, start);
+            lineRenderer.SetPosition (1, end);
         }
-        else if(laserBeamBehavior == LaserBeamBehavior.OnWhenHitTarget)
+        else if (laserBeamBehavior == LaserBeamBehavior.OnWhenHitTarget)
         {
-            if(_hitTarget)
+            if (_hitTarget)
             {
                 if (!lineRenderer.enabled)
                 {
                     lineRenderer.enabled = true;
-                    lineRenderer.SetPosition(0, start);
-                    lineRenderer.SetPosition(1, end);
+                    lineRenderer.SetPosition (0, start);
+                    lineRenderer.SetPosition (1, end);
                 }
             }
             else
             {
-                if(lineRenderer.enabled)
+                if (lineRenderer.enabled)
                 {
                     lineRenderer.enabled = false;
                 }
@@ -131,8 +135,8 @@ public class LaserPointer : OVRCursor
         }
     }
 
-    void OnDisable()
+    void OnDisable ()
     {
-        if(cursorVisual) cursorVisual.SetActive(false);
+        if (cursorVisual) cursorVisual.SetActive (false);
     }
 }

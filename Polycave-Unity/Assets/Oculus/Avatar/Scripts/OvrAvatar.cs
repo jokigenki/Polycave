@@ -103,9 +103,11 @@ public class OvrAvatar : MonoBehaviour
     private static readonly Vector3 MOUTH_HEAD_OFFSET = new Vector3 (0, -0.085f, 0.09f);
     private const string MOUTH_HELPER_NAME = "MouthAnchor";
 
-    //    private OVRLipSyncMicInput micInput = null;
-    //    private OVRLipSyncContext lipsyncContext = null;
-    //    private OVRLipSync.Frame currentFrame = new OVRLipSync.Frame();
+    /*
+        private OVRLipSyncMicInput micInput = null;
+        private OVRLipSyncContext lipsyncContext = null;
+        private OVRLipSync.Frame currentFrame = new OVRLipSync.Frame();
+     */
     private float[] visemes = new float[15];
     private AudioSource audioSource;
     private ONSPAudioSource spatializedSource;
@@ -1019,9 +1021,9 @@ public class OvrAvatar : MonoBehaviour
 
         ConfigureHelpers ();
 
-        /*
         if (GetComponent<OvrAvatarLocalDriver> () != null)
         {
+            /*
             // Use mic.
             lipsyncContext.audioLoopback = false;
             if (CanOwnMicrophone && IsValidMic ())
@@ -1031,8 +1033,8 @@ public class OvrAvatar : MonoBehaviour
                 micInput.MicFrequency = 44100;
                 micInput.micControl = OVRLipSyncMicInput.micActivation.ConstantSpeak;
             }
-        }
              */
+        }
     }
 
     static void ExpressiveGlobalInit ()
@@ -1162,17 +1164,16 @@ public class OvrAvatar : MonoBehaviour
             spatializedSource.EnableSpatialization = true;
             spatializedSource.Far = 100f;
             spatializedSource.Near = 0.1f;
-
             /*
-            // Add phoneme context to the mouth anchor
-            lipsyncContext = MouthAnchor.GetComponent<OVRLipSyncContext> ();
-            if (lipsyncContext == null)
-            {
-                lipsyncContext = MouthAnchor.gameObject.AddComponent<OVRLipSyncContext> ();
-                lipsyncContext.provider = OVRLipSync.ContextProviders.Enhanced;
-                // Ignore audio callback if microphone is owned by VoIP
-                lipsyncContext.skipAudioSource = !CanOwnMicrophone;
-            }
+                        // Add phoneme context to the mouth anchor
+                        lipsyncContext = MouthAnchor.GetComponent<OVRLipSyncContext> ();
+                        if (lipsyncContext == null)
+                        {
+                            lipsyncContext = MouthAnchor.gameObject.AddComponent<OVRLipSyncContext> ();
+                            lipsyncContext.provider = OVRLipSync.ContextProviders.Enhanced;
+                            // Ignore audio callback if microphone is owned by VoIP
+                            lipsyncContext.skipAudioSource = !CanOwnMicrophone;
+                        }
              */
 
             StartCoroutine (WaitForMouthAudioSource ());
@@ -1251,45 +1252,45 @@ public class OvrAvatar : MonoBehaviour
     }
 
     /*
-    public void UpdateVoiceData (short[] pcmData, int numChannels)
-    {
-        if (lipsyncContext != null && micInput == null)
+        public void UpdateVoiceData (short[] pcmData, int numChannels)
         {
-            lipsyncContext.ProcessAudioSamplesRaw (pcmData, numChannels);
-        }
-    }
-    public void UpdateVoiceData (float[] pcmData, int numChannels)
-    {
-        if (lipsyncContext != null && micInput == null)
-        {
-            lipsyncContext.ProcessAudioSamplesRaw (pcmData, numChannels);
-        }
-    }
-
-    private void UpdateFacewave ()
-    {
-        if (lipsyncContext != null && (micInput != null || CanOwnMicrophone == false))
-        {
-            // Get the current viseme frame
-            currentFrame = lipsyncContext.GetCurrentPhonemeFrame ();
-
-            // Verify length
-            if (currentFrame.Visemes.Length != 15)
+            if (lipsyncContext != null && micInput == null)
             {
-                Debug.LogError ("Unexpected number of visemes " + currentFrame.Visemes);
-                return;
+                lipsyncContext.ProcessAudioSamplesRaw (pcmData, numChannels);
             }
-
-            // Copy to viseme array
-            currentFrame.Visemes.CopyTo (visemes, 0);
-
-            // Send visemes to native implementation.
-            for (int i = 0; i < 15; i++)
-            {
-                RuntimeVisemes.visemeParams[i] = visemes[i];
-            }
-            CAPI.ovrAvatar_SetVisemes (sdkAvatar, RuntimeVisemes);
         }
-    }
+        public void UpdateVoiceData (float[] pcmData, int numChannels)
+        {
+            if (lipsyncContext != null && micInput == null)
+            {
+                lipsyncContext.ProcessAudioSamplesRaw (pcmData, numChannels);
+            }
+        }
+
+        private void UpdateFacewave ()
+        {
+            if (lipsyncContext != null && (micInput != null || CanOwnMicrophone == false))
+            {
+                // Get the current viseme frame
+                currentFrame = lipsyncContext.GetCurrentPhonemeFrame ();
+
+                // Verify length
+                if (currentFrame.Visemes.Length != 15)
+                {
+                    Debug.LogError ("Unexpected number of visemes " + currentFrame.Visemes);
+                    return;
+                }
+
+                // Copy to viseme array
+                currentFrame.Visemes.CopyTo (visemes, 0);
+
+                // Send visemes to native implementation.
+                for (int i = 0; i < 15; i++)
+                {
+                    RuntimeVisemes.visemeParams[i] = visemes[i];
+                }
+                CAPI.ovrAvatar_SetVisemes (sdkAvatar, RuntimeVisemes);
+            }
+        }
      */
 }
