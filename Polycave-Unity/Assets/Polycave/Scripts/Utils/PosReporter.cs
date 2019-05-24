@@ -24,8 +24,7 @@ public class PosReporter : MonoBehaviour
         foreach (Transform tr in transform)
         {
             string enabled = transform.gameObject.activeSelf ? "o" : "x";
-            string mesh = tr.GetComponent<MeshRenderer> ()?.name ?? "";
-            log += $"{indent}{enabled} {tr.name} {mesh}\n";
+            log += $"{indent}{enabled} {tr.name}\n";
             if (tr.childCount > 0) log = DebugChildren (tr, log, v + 1);
         }
         return log;

@@ -5,6 +5,7 @@ public class Paths
 {
     public static string Radicals = "radicals.json";
     public static string Sentences = "sentences.json";
+    public static string Conjugations = "conjugations.json";
     public static string KanjiToRadicals = "kanji_radicals.json";
     public static string LearningSets = "learning_sets.json";
 
@@ -16,6 +17,11 @@ public class Paths
     public static string GetSentencesPath ()
     {
         return Path.Combine (Application.streamingAssetsPath, Sentences);
+    }
+
+    public static string GetConjugationsPath ()
+    {
+        return Path.Combine (Application.streamingAssetsPath, Conjugations);
     }
 
     public static string GetKanjiToRadicalsPath ()

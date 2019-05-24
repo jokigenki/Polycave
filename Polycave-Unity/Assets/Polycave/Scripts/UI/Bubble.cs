@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Bubble : MonoBehaviour
 {
+    public AnimationCurve curve = AnimationCurve.EaseInOut (0, 0, 1, 1);
+    public float animateInDuration = 0.5f;
     private TextMeshPro _text;
     private GameObject _inside;
     private GameObject _outside;
@@ -25,6 +27,41 @@ public class Bubble : MonoBehaviour
         set { _text.text = value; }
     }
 
+    public void AnimateIn ()
+    {
+        StartCoroutine (_AnimateIn ());
+    }
+
+    private IEnumerator _AnimateIn ()
+    {
+        float scaleV = 2f;
+        Vector3 scaleVec = new Vector3 (scaleV, scaleV, scaleV);
+        _inside.transform.localScale = scaleVec;
+        _outside.transform.localScale = scaleVec;
+
+        float t = 0;
+        SetAlphaOnSurface (_inside, 0);
+        SetAlphaOnSurface (_outside, 0);
+        float insideTarget = 0.2f;
+        float outsideTarget = 0.6f;
+        while (t < animateInDuration)
+        {
+            t += Time.deltaTime;
+            float v = curve.Evaluate (t / animateInDuration);
+            float insideV = Mathf.Lerp (0, insideTarget, v);
+            float outsideV = Mathf.Lerp (0, outsideTarget, v);
+            SetAlphaOnSurface (_inside, insideV);
+            SetAlphaOnSurface (_outside, outsideV);
+            scaleV = Mathf.Lerp (2, 1, v);
+            scaleVec.x = scaleV;
+            scaleVec.y = scaleV;
+            scaleVec.z = scaleV;
+            _inside.transform.localScale = scaleVec;
+            _outside.transform.localScale = scaleVec;
+            yield return null;
+        }
+    }
+
     public void SetTexture (Texture texture)
     {
         _texture = texture;
@@ -40,5 +77,11 @@ public class Bubble : MonoBehaviour
 
         Renderer renderer = target.GetComponent<Renderer> ();
         renderer.material.SetTexture ("_MainTex", texture);
+    }
+
+    private void SetAlphaOnSurface (GameObject target, float value)
+    {
+        Renderer renderer = target.GetComponent<Renderer> ();
+        renderer.material.SetFloat ("Transparency", value);
     }
 }

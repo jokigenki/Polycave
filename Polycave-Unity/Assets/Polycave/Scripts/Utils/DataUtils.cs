@@ -75,6 +75,7 @@ namespace NekoUtils
 
         public static IEnumerator LoadJson<T> (this string path, Action<T> callback, bool stripWhitespace = false, bool log = true)
         {
+            Debug.Log ($"Loading JSON {path}");
             yield return path.FileToString ((text) =>
             {
                 if (text != null) callback (JsonConvert.DeserializeObject<T> (text));

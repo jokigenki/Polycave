@@ -11,9 +11,9 @@ Runes
 Bag?
 
 Fix billboarding?
+Rebuild font using sentence data
 
-Data sets
-- Example sentences - Who?
+Posterise the panoramas
 
 Links between items
 - Sentence -> Compound - Example sentences should be marked up with compounds so we know where they are. Take this list and check whether we have the compounds stored in data
@@ -31,3 +31,16 @@ Links between items
 6 This makes the choices appear as bubbles
 7 Selecting a bubble warps the user into that bubble, and the cycle repeats from 2.
 8 The user can select a different rune to see a different choice, or cancel to remove all the choices.
+
+
+We first display a multi layer text display, which is used for sentence, compound, kanji
+We display 1 or 2 runes, up and down, sentences has only down, kanji has only up, compounds that have no kanji only have up
+Clicking a rune:
+Kanji: the display vanishes, and is replaced by bubbles containing all of the available compounds
+Compound down: the display vanishes, and bubbles animate in for each of the kanji parts of the compound
+Compound up: the display vanishes, and bubbles animate in for each available sentence
+Sentence down: the display vanishes, and each compound in the sentence is replaced by a bubble
+
+character distance is 0.15
+
+cancel rune
