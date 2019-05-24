@@ -4,6 +4,8 @@ Create TMP based component to display characters as a set of selectable items
 
 Setup controller to allow selection of character items
 
+Switch runecanvas event camera to use correct camera
+
 Popup system
 
 Runes
