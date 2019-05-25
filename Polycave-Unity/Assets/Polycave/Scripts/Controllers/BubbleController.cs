@@ -14,7 +14,9 @@ public class BubbleController : MonoBehaviour
 
     public Texture[] textures;
     public float characterDistance = 0.15f;
-    public Vector3 displayCentre = new Vector3 (0, 1, 1);
+    public Vector3 displayCentre = new Vector3 (0, 30, 30);
+
+    public LaserPointer.LaserBeamBehavior laserBeamBehavior;
 
     private List<GameObject> _currentDisplay = new List<GameObject> ();
 
@@ -22,6 +24,9 @@ public class BubbleController : MonoBehaviour
     {
         EventBus.Instance.AddListener<DataProxySelectionEvent> (OnDataProxySelection);
         EventBus.Instance.AddListener<DataProxyChoicesEvent> (OnDataProxyChoices);
+
+        LaserPointer lp = FindObjectOfType<LaserPointer> ();
+        lp.laserBeamBehavior = laserBeamBehavior;
     }
 
     public void OnDestroy ()
@@ -99,14 +104,14 @@ public class BubbleController : MonoBehaviour
     private GameObject CreateDisplay ()
     {
         ClearDisplay ();
-        GameObject displayGo = Instantiate (textDisplayPrefab, displayCentre, Quaternion.identity, displayParent);
+        GameObject displayGo = Instantiate (textDisplayPrefab, displayParent.position, Quaternion.identity, displayParent);
         _currentDisplay.Add (displayGo);
         return displayGo;
     }
 
     public void CreateBubbleForText (string text, Texture texture, float xOffset)
     {
-        Vector3 position = displayCentre;
+        Vector3 position = displayParent.position;
         position.x += xOffset;
         GameObject bubbleGO = Instantiate (bubblePrefab, position, Quaternion.identity, displayParent);
         bubbleGO.name = $"bubble_{text}";

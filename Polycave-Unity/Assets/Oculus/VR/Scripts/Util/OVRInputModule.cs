@@ -591,57 +591,61 @@ namespace UnityEngine.EventSystems
             //Populate some default values
             leftData.button = PointerEventData.InputButton.Left;
             leftData.useDragThreshold = true;
+
             // Perform raycast to find intersections with world
             eventSystem.RaycastAll (leftData, m_RaycastResultCache);
             var raycast = FindFirstRaycast (m_RaycastResultCache);
+
             leftData.pointerCurrentRaycast = raycast;
             m_RaycastResultCache.Clear ();
 
             m_Cursor.SetCursorRay (rayTransform);
 
-            OVRRaycaster ovrRaycaster = raycast.module as OVRRaycaster;
-            // We're only interested in intersections from OVRRaycasters
-            if (ovrRaycaster)
+            if (raycast.isValid)
             {
-                // The Unity UI system expects event data to have a screen position
-                // so even though this raycast came from a world space ray we must get a screen
-                // space position for the camera attached to this raycaster for compatability
-                leftData.position = ovrRaycaster.GetScreenPosition (raycast);
-
-                // Find the world position and normal the Graphic the ray intersected
-                RectTransform graphicRect = raycast.gameObject.GetComponent<RectTransform> ();
-                if (graphicRect != null)
+                OVRRaycaster ovrRaycaster = raycast.module as OVRRaycaster;
+                // We're only interested in intersections from OVRRaycasters
+                if (ovrRaycaster)
                 {
-                    // Set are gaze indicator with this world position and normal
-                    Vector3 worldPos = raycast.worldPosition;
-                    Vector3 normal = GetRectTransformNormal (graphicRect);
-                    m_Cursor.SetCursorStartDest (rayTransform.position, worldPos, normal);
-                }
-            }
+                    // The Unity UI system expects event data to have a screen position
+                    // so even though this raycast came from a world space ray we must get a screen
+                    // space position for the camera attached to this raycaster for compatability
+                    leftData.position = ovrRaycaster.GetScreenPosition (raycast);
 
-            // Now process physical raycast intersections
-            OVRPhysicsRaycaster physicsRaycaster = raycast.module as OVRPhysicsRaycaster;
-            if (physicsRaycaster)
-            {
-                Vector3 position = raycast.worldPosition;
-
-                if (performSphereCastForGazepointer)
-                {
-                    // Here we cast a sphere into the scene rather than a ray. This gives a more accurate depth
-                    // for positioning a circular gaze pointer
-                    List<RaycastResult> results = new List<RaycastResult> ();
-                    physicsRaycaster.Spherecast (leftData, results, m_SpherecastRadius);
-                    if (results.Count > 0 && results[0].distance < raycast.distance)
+                    // Find the world position and normal the Graphic the ray intersected
+                    RectTransform graphicRect = raycast.gameObject.GetComponent<RectTransform> ();
+                    if (graphicRect != null)
                     {
-                        position = results[0].worldPosition;
+                        // Set are gaze indicator with this world position and normal
+                        Vector3 worldPos = raycast.worldPosition;
+                        Vector3 normal = GetRectTransformNormal (graphicRect);
+                        m_Cursor.SetCursorStartDest (rayTransform.position, worldPos, normal);
                     }
                 }
 
-                leftData.position = physicsRaycaster.GetScreenPos (raycast.worldPosition);
+                // Now process physical raycast intersections
+                OVRPhysicsRaycaster physicsRaycaster = raycast.module as OVRPhysicsRaycaster;
+                if (physicsRaycaster)
+                {
+                    Vector3 position = raycast.worldPosition;
 
-                m_Cursor.SetCursorStartDest (rayTransform.position, position, raycast.worldNormal);
+                    if (performSphereCastForGazepointer)
+                    {
+                        // Here we cast a sphere into the scene rather than a ray. This gives a more accurate depth
+                        // for positioning a circular gaze pointer
+                        List<RaycastResult> results = new List<RaycastResult> ();
+                        physicsRaycaster.Spherecast (leftData, results, m_SpherecastRadius);
+                        if (results.Count > 0 && results[0].distance < raycast.distance)
+                        {
+                            position = results[0].worldPosition;
+                        }
+                    }
+
+                    leftData.position = physicsRaycaster.GetScreenPos (raycast.worldPosition);
+
+                    m_Cursor.SetCursorStartDest (rayTransform.position, position, raycast.worldNormal);
+                }
             }
-
             // Stick default data values in right and middle slots for compatability
 
             // copy the apropriate data into right and middle slots
