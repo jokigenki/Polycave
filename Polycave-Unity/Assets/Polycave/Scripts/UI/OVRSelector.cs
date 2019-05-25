@@ -15,7 +15,6 @@ public class OVRSelector : MonoBehaviour
 
         if (OVRInput.Get (OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTrackedRemote))
         {
-            Debug.Log ("Button pressed");
             Ray ray = new Ray (pointer.StartPoint, pointer.Forward);
             RaycastHit[] hits = Physics.RaycastAll (ray, 100f);
             foreach (RaycastHit hit in hits)

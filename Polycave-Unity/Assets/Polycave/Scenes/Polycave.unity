@@ -544,6 +544,7 @@ GameObject:
   - component: {fileID: 310687989}
   - component: {fileID: 310687988}
   - component: {fileID: 310687992}
+  - component: {fileID: 310687993}
   m_Layer: 5
   m_Name: RuneCanvas
   m_TagString: Untagged
@@ -651,6 +652,18 @@ MonoBehaviour:
     m_Bits: 4294967295
   pointer: {fileID: 20250920452111223}
   sortOrder: 0
+--- !u!114 &310687993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310687987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b366310394f747459a38918acb79d1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &453305158
 GameObject:
   m_ObjectHideFlags: 0

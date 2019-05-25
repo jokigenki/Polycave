@@ -19,7 +19,7 @@ public class RuneController : MonoBehaviour
 
         EventBus.Instance.AddListener<DataProxySelectionEvent> (OnDataProxySelection);
 
-        _downButton.onClick.AddListener (OnUpClicked);
+        _upButton.onClick.AddListener (OnUpClicked);
         _downButton.onClick.AddListener (OnDownClicked);
     }
 
