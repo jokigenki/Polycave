@@ -15,7 +15,13 @@ Optimise start up/display black until ready
 
 Passing all the data around in events is a bit clunky?
 
-Hide kanji button if in kanji
+Buttons should layout in centre if only one
+
+Items should follow curve of ground disc
+
+It's not obvious you have to select an option.
+
+Selection highlight?
 
 Links between items
 - Sentence -> Compound - Example sentences should be marked up with compounds so we know where they are. Take this list and check whether we have the compounds stored in data
