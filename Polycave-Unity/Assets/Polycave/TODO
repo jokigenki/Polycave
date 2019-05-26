@@ -1,17 +1,21 @@
 Fix positioning of laser
 
-Setup controller to allow selection of character items
+Still some missing characters
 
 Popup system
 
 Bag?
 
 Fix billboarding?
-Rebuild font using sentence data
 
-When displaying choices, change up/down to back
+Kanji need to have readings and senses
+Change skybox
 
-Up/down is not clear, change to context sensitive
+Optimise start up/display black until ready
+
+Passing all the data around in events is a bit clunky?
+
+Hide kanji button if in kanji
 
 Links between items
 - Sentence -> Compound - Example sentences should be marked up with compounds so we know where they are. Take this list and check whether we have the compounds stored in data

@@ -25,28 +25,30 @@ public class RuneController : MonoBehaviour
         _upButton.onClick.AddListener (OnUpClicked);
         _downButton.onClick.AddListener (OnDownClicked);
         _backButton.onClick.AddListener (OnBackClicked);
+
+        _upButton.gameObject.SetActive (false);
+        _downButton.gameObject.SetActive (false);
+        _backButton.gameObject.SetActive (false);
     }
 
     private void OnDataProxySelection (DataProxySelectionEvent e)
     {
         _currentEvent = e;
 
-        _upButton.gameObject.SetActive (e.HasUp);
         TextMeshProUGUI upTmp = _upButton.GetComponentInChildren<TextMeshProUGUI> ();
-        if (e.item != null) upTmp.text = "sentence";
-        else if (e.kanji != null) upTmp.text = "compound";
+        if (e.item != null) upTmp.text = "sentences";
+        else if (e.kanji != null) upTmp.text = "compounds";
 
-        _downButton.gameObject.SetActive (e.HasDown);
         TextMeshProUGUI dnTmp = _downButton.GetComponentInChildren<TextMeshProUGUI> ();
         if (e.item != null) dnTmp.text = "kanji";
-        else if (e.sentence != null) dnTmp.text = "compound";
+        else if (e.sentence != null) dnTmp.text = "compounds";
         UpdateButtons ();
     }
 
     private void UpdateButtons ()
     {
-        _upButton.gameObject.SetActive (_currentEvent.navType == NavType.Display);
-        _downButton.gameObject.SetActive (_currentEvent.navType == NavType.Display);
+        _upButton.gameObject.SetActive (_currentEvent.navType == NavType.Display && _currentEvent.HasUp);
+        _downButton.gameObject.SetActive (_currentEvent.navType == NavType.Display && _currentEvent.HasDown);
         _backButton.gameObject.SetActive (_currentEvent.navType == NavType.Choice);
     }
 

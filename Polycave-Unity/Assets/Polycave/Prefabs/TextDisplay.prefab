@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: -2412787074948108443}
   - component: {fileID: 8478338829250222574}
   - component: {fileID: 2003485189360170189}
+  - component: {fileID: 1587004424103380446}
+  - component: {fileID: 4475105187025132541}
   m_Layer: 0
   m_Name: TextDisplay
   m_TagString: Untagged
@@ -126,6 +128,32 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+--- !u!65 &1587004424103380446
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5697873067435770941}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.6, y: 5.6, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4475105187025132541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5697873067435770941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67bd6da8dca6e0b44b5a1adbbb40570c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propogateHit: 0
 --- !u!1 &6255130029628944763
 GameObject:
   m_ObjectHideFlags: 0

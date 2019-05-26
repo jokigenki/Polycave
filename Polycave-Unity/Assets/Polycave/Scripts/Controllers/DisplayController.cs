@@ -19,11 +19,14 @@ public class DisplayController : MonoBehaviour
 
     private List<GameObject> _currentDisplay = new List<GameObject> ();
 
+    private DataProxy _dataProxy;
+
     public void Start ()
     {
         EventBus.Instance.AddListener<DataProxySelectionEvent> (OnDataProxySelection);
         EventBus.Instance.AddListener<DataProxyChoicesEvent> (OnDataProxyChoices);
 
+        _dataProxy = FindObjectOfType<DataProxy> ();
         LaserPointer lp = FindObjectOfType<LaserPointer> ();
         if (lp != null) lp.laserBeamBehavior = laserBeamBehavior;
     }
@@ -61,11 +64,17 @@ public class DisplayController : MonoBehaviour
     private void DisplayChoices<T> (List<T> choices)
     {
         ClearDisplay ();
-        float xPos = ((choices.Count / 2) - 0.5f) * -previewPanelSpacing;
+        float xPos = (((float) choices.Count / 2f) - 0.5f) * -previewPanelSpacing;
+        Debug.Log ($"count: {choices.Count} xPos {xPos}");
         foreach (T choice in choices)
         {
             GameObject go = CreateDisplay (textPreviewPrefab, xPos);
             go.GetComponent<TextDisplay> ().DisplayData (choice);
+            go.GetComponent<Collider> ().enabled = true;
+            SelectionReactor reactor = go.GetComponent<SelectionReactor> ();
+            reactor.userData = choice;
+            reactor.action = OnChoiceSelected;
+
             xPos += previewPanelSpacing;
         }
     }
@@ -82,8 +91,9 @@ public class DisplayController : MonoBehaviour
     public void DisplayItem<T> (T item)
     {
         ClearDisplay ();
-        GameObject displayGo = CreateDisplay (textDisplayPrefab);
-        displayGo.GetComponent<TextDisplay> ().DisplayData (item);
+        GameObject go = CreateDisplay (textDisplayPrefab);
+        go.GetComponent<TextDisplay> ().DisplayData (item);
+        go.GetComponent<Collider> ().enabled = false;
     }
 
     private GameObject CreateDisplay (GameObject prefab, float xOffset = 0)
@@ -114,5 +124,10 @@ public class DisplayController : MonoBehaviour
         string text = bubble.Text;
         Texture texture = bubble.Texture;
         EventBus.Instance.Raise (new BubbleEvent (text, texture));
+    }
+
+    private void OnChoiceSelected (SelectionReactor reactor)
+    {
+        _dataProxy.SetCurrentData (reactor.userData);
     }
 }

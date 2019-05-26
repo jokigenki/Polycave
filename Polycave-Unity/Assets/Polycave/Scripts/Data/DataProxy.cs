@@ -20,9 +20,9 @@ public class DataProxy : MonoBehaviour
 
     public LearningSet extendedSet;
 
-    public string currentKanji;
-    public LearningSetItem currentItem;
-    public ExampleSentence currentSentence;
+    private LearningSetItem _currentItem;
+    private string _currentKanji;
+    private ExampleSentence _currentSentence;
 
     public void Start ()
     {
@@ -38,11 +38,33 @@ public class DataProxy : MonoBehaviour
         yield return LoadLearningSets ();
 
         extendedSet = learningSets.Select (kv => kv.Value).Where (s => s.name == "extended").FirstOrDefault ();
-        currentItem = GetItemForCompound ("家");
 
         if (onDataLoaded != null) onDataLoaded ();
 
-        EventBus.Instance.Raise (new DataProxySelectionEvent (currentItem, NavType.Display, GetKanjiForItem (currentItem), GetSentencesForItem (currentItem)));
+        LearningSetItem startItem = GetItemForCompound ("家");
+        SetCurrentData (startItem);
+    }
+
+    public void SetCurrentData (System.Object data)
+    {
+        _currentItem = null;
+        _currentKanji = null;
+        _currentSentence = null;
+        if (data is LearningSetItem)
+        {
+            _currentItem = data as LearningSetItem;
+            EventBus.Instance.Raise (new DataProxySelectionEvent (_currentItem, NavType.Display, GetKanjiForItem (_currentItem), GetSentencesForItem (_currentItem)));
+        }
+        else if (data is ExampleSentence)
+        {
+            _currentSentence = data as ExampleSentence;
+            EventBus.Instance.Raise (new DataProxySelectionEvent (_currentSentence, NavType.Display, GetItemsForSentence (_currentSentence)));
+        }
+        else if (data is string)
+        {
+            _currentKanji = data as string;
+            EventBus.Instance.Raise (new DataProxySelectionEvent (_currentKanji, NavType.Display, extendedSet.GetItemsForKanji (_currentKanji)));
+        }
     }
 
     public IEnumerator LoadRadicals ()
@@ -120,12 +142,14 @@ public class DataProxy : MonoBehaviour
     public List<string> GetKanjiForItem (LearningSetItem item)
     {
         string kanji = item.FirstKanji ();
-        return kanji.Select (k => $"{k}").ToList (); // TODO: we need to check whether the component is a kanji, or kana
+        if (kanji == null) return new List<string> (); // if the item is kana only, this will trigger
+        return kanji.Select (k => $"{k}").ToList ();
     }
 
     public List<ExampleSentence> GetSentencesForItem (LearningSetItem item)
     {
         string kanji = item.FirstKanji ();
+        if (kanji == null) kanji = item.FirstReading (); // in case of kana only, e.g. suru, coffee
         // sentences where the nouns array contains the kanji, or the conjugations array contains a conjugated form of the kanji
         // jumping through a hoop backwards!
         return sentences.Where (s => s.nouns.Contains (kanji)

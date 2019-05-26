@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 
 namespace PolyblotPlayground
 {
@@ -11,7 +12,16 @@ namespace PolyblotPlayground
 
         public string FirstKanji ()
         {
-            return data.First ().Value.kanji[0].First ().Value;
+            List<Dictionary<string, string>> kanjiList = data?.First ().Value.kanji;
+            if (kanjiList == null || kanjiList.Count == 0) return null;
+            return kanjiList[0]?.First ().Value;
+        }
+
+        public string FirstReading ()
+        {
+            List<Dictionary<string, string>> readingList = data.First ().Value.reading;
+            if (readingList.Count == 0) return null;
+            return readingList[0].First ().Value;
         }
     }
 }
