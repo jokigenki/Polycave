@@ -42,7 +42,7 @@ public class DataProxy : MonoBehaviour
 
         if (onDataLoaded != null) onDataLoaded ();
 
-        EventBus.Instance.Raise (new DataProxySelectionEvent (currentItem, GetKanjiForItem (currentItem), GetSentencesForItem (currentItem)));
+        EventBus.Instance.Raise (new DataProxySelectionEvent (currentItem, NavType.Display, GetKanjiForItem (currentItem), GetSentencesForItem (currentItem)));
     }
 
     public IEnumerator LoadRadicals ()
@@ -128,8 +128,8 @@ public class DataProxy : MonoBehaviour
         string kanji = item.FirstKanji ();
         // sentences where the nouns array contains the kanji, or the conjugations array contains a conjugated form of the kanji
         // jumping through a hoop backwards!
-        return sentences.Where (s => s.nouns.Contains (kanji) ||
-            s.conjugations.Where (c => GetDictionaryFormForConjugation (c) == kanji).Count () > 0).ToList ();
+        return sentences.Where (s => s.nouns.Contains (kanji)
+            || s.conjugations.Where (c => GetDictionaryFormForConjugation (c) == kanji).Count () > 0).ToList ();
     }
 
     public List<LearningSetItem> GetItemsForSentence (ExampleSentence sentence)
@@ -154,6 +154,7 @@ public class DataProxyChoicesEvent : GameEvent
 
 public class DataProxySelectionEvent : GameEvent
 {
+    public NavType navType;
     public string kanji;
     public LearningSetItem item;
     public ExampleSentence sentence;
@@ -162,32 +163,46 @@ public class DataProxySelectionEvent : GameEvent
     public List<LearningSetItem> itemChoices;
     public List<ExampleSentence> sentenceChoices;
 
-    public DataProxySelectionEvent (string kanji, List<LearningSetItem> itemChoices)
+    public DataProxySelectionEvent (string kanji, NavType navType, List<LearningSetItem> itemChoices)
     {
+        this.navType = navType;
         this.kanji = kanji;
         this.itemChoices = itemChoices;
     }
 
-    public DataProxySelectionEvent (LearningSetItem item, List<string> kanjiChoices, List<ExampleSentence> sentenceChoices)
+    public DataProxySelectionEvent (LearningSetItem item, NavType navType, List<string> kanjiChoices, List<ExampleSentence> sentenceChoices)
     {
+        this.navType = navType;
         this.item = item;
         this.kanjiChoices = kanjiChoices;
         this.sentenceChoices = sentenceChoices;
     }
 
-    public DataProxySelectionEvent (ExampleSentence sentence, List<LearningSetItem> itemChoices)
+    public DataProxySelectionEvent (ExampleSentence sentence, NavType navType, List<LearningSetItem> itemChoices)
     {
+        this.navType = navType;
         this.sentence = sentence;
         this.itemChoices = itemChoices;
+    }
+
+    public DataProxySelectionEvent (DataProxyChoicesEvent e, NavType navType)
+    {
+        this.navType = navType;
+        this.sentence = e.currentEvent.sentence;
+        this.sentenceChoices = e.currentEvent.sentenceChoices;
+        this.item = e.currentEvent.item;
+        this.itemChoices = e.currentEvent.itemChoices;
+        this.kanji = e.currentEvent.kanji;
+        this.kanjiChoices = e.currentEvent.kanjiChoices;
     }
 
     public bool HasUp
     {
         get
         {
-            return sentence == null &&
-                ((kanji != null && itemChoices.Count > 0) ||
-                    (item != null && sentenceChoices.Count > 0));
+            return sentence == null
+                && ((kanji != null && itemChoices.Count > 0)
+                    || (item != null && sentenceChoices.Count > 0));
         }
     }
 
@@ -195,9 +210,9 @@ public class DataProxySelectionEvent : GameEvent
     {
         get
         {
-            return kanji == null &&
-                ((item != null && kanjiChoices.Count > 0) ||
-                    (sentence != null && itemChoices.Count > 0));
+            return kanji == null
+                && ((item != null && kanjiChoices.Count > 0)
+                    || (sentence != null && itemChoices.Count > 0));
         }
     }
 }

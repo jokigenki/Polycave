@@ -1,21 +1,17 @@
 Fix positioning of laser
 
-Create TMP based component to display characters as a set of selectable items
-
 Setup controller to allow selection of character items
 
-Switch runecanvas event camera to use correct camera
-
 Popup system
-
-Runes
 
 Bag?
 
 Fix billboarding?
 Rebuild font using sentence data
 
-Posterise the panoramas
+When displaying choices, change up/down to back
+
+Up/down is not clear, change to context sensitive
 
 Links between items
 - Sentence -> Compound - Example sentences should be marked up with compounds so we know where they are. Take this list and check whether we have the compounds stored in data

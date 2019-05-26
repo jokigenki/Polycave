@@ -3,21 +3,33 @@ using System.Linq;
 using PolyblotPlayground;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TextDisplay : MonoBehaviour
 {
     private TextMeshPro _japanese;
     private TextMeshPro _reading;
     private TextMeshPro _senses;
+    private SpriteRenderer _spriteRenderer;
+    private VerticalLayoutGroup _vlg;
 
     private void Awake ()
     {
         _japanese = transform.Find ("Japanese").GetComponent<TextMeshPro> ();
         _reading = transform.Find ("Reading").GetComponent<TextMeshPro> ();
         _senses = transform.Find ("Senses").GetComponent<TextMeshPro> ();
+        _spriteRenderer = GetComponent<SpriteRenderer> ();
+        _vlg = GetComponent<VerticalLayoutGroup> ();
     }
 
-    public void DisplayLearningItem (LearningSetItem item)
+    public void DisplayData<T> (T data)
+    {
+        if (data is LearningSetItem) DisplayLearningItem (data as LearningSetItem);
+        else if (data is ExampleSentence) DisplaySentence (data as ExampleSentence);
+        else if (data is string) DisplayKanji (data as string);
+    }
+
+    private void DisplayLearningItem (LearningSetItem item)
     {
         Source source = item.data.Values.First ();
         _japanese.text = JoinData (source.kanji, ", ");
@@ -31,14 +43,14 @@ public class TextDisplay : MonoBehaviour
         return string.Join (separator, v);
     }
 
-    public void DisplayKanji (string kanji)
+    private void DisplayKanji (string kanji)
     {
         _japanese.text = kanji;
         _reading.text = "";
         _senses.text = "";
     }
 
-    public void DisplaySentence (ExampleSentence sentence)
+    private void DisplaySentence (ExampleSentence sentence)
     {
         _japanese.text = sentence.japanese;
         _reading.text = sentence.english;
