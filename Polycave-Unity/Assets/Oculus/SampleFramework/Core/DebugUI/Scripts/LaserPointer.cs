@@ -69,14 +69,15 @@ public class LaserPointer : OVRCursor
 
     public override void SetCursorStartDest (Vector3 start, Vector3 dest, Vector3 normal)
     {
-        _startPoint = start;
+        _startPoint = OVRInput.GetLocalControllerPosition (OVRInput.Controller.RTrackedRemote); //start;
         _endPoint = dest;
         _hitTarget = true;
     }
 
     public override void SetCursorRay (Transform t)
     {
-        _startPoint = t.position;
+        _startPoint = OVRInput.GetLocalControllerPosition (OVRInput.Controller.RTrackedRemote); //t.position;
+        OVRInput.GetLocalControllerPosition (OVRInput.Controller.RTrackedRemote);
         _forward = t.forward;
         _hitTarget = false;
     }

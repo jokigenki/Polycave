@@ -10,10 +10,10 @@ public class DisplayController : MonoBehaviour
     public GameObject textDisplayPrefab;
     public GameObject textPreviewPrefab;
     public Transform displayParent;
-    public float previewPanelSpacing = 2f;
+    public float previewPanelSpacing = 30f;
 
     public float characterDistance = 0.15f;
-    public Vector3 displayCentre = new Vector3 (0, 30, 30);
+    public float displayDistance = 10f;
 
     public LaserPointer.LaserBeamBehavior laserBeamBehavior;
 
@@ -21,6 +21,7 @@ public class DisplayController : MonoBehaviour
 
     private DataProxy _dataProxy;
 
+    private static float d2r = Mathf.PI / 180f;
     public void Start ()
     {
         EventBus.Instance.AddListener<DataProxySelectionEvent> (OnDataProxySelection);
@@ -64,18 +65,17 @@ public class DisplayController : MonoBehaviour
     private void DisplayChoices<T> (List<T> choices)
     {
         ClearDisplay ();
-        float xPos = (((float) choices.Count / 2f) - 0.5f) * -previewPanelSpacing;
-        Debug.Log ($"count: {choices.Count} xPos {xPos}");
+        float yRot = (((float) choices.Count / 2f) - 0.5f) * -previewPanelSpacing;
         foreach (T choice in choices)
         {
-            GameObject go = CreateDisplay (textPreviewPrefab, xPos);
+            GameObject go = CreateDisplay (textPreviewPrefab, yRot);
             go.GetComponent<TextDisplay> ().DisplayData (choice);
             go.GetComponent<Collider> ().enabled = true;
             SelectionReactor reactor = go.GetComponent<SelectionReactor> ();
             reactor.userData = choice;
             reactor.action = OnChoiceSelected;
 
-            xPos += previewPanelSpacing;
+            yRot += previewPanelSpacing;
         }
     }
 
@@ -96,11 +96,13 @@ public class DisplayController : MonoBehaviour
         go.GetComponent<Collider> ().enabled = false;
     }
 
-    private GameObject CreateDisplay (GameObject prefab, float xOffset = 0)
+    private GameObject CreateDisplay (GameObject prefab, float yRotation = 0)
     {
-        Vector3 position = displayParent.position;
-        position.x = xOffset;
-        GameObject displayGo = Instantiate (prefab, position, Quaternion.identity, displayParent);
+        float rads = yRotation * d2r;
+        GameObject displayGo = Instantiate (prefab, displayParent);
+        Vector3 position = new Vector3 (Mathf.Sin (rads) * displayDistance, 0, Mathf.Cos (rads) * displayDistance);
+        displayGo.transform.localPosition = position;
+        displayGo.transform.localRotation = Quaternion.Euler (new Vector3 (0, yRotation, 0));
         _currentDisplay.Add (displayGo);
         return displayGo;
     }

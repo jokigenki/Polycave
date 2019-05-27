@@ -4,6 +4,7 @@ using UnityEngine;
 public class Paths
 {
     public static string Radicals = "radicals.json";
+    public static string Kanji = "kanji.json";
     public static string Sentences = "sentences.json";
     public static string Conjugations = "conjugations.json";
     public static string KanjiToRadicals = "kanji_radicals.json";
@@ -12,6 +13,11 @@ public class Paths
     public static string GetRadicalsPath ()
     {
         return Path.Combine (Application.streamingAssetsPath, Radicals);
+    }
+
+    public static string GetKanjiPath ()
+    {
+        return Path.Combine (Application.streamingAssetsPath, Kanji);
     }
 
     public static string GetSentencesPath ()

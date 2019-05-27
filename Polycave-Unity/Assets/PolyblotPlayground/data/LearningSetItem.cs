@@ -10,6 +10,15 @@ namespace PolyblotPlayground
         public List<string> sources;
         public List<string> tags;
 
+        public bool ContainsKanji (string kanji)
+        {
+            List<Dictionary<string, string>> kanjiList = data?.First ().Value.kanji;
+            bool hasKanjiList = kanjiList != null && kanjiList.Count > 0;
+            if (!hasKanjiList) return false;
+            List<string> compounds = kanjiList.SelectMany (k => k.Values).ToList ();
+            return compounds.FirstOrDefault (c => c.Contains (kanji)) != null;
+        }
+
         public string FirstKanji ()
         {
             List<Dictionary<string, string>> kanjiList = data?.First ().Value.kanji;

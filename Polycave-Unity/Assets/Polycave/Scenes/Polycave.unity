@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.12995364, g: 0.1332156, b: 0.12471079, a: 1}
+  m_IndirectSpecularColor: {r: 0.12995367, g: 0.13321567, b: 0.12471081, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -807,7 +807,8 @@ MonoBehaviour:
   editorGameObjects:
   - {fileID: 1630506756}
   editorControllerScripts: []
-  canvases: []
+  canvases:
+  - {fileID: 310687990}
 --- !u!114 &453305162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -827,9 +828,9 @@ MonoBehaviour:
   textPreviewPrefab: {fileID: 5697873067435770941, guid: 51cb056f3fd7f3445a1750528ce6183f,
     type: 3}
   displayParent: {fileID: 837130370}
-  previewPanelSpacing: 8
+  previewPanelSpacing: 40
   characterDistance: 0.15
-  displayCentre: {x: 0, y: 2, z: 10}
+  displayDistance: 10
   laserBeamBehavior: 2
 --- !u!114 &453305163
 MonoBehaviour:
@@ -1405,7 +1406,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 837130369}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 10}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2706,7 +2707,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 8.62e-43, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 1
@@ -3219,8 +3220,14 @@ MonoBehaviour:
   - {fileID: 224695748131206373}
   - {fileID: 224193467074759035}
   manuallyResizeContentPanels: 1
+  reEnable: []
   toEnable: []
   toDisable: []
+  insertPositions: []
+  menuOffset: {x: 0, y: 0, z: 0}
+  rig: {fileID: 0}
+  lp: {fileID: 0}
+  lr: {fileID: 0}
   laserBeamBehavior: 0
 --- !u!114 &114798580738182347
 MonoBehaviour:

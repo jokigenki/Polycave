@@ -18,12 +18,12 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ************************************************************************************/
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.Build;
-using UnityEngine;
 using UnityEditor.SceneManagement;
+using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections.Generic;
 
 public enum PlayModeState
 {
@@ -36,75 +36,75 @@ class ONSPPropagationSerializationManager
 {
     private static PlayModeState _currentState = PlayModeState.Stopped;
 
-    static ONSPPropagationSerializationManager()
+    static ONSPPropagationSerializationManager ()
     {
         EditorSceneManager.sceneSaving += OnSceneSaving;
-        EditorApplication.playmodeStateChanged = OnUnityPlayModeChanged;
+        EditorApplication.playModeStateChanged += OnUnityPlayModeChanged;
     }
     public int callbackOrder { get { return 0; } }
-    public void OnPreprocessBuild(BuildTarget target, string path)
+    public void OnPreprocessBuild (BuildTarget target, string path)
     {
-        Debug.Log("ONSPPropagationSerializationManager.OnPreprocessBuild for target " + target + " at path " + path);
+        Debug.Log ("ONSPPropagationSerializationManager.OnPreprocessBuild for target " + target + " at path " + path);
     }
 
-    [MenuItem("OculusSpatializer/Build audio geometry for current scene")]
-    public static void BuildAudioGeometryForCurrentScene()
+    [MenuItem ("OculusSpatializer/Build audio geometry for current scene")]
+    public static void BuildAudioGeometryForCurrentScene ()
     {
-        BuildAudioGeometryForScene(EditorSceneManager.GetActiveScene());
+        BuildAudioGeometryForScene (EditorSceneManager.GetActiveScene ());
     }
 
-    [MenuItem("OculusSpatializer/Rebuild audio geometry all scenes")]
-    public static void RebuildAudioGeometryForAllScenes()
+    [MenuItem ("OculusSpatializer/Rebuild audio geometry all scenes")]
+    public static void RebuildAudioGeometryForAllScenes ()
     {
-        Debug.Log("Rebuilding geometry for all scenes");
+        Debug.Log ("Rebuilding geometry for all scenes");
 
-        System.IO.Directory.Delete(ONSPPropagationGeometry.GeometryAssetPath, true);
+        System.IO.Directory.Delete (ONSPPropagationGeometry.GeometryAssetPath, true);
 
         for (int i = 0; i < EditorSceneManager.sceneCount; ++i)
         {
-            BuildAudioGeometryForScene(EditorSceneManager.GetSceneAt(i));
+            BuildAudioGeometryForScene (EditorSceneManager.GetSceneAt (i));
         }
     }
 
-    public static void OnSceneSaving(Scene scene, string path)
+    public static void OnSceneSaving (Scene scene, string path)
     {
-        BuildAudioGeometryForScene(scene);
+        BuildAudioGeometryForScene (scene);
     }
 
-    private static void BuildAudioGeometryForScene(Scene scene)
+    private static void BuildAudioGeometryForScene (Scene scene)
     {
-        Debug.Log("Building audio geometry for scene" + scene.name);
+        Debug.Log ("Building audio geometry for scene" + scene.name);
 
-        List<GameObject> rootObjects = new List<GameObject>();
-        scene.GetRootGameObjects(rootObjects);
+        List<GameObject> rootObjects = new List<GameObject> ();
+        scene.GetRootGameObjects (rootObjects);
 
-        HashSet<string> fileNames = new HashSet<string>();
+        HashSet<string> fileNames = new HashSet<string> ();
         foreach (GameObject go in rootObjects)
         {
-            var geometryComponents = go.GetComponentsInChildren<ONSPPropagationGeometry>();
+            var geometryComponents = go.GetComponentsInChildren<ONSPPropagationGeometry> ();
             foreach (ONSPPropagationGeometry geo in geometryComponents)
             {
                 if (geo.fileEnabled)
                 {
-                    if (!geo.WriteFile())
+                    if (!geo.WriteFile ())
                     {
-                        Debug.LogError("Failed writing geometry for " + geo.gameObject.name);
+                        Debug.LogError ("Failed writing geometry for " + geo.gameObject.name);
                     }
                     else
                     {
-                        if (!fileNames.Add(geo.filePathRelative))
+                        if (!fileNames.Add (geo.filePathRelative))
                         {
-                            Debug.LogWarning("Duplicate file name detected: " + geo.filePathRelative);
+                            Debug.LogWarning ("Duplicate file name detected: " + geo.filePathRelative);
                         }
                     }
                 }
             }
         }
 
-        Debug.Log("Successfully built " + fileNames.Count + " geometry objects");
+        Debug.Log ("Successfully built " + fileNames.Count + " geometry objects");
     }
 
-    private static void OnUnityPlayModeChanged()
+    private static void OnUnityPlayModeChanged (PlayModeStateChange change)
     {
         var changedState = PlayModeState.Stopped;
         switch (_currentState)

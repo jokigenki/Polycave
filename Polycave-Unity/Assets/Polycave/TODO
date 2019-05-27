@@ -1,6 +1,6 @@
 Fix positioning of laser
 
-Still some missing characters
+Got to a deadend...
 
 Popup system
 
@@ -16,8 +16,6 @@ Optimise start up/display black until ready
 Passing all the data around in events is a bit clunky?
 
 Buttons should layout in centre if only one
-
-Items should follow curve of ground disc
 
 It's not obvious you have to select an option.
 

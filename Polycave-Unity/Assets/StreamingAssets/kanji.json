@@ -1,0 +1,1027 @@
+[
+    {
+        "kanji": "一",
+        "meaning": "one",
+        "reading": "いち"
+    },
+    {
+        "kanji": "七",
+        "meaning": "seven",
+        "reading": "しち"
+    },
+    {
+        "kanji": "三",
+        "meaning": "three",
+        "reading": "さん"
+    },
+    {
+        "kanji": "世",
+        "meaning": "world",
+        "reading": "よ"
+    },
+    {
+        "kanji": "中",
+        "meaning": "middle",
+        "reading": "ちゅう"
+    },
+    {
+        "kanji": "丸",
+        "meaning": "round; circle",
+        "reading": "がん"
+    },
+    {
+        "kanji": "九",
+        "meaning": "nine",
+        "reading": "きゅう"
+    },
+    {
+        "kanji": "事",
+        "meaning": "thing",
+        "reading": "じ"
+    },
+    {
+        "kanji": "二",
+        "meaning": "two",
+        "reading": "に"
+    },
+    {
+        "kanji": "五",
+        "meaning": "five",
+        "reading": "ご"
+    },
+    {
+        "kanji": "人",
+        "meaning": "person",
+        "reading": "じん"
+    },
+    {
+        "kanji": "今",
+        "meaning": "now",
+        "reading": "こん"
+    },
+    {
+        "kanji": "仕",
+        "meaning": "attend to",
+        "reading": "し"
+    },
+    {
+        "kanji": "休",
+        "meaning": "rest",
+        "reading": "きゅう"
+    },
+    {
+        "kanji": "体",
+        "meaning": "body",
+        "reading": "たい"
+    },
+    {
+        "kanji": "作",
+        "meaning": "make",
+        "reading": "さく"
+    },
+    {
+        "kanji": "兄",
+        "meaning": "older brother",
+        "reading": "けい"
+    },
+    {
+        "kanji": "先",
+        "meaning": "ahead",
+        "reading": "せん"
+    },
+    {
+        "kanji": "八",
+        "meaning": "eight",
+        "reading": "はち"
+    },
+    {
+        "kanji": "六",
+        "meaning": "six",
+        "reading": "ろく"
+    },
+    {
+        "kanji": "冊",
+        "meaning": "volume",
+        "reading": "せつ"
+    },
+    {
+        "kanji": "凍",
+        "meaning": "freeze",
+        "reading": "とう"
+    },
+    {
+        "kanji": "出",
+        "meaning": "take out",
+        "reading": "しゅう"
+    },
+    {
+        "kanji": "分",
+        "meaning": "divide",
+        "reading": "ぶん"
+    },
+    {
+        "kanji": "切",
+        "meaning": "cut",
+        "reading": "せつ"
+    },
+    {
+        "kanji": "別",
+        "meaning": "separated",
+        "reading": "べつ"
+    },
+    {
+        "kanji": "前",
+        "meaning": "before",
+        "reading": "ぜん"
+    },
+    {
+        "kanji": "剣",
+        "meaning": "sword",
+        "reading": "けん"
+    },
+    {
+        "kanji": "動",
+        "meaning": "move",
+        "reading": "どう"
+    },
+    {
+        "kanji": "医",
+        "meaning": "doctor",
+        "reading": "い"
+    },
+    {
+        "kanji": "十",
+        "meaning": "ten",
+        "reading": "じゅう"
+    },
+    {
+        "kanji": "卵",
+        "meaning": "egg",
+        "reading": "らん"
+    },
+    {
+        "kanji": "友",
+        "meaning": "friend",
+        "reading": "ゆう"
+    },
+    {
+        "kanji": "右",
+        "meaning": "right",
+        "reading": "う"
+    },
+    {
+        "kanji": "名",
+        "meaning": "name",
+        "reading": "めい"
+    },
+    {
+        "kanji": "君",
+        "meaning": "you",
+        "reading": "くん"
+    },
+    {
+        "kanji": "味",
+        "meaning": "taste",
+        "reading": "み"
+    },
+    {
+        "kanji": "咲",
+        "meaning": "blossom",
+        "reading": "さ"
+    },
+    {
+        "kanji": "員",
+        "meaning": "employee",
+        "reading": "いん"
+    },
+    {
+        "kanji": "四",
+        "meaning": "four",
+        "reading": "し"
+    },
+    {
+        "kanji": "土",
+        "meaning": "ground",
+        "reading": "ど"
+    },
+    {
+        "kanji": "壊",
+        "meaning": "break",
+        "reading": "かい"
+    },
+    {
+        "kanji": "夏",
+        "meaning": "summer",
+        "reading": "か"
+    },
+    {
+        "kanji": "夜",
+        "meaning": "night",
+        "reading": "や"
+    },
+    {
+        "kanji": "大",
+        "meaning": "big",
+        "reading": "だい"
+    },
+    {
+        "kanji": "太",
+        "meaning": "fat",
+        "reading": "た"
+    },
+    {
+        "kanji": "女",
+        "meaning": "woman",
+        "reading": "しょ"
+    },
+    {
+        "kanji": "好",
+        "meaning": "like",
+        "reading": "こう"
+    },
+    {
+        "kanji": "妹",
+        "meaning": "younger sister",
+        "reading": "まい"
+    },
+    {
+        "kanji": "姉",
+        "meaning": "elder sister",
+        "reading": "し"
+    },
+    {
+        "kanji": "始",
+        "meaning": "begin",
+        "reading": "し"
+    },
+    {
+        "kanji": "婦",
+        "meaning": "wife",
+        "reading": "ふ"
+    },
+    {
+        "kanji": "子",
+        "meaning": "child",
+        "reading": "し"
+    },
+    {
+        "kanji": "学",
+        "meaning": "learn",
+        "reading": "がく"
+    },
+    {
+        "kanji": "官",
+        "meaning": "bureaucrat",
+        "reading": "かん"
+    },
+    {
+        "kanji": "家",
+        "meaning": "house",
+        "reading": "か"
+    },
+    {
+        "kanji": "寒",
+        "meaning": "cold",
+        "reading": "かん"
+    },
+    {
+        "kanji": "小",
+        "meaning": "small",
+        "reading": "しょう"
+    },
+    {
+        "kanji": "少",
+        "meaning": "a little",
+        "reading": "しょう"
+    },
+    {
+        "kanji": "屋",
+        "meaning": "roof",
+        "reading": "おく"
+    },
+    {
+        "kanji": "左",
+        "meaning": "left",
+        "reading": "さ"
+    },
+    {
+        "kanji": "師",
+        "meaning": "teacher",
+        "reading": "し"
+    },
+    {
+        "kanji": "年",
+        "meaning": "year",
+        "reading": "ねん"
+    },
+    {
+        "kanji": "幸",
+        "meaning": "happiness",
+        "reading": "こう"
+    },
+    {
+        "kanji": "度",
+        "meaning": "degree",
+        "reading": "ど"
+    },
+    {
+        "kanji": "弟",
+        "meaning": "younger brother",
+        "reading": "だい"
+    },
+    {
+        "kanji": "強",
+        "meaning": "strong",
+        "reading": "きょう"
+    },
+    {
+        "kanji": "彼",
+        "meaning": "he",
+        "reading": "ひ"
+    },
+    {
+        "kanji": "心",
+        "meaning": "heart",
+        "reading": "しん"
+    },
+    {
+        "kanji": "思",
+        "meaning": "think",
+        "reading": "し"
+    },
+    {
+        "kanji": "手",
+        "meaning": "hand",
+        "reading": "しゅ"
+    },
+    {
+        "kanji": "折",
+        "meaning": "fold",
+        "reading": "せつ"
+    },
+    {
+        "kanji": "抵",
+        "meaning": "resist",
+        "reading": "てい"
+    },
+    {
+        "kanji": "持",
+        "meaning": "hold",
+        "reading": "じ"
+    },
+    {
+        "kanji": "指",
+        "meaning": "finger",
+        "reading": "し"
+    },
+    {
+        "kanji": "摂",
+        "meaning": "absorb",
+        "reading": "せつ"
+    },
+    {
+        "kanji": "教",
+        "meaning": "teach",
+        "reading": "きょう"
+    },
+    {
+        "kanji": "料",
+        "meaning": "free",
+        "reading": "りょう"
+    },
+    {
+        "kanji": "新",
+        "meaning": "new",
+        "reading": "しん"
+    },
+    {
+        "kanji": "方",
+        "meaning": "direction",
+        "reading": "ぼう"
+    },
+    {
+        "kanji": "日",
+        "meaning": "sun",
+        "reading": "にち"
+    },
+    {
+        "kanji": "早",
+        "meaning": "early",
+        "reading": "そう"
+    },
+    {
+        "kanji": "明",
+        "meaning": "bright",
+        "reading": "めい"
+    },
+    {
+        "kanji": "映",
+        "meaning": "shine",
+        "reading": "えい"
+    },
+    {
+        "kanji": "昨",
+        "meaning": "yesterday",
+        "reading": "さく"
+    },
+    {
+        "kanji": "時",
+        "meaning": "time",
+        "reading": "じ"
+    },
+    {
+        "kanji": "暑",
+        "meaning": "hot",
+        "reading": "しょ"
+    },
+    {
+        "kanji": "暖",
+        "meaning": "warm",
+        "reading": "だん"
+    },
+    {
+        "kanji": "暮",
+        "meaning": "dark",
+        "reading": "ぼ"
+    },
+    {
+        "kanji": "曜",
+        "meaning": "day of the week",
+        "reading": "よう"
+    },
+    {
+        "kanji": "最",
+        "meaning": "most",
+        "reading": "せい"
+    },
+    {
+        "kanji": "月",
+        "meaning": "month",
+        "reading": "がつ"
+    },
+    {
+        "kanji": "有",
+        "meaning": "have",
+        "reading": "ゆう"
+    },
+    {
+        "kanji": "木",
+        "meaning": "tree",
+        "reading": "もく"
+    },
+    {
+        "kanji": "本",
+        "meaning": "book",
+        "reading": "ほん"
+    },
+    {
+        "kanji": "来",
+        "meaning": "come",
+        "reading": "らい"
+    },
+    {
+        "kanji": "林",
+        "meaning": "wood",
+        "reading": "りん"
+    },
+    {
+        "kanji": "校",
+        "meaning": "exam",
+        "reading": "こう"
+    },
+    {
+        "kanji": "格",
+        "meaning": "status",
+        "reading": "かく"
+    },
+    {
+        "kanji": "桜",
+        "meaning": "cherry tree",
+        "reading": "おう"
+    },
+    {
+        "kanji": "森",
+        "meaning": "forest",
+        "reading": "しん"
+    },
+    {
+        "kanji": "楽",
+        "meaning": "music",
+        "reading": "がく"
+    },
+    {
+        "kanji": "歳",
+        "meaning": "years old",
+        "reading": "さい"
+    },
+    {
+        "kanji": "母",
+        "meaning": "mother",
+        "reading": "ぼ"
+    },
+    {
+        "kanji": "氏",
+        "meaning": "family",
+        "reading": "し"
+    },
+    {
+        "kanji": "気",
+        "meaning": "spirit",
+        "reading": "き"
+    },
+    {
+        "kanji": "水",
+        "meaning": "water",
+        "reading": "すい"
+    },
+    {
+        "kanji": "治",
+        "meaning": "govern",
+        "reading": "じ"
+    },
+    {
+        "kanji": "泳",
+        "meaning": "swim",
+        "reading": "えい"
+    },
+    {
+        "kanji": "洗",
+        "meaning": "wash",
+        "reading": "せん"
+    },
+    {
+        "kanji": "涼",
+        "meaning": "refreshing",
+        "reading": "りょう"
+    },
+    {
+        "kanji": "火",
+        "meaning": "fire",
+        "reading": "か"
+    },
+    {
+        "kanji": "照",
+        "meaning": "shine",
+        "reading": "しょう"
+    },
+    {
+        "kanji": "父",
+        "meaning": "father",
+        "reading": "ふ"
+    },
+    {
+        "kanji": "牛",
+        "meaning": "cow",
+        "reading": "ぎゅう"
+    },
+    {
+        "kanji": "猫",
+        "meaning": "cat",
+        "reading": "びょう"
+    },
+    {
+        "kanji": "生",
+        "meaning": "life",
+        "reading": "せい"
+    },
+    {
+        "kanji": "画",
+        "meaning": "draw",
+        "reading": "が"
+    },
+    {
+        "kanji": "留",
+        "meaning": "detain",
+        "reading": "る"
+    },
+    {
+        "kanji": "病",
+        "meaning": "illness",
+        "reading": "へい"
+    },
+    {
+        "kanji": "痛",
+        "meaning": "painful",
+        "reading": "つう"
+    },
+    {
+        "kanji": "発",
+        "meaning": "emission",
+        "reading": "はつ"
+    },
+    {
+        "kanji": "看",
+        "meaning": "watch over",
+        "reading": "かん"
+    },
+    {
+        "kanji": "眠",
+        "meaning": "sleep",
+        "reading": "みん"
+    },
+    {
+        "kanji": "着",
+        "meaning": "arrive",
+        "reading": "ちゃく"
+    },
+    {
+        "kanji": "砂",
+        "meaning": "stand",
+        "reading": "せ"
+    },
+    {
+        "kanji": "確",
+        "meaning": "certain",
+        "reading": "かく"
+    },
+    {
+        "kanji": "私",
+        "meaning": "private",
+        "reading": "し"
+    },
+    {
+        "kanji": "秒",
+        "meaning": "second",
+        "reading": "びょう"
+    },
+    {
+        "kanji": "糖",
+        "meaning": "sugar",
+        "reading": "とう"
+    },
+    {
+        "kanji": "紅",
+        "meaning": "deep red",
+        "reading": "こう"
+    },
+    {
+        "kanji": "終",
+        "meaning": "end",
+        "reading": "しゅう"
+    },
+    {
+        "kanji": "給",
+        "meaning": "supply",
+        "reading": "きゅう"
+    },
+    {
+        "kanji": "続",
+        "meaning": "continue",
+        "reading": "そく"
+    },
+    {
+        "kanji": "綺",
+        "meaning": "beautiful",
+        "reading": "き"
+    },
+    {
+        "kanji": "美",
+        "meaning": "beautiful",
+        "reading": "び"
+    },
+    {
+        "kanji": "者",
+        "meaning": "person",
+        "reading": "しゃ"
+    },
+    {
+        "kanji": "肉",
+        "meaning": "meat",
+        "reading": "にく"
+    },
+    {
+        "kanji": "背",
+        "meaning": "back",
+        "reading": "はい"
+    },
+    {
+        "kanji": "胸",
+        "meaning": "chest",
+        "reading": "きょう"
+    },
+    {
+        "kanji": "腕",
+        "meaning": "arm",
+        "reading": "わん"
+    },
+    {
+        "kanji": "腹",
+        "meaning": "stomach",
+        "reading": "ふく"
+    },
+    {
+        "kanji": "臓",
+        "meaning": "entrails",
+        "reading": "ぞう"
+    },
+    {
+        "kanji": "良",
+        "meaning": "good",
+        "reading": "りょう"
+    },
+    {
+        "kanji": "茶",
+        "meaning": "tea",
+        "reading": "ちゃ"
+    },
+    {
+        "kanji": "行",
+        "meaning": "go",
+        "reading": "こう"
+    },
+    {
+        "kanji": "見",
+        "meaning": "see",
+        "reading": "かん"
+    },
+    {
+        "kanji": "親",
+        "meaning": "parent",
+        "reading": "しん"
+    },
+    {
+        "kanji": "計",
+        "meaning": "arrange",
+        "reading": "けい"
+    },
+    {
+        "kanji": "話",
+        "meaning": "talk",
+        "reading": "わ"
+    },
+    {
+        "kanji": "誕",
+        "meaning": "birth",
+        "reading": "たん"
+    },
+    {
+        "kanji": "読",
+        "meaning": "read",
+        "reading": "どく"
+    },
+    {
+        "kanji": "警",
+        "meaning": "admonish",
+        "reading": "けい"
+    },
+    {
+        "kanji": "護",
+        "meaning": "defend",
+        "reading": "ご"
+    },
+    {
+        "kanji": "豚",
+        "meaning": "pork",
+        "reading": "とん"
+    },
+    {
+        "kanji": "買",
+        "meaning": "buy",
+        "reading": "ばい"
+    },
+    {
+        "kanji": "賢",
+        "meaning": "wise",
+        "reading": "けん"
+    },
+    {
+        "kanji": "足",
+        "meaning": "foot",
+        "reading": "そく"
+    },
+    {
+        "kanji": "車",
+        "meaning": "car",
+        "reading": "しゃ"
+    },
+    {
+        "kanji": "近",
+        "meaning": "close",
+        "reading": "きん"
+    },
+    {
+        "kanji": "週",
+        "meaning": "week",
+        "reading": "しゅう"
+    },
+    {
+        "kanji": "遅",
+        "meaning": "late",
+        "reading": "ち"
+    },
+    {
+        "kanji": "運",
+        "meaning": "carry",
+        "reading": "うん"
+    },
+    {
+        "kanji": "道",
+        "meaning": "road",
+        "reading": "どう"
+    },
+    {
+        "kanji": "達",
+        "meaning": "arrive",
+        "reading": "たつ"
+    },
+    {
+        "kanji": "部",
+        "meaning": "part",
+        "reading": "ぶ"
+    },
+    {
+        "kanji": "金",
+        "meaning": "gold",
+        "reading": "きん"
+    },
+    {
+        "kanji": "針",
+        "meaning": "needle",
+        "reading": "しん"
+    },
+    {
+        "kanji": "銀",
+        "meaning": "silver",
+        "reading": "ぎん"
+    },
+    {
+        "kanji": "間",
+        "meaning": "interval",
+        "reading": "かん"
+    },
+    {
+        "kanji": "降",
+        "meaning": "get off",
+        "reading": "こう"
+    },
+    {
+        "kanji": "雨",
+        "meaning": "rain",
+        "reading": "う"
+    },
+    {
+        "kanji": "雪",
+        "meaning": "snow",
+        "reading": "せつ"
+    },
+    {
+        "kanji": "零",
+        "meaning": "zero",
+        "reading": "れい"
+    },
+    {
+        "kanji": "電",
+        "meaning": "electricity",
+        "reading": "でん"
+    },
+    {
+        "kanji": "青",
+        "meaning": "blue",
+        "reading": "せい"
+    },
+    {
+        "kanji": "音",
+        "meaning": "sound",
+        "reading": "おん"
+    },
+    {
+        "kanji": "頃",
+        "meaning": "time",
+        "reading": "ころ"
+    },
+    {
+        "kanji": "頭",
+        "meaning": "head",
+        "reading": "とう"
+    },
+    {
+        "kanji": "食",
+        "meaning": "food",
+        "reading": "しょく"
+    },
+    {
+        "kanji": "飲",
+        "meaning": "drink",
+        "reading": "いん"
+    },
+    {
+        "kanji": "養",
+        "meaning": "rear",
+        "reading": "よう"
+    },
+    {
+        "kanji": "館",
+        "meaning": "building",
+        "reading": "かん"
+    },
+    {
+        "kanji": "骨",
+        "meaning": "bone",
+        "reading": "こつ"
+    },
+    {
+        "kanji": "高",
+        "meaning": "high",
+        "reading": "こう"
+    },
+    {
+        "kanji": "魚",
+        "meaning": "fish",
+        "reading": "ぎょ"
+    },
+    {
+        "kanji": "鶏",
+        "meaning": "chicken",
+        "reading": "けい"
+    },
+    {
+        "kanji": "麗",
+        "meaning": "lovely",
+        "reading": "れい"
+    },
+    {
+        "kanji": "使",
+        "meaning": "use",
+        "reading": "し"
+    },
+    {
+        "kanji": "周",
+        "meaning": "circumference",
+        "reading": "しゅう"
+    },
+    {
+        "kanji": "察",
+        "meaning": "inspect",
+        "reading": "せつ"
+    },
+    {
+        "kanji": "後",
+        "meaning": "behind",
+        "reading": "ご"
+    },
+    {
+        "kanji": "従",
+        "meaning": "obey",
+        "reading": "じゅう"
+    },
+    {
+        "kanji": "悪",
+        "meaning": "bad",
+        "reading": "あく"
+    },
+    {
+        "kanji": "易",
+        "meaning": "easy",
+        "reading": "い"
+    },
+    {
+        "kanji": "業",
+        "meaning": "business",
+        "reading": "ぎょう"
+    },
+    {
+        "kanji": "理",
+        "meaning": "logic",
+        "reading": "り"
+    },
+    {
+        "kanji": "看",
+        "meaning": "watch over",
+        "reading": "かん"
+    },
+    {
+        "kanji": "笑",
+        "meaning": "laugh",
+        "reading": "しょう"
+    },
+    {
+        "kanji": "胃",
+        "meaning": "stomach",
+        "reading": "い"
+    },
+    {
+        "kanji": "貴",
+        "meaning": "valuable",
+        "reading": "き"
+    },
+    {
+        "kanji": "輩",
+        "meaning": "colleague",
+        "reading": "はい"
+    },
+    {
+        "kanji": "遠",
+        "meaning": "far away",
+        "reading": "いん"
+    },
+    {
+        "kanji": "醜",
+        "meaning": "ugly",
+        "reading": "しゅう"
+    },
+    {
+        "kanji": "難",
+        "meaning": "difficult",
+        "reading": "なん"
+    }
+]

@@ -1,13 +1,13 @@
 namespace Oculus.Platform
 {
-  using System;
   using System.IO;
+  using System;
   using UnityEditor;
   using UnityEngine;
 
   // This classes implements a UI to edit the PlatformSettings class.
   // The UI is accessible from a the menu bar via: Oculus Platform -> Edit Settings
-  [CustomEditor(typeof(PlatformSettings))]
+  [CustomEditor (typeof (PlatformSettings))]
   public class OculusPlatformSettingsEditor : Editor
   {
     private bool isUnityEditorSettingsExpanded;
@@ -15,91 +15,91 @@ namespace Oculus.Platform
 
     private WWW getAccessTokenRequest;
 
-    private void OnEnable()
+    private void OnEnable ()
     {
       isUnityEditorSettingsExpanded = true;
       isBuildSettingsExpanded = true;
     }
 
-    [UnityEditor.MenuItem("Oculus/Platform/Edit Settings")]
-    public static void Edit()
+    [UnityEditor.MenuItem ("Oculus/Platform/Edit Settings")]
+    public static void Edit ()
     {
       UnityEditor.Selection.activeObject = PlatformSettings.Instance;
     }
 
-    public override void OnInspectorGUI()
+    public override void OnInspectorGUI ()
     {
       //
       // Application IDs section
       //
-      EditorGUILayout.LabelField("Application ID:");
-      GUIContent riftAppIDLabel = new GUIContent("Oculus Rift [?]", "This AppID will be used when building to the Windows target.");
-      GUIContent mobileAppIDLabel = new GUIContent("Oculus Go/Quest or Gear VR [?]", "This AppID will be used when building to the Android target");
-      PlatformSettings.AppID = MakeTextBox(riftAppIDLabel, PlatformSettings.AppID);
-      PlatformSettings.MobileAppID = MakeTextBox(mobileAppIDLabel, PlatformSettings.MobileAppID);
+      EditorGUILayout.LabelField ("Application ID:");
+      GUIContent riftAppIDLabel = new GUIContent ("Oculus Rift [?]", "This AppID will be used when building to the Windows target.");
+      GUIContent mobileAppIDLabel = new GUIContent ("Oculus Go/Quest or Gear VR [?]", "This AppID will be used when building to the Android target");
+      PlatformSettings.AppID = MakeTextBox (riftAppIDLabel, PlatformSettings.AppID);
+      PlatformSettings.MobileAppID = MakeTextBox (mobileAppIDLabel, PlatformSettings.MobileAppID);
 
-      if (GUILayout.Button("Create / Find your app on https://dashboard.oculus.com"))
+      if (GUILayout.Button ("Create / Find your app on https://dashboard.oculus.com"))
       {
-        UnityEngine.Application.OpenURL("https://dashboard.oculus.com/");
+        UnityEngine.Application.OpenURL ("https://dashboard.oculus.com/");
       }
 
 #if UNITY_ANDROID
-      if (String.IsNullOrEmpty(PlatformSettings.MobileAppID))
+      if (String.IsNullOrEmpty (PlatformSettings.MobileAppID))
       {
-        EditorGUILayout.HelpBox("Please enter a valid Oculus Go/Quest or Gear VR App ID.", MessageType.Error);
+        EditorGUILayout.HelpBox ("Please enter a valid Oculus Go/Quest or Gear VR App ID.", MessageType.Error);
       }
       else
       {
         var msg = "Configured to connect with App ID " + PlatformSettings.MobileAppID;
-        EditorGUILayout.HelpBox(msg, MessageType.Info);
+        EditorGUILayout.HelpBox (msg, MessageType.Info);
       }
 #else
-      if (String.IsNullOrEmpty(PlatformSettings.AppID))
+      if (String.IsNullOrEmpty (PlatformSettings.AppID))
       {
-        EditorGUILayout.HelpBox("Please enter a valid Oculus Rift App ID.", MessageType.Error);
+        EditorGUILayout.HelpBox ("Please enter a valid Oculus Rift App ID.", MessageType.Error);
       }
       else
       {
         var msg = "Configured to connect with App ID " + PlatformSettings.AppID;
-        EditorGUILayout.HelpBox(msg, MessageType.Info);
+        EditorGUILayout.HelpBox (msg, MessageType.Info);
       }
 #endif
-      EditorGUILayout.Separator();
+      EditorGUILayout.Separator ();
 
       //
       // Unity Editor Settings section
       //
-      isUnityEditorSettingsExpanded = EditorGUILayout.Foldout(isUnityEditorSettingsExpanded, "Unity Editor Settings");
+      isUnityEditorSettingsExpanded = EditorGUILayout.Foldout (isUnityEditorSettingsExpanded, "Unity Editor Settings");
       if (isUnityEditorSettingsExpanded)
       {
-        GUIHelper.HInset(6, () =>
+        GUIHelper.HInset (6, () =>
         {
-          bool HasTestAccessToken = !String.IsNullOrEmpty(StandalonePlatformSettings.OculusPlatformTestUserAccessToken);
+          bool HasTestAccessToken = !String.IsNullOrEmpty (StandalonePlatformSettings.OculusPlatformTestUserAccessToken);
           if (PlatformSettings.UseStandalonePlatform)
           {
-            if (!HasTestAccessToken && 
-            (String.IsNullOrEmpty(StandalonePlatformSettings.OculusPlatformTestUserEmail) ||
-            String.IsNullOrEmpty(StandalonePlatformSettings.OculusPlatformTestUserPassword)))
+            if (!HasTestAccessToken &&
+              (String.IsNullOrEmpty (StandalonePlatformSettings.OculusPlatformTestUserEmail) ||
+                String.IsNullOrEmpty (StandalonePlatformSettings.OculusPlatformTestUserPassword)))
             {
-              EditorGUILayout.HelpBox("Please enter a valid user credentials.", MessageType.Error);
+              EditorGUILayout.HelpBox ("Please enter a valid user credentials.", MessageType.Error);
             }
             else
             {
               var msg = "The Unity editor will use the supplied test user credentials and operate in standalone mode.  Some user data will be mocked.";
-              EditorGUILayout.HelpBox(msg, MessageType.Info);
+              EditorGUILayout.HelpBox (msg, MessageType.Info);
             }
           }
           else
           {
             var msg = "The Unity editor will use the user credentials from the Oculus application.";
-            EditorGUILayout.HelpBox(msg, MessageType.Info);
+            EditorGUILayout.HelpBox (msg, MessageType.Info);
           }
 
           var useStandaloneLabel = "Use Standalone Platform [?]";
-          var useStandaloneHint = "If this is checked your app will use a debug platform with the User info below.  "
-            + "Otherwise your app will connect to the Oculus Platform.  This setting only applies to the Unity Editor";
+          var useStandaloneHint = "If this is checked your app will use a debug platform with the User info below.  " +
+            "Otherwise your app will connect to the Oculus Platform.  This setting only applies to the Unity Editor";
           PlatformSettings.UseStandalonePlatform =
-            MakeToggle(new GUIContent(useStandaloneLabel, useStandaloneHint), PlatformSettings.UseStandalonePlatform);
+            MakeToggle (new GUIContent (useStandaloneLabel, useStandaloneHint), PlatformSettings.UseStandalonePlatform);
 
           GUI.enabled = PlatformSettings.UseStandalonePlatform;
 
@@ -110,27 +110,27 @@ namespace Oculus.Platform
               "https://dashboard.oculus.com/organizations/<your org ID>/testusers " +
               "however any valid Oculus account email may be used.";
             StandalonePlatformSettings.OculusPlatformTestUserEmail =
-              MakeTextBox(new GUIContent(emailLabel, emailHint), StandalonePlatformSettings.OculusPlatformTestUserEmail);
+              MakeTextBox (new GUIContent (emailLabel, emailHint), StandalonePlatformSettings.OculusPlatformTestUserEmail);
 
             var passwdLabel = "Test User Password: ";
             var passwdHint = "Password associated with the email address.";
             StandalonePlatformSettings.OculusPlatformTestUserPassword =
-              MakePasswordBox(new GUIContent(passwdLabel, passwdHint), StandalonePlatformSettings.OculusPlatformTestUserPassword);
+              MakePasswordBox (new GUIContent (passwdLabel, passwdHint), StandalonePlatformSettings.OculusPlatformTestUserPassword);
 
             var isLoggingIn = (getAccessTokenRequest != null);
             var loginLabel = (!isLoggingIn) ? "Login" : "Logging in...";
 
             GUI.enabled = !isLoggingIn;
-            if (GUILayout.Button(loginLabel))
+            if (GUILayout.Button (loginLabel))
             {
-              WWWForm form = new WWWForm();
+              WWWForm form = new WWWForm ();
               var headers = form.headers;
-              headers.Add("Authorization", "Bearer OC|1141595335965881|");
-              form.AddField("email", StandalonePlatformSettings.OculusPlatformTestUserEmail);
-              form.AddField("password", StandalonePlatformSettings.OculusPlatformTestUserPassword);
+              headers.Add ("Authorization", "Bearer OC|1141595335965881|");
+              form.AddField ("email", StandalonePlatformSettings.OculusPlatformTestUserEmail);
+              form.AddField ("password", StandalonePlatformSettings.OculusPlatformTestUserPassword);
 
               // Start the WWW request to get the access token
-              getAccessTokenRequest = new WWW("https://graph.oculus.com/login", form.data, headers);
+              getAccessTokenRequest = new WWW ("https://graph.oculus.com/login", form.data, headers);
               EditorApplication.update += GetAccessToken;
             }
             GUI.enabled = true;
@@ -138,11 +138,11 @@ namespace Oculus.Platform
           else
           {
             var loggedInMsg = "Currently using the credentials associated with " + StandalonePlatformSettings.OculusPlatformTestUserEmail;
-            EditorGUILayout.HelpBox(loggedInMsg, MessageType.Info);
+            EditorGUILayout.HelpBox (loggedInMsg, MessageType.Info);
 
             var logoutLabel = "Clear Credentials";
 
-            if (GUILayout.Button(logoutLabel))
+            if (GUILayout.Button (logoutLabel))
             {
               StandalonePlatformSettings.OculusPlatformTestUserAccessToken = "";
             }
@@ -151,35 +151,36 @@ namespace Oculus.Platform
           GUI.enabled = true;
         });
       }
-      EditorGUILayout.Separator();
+      EditorGUILayout.Separator ();
 
       //
       // Build Settings section
       //
-      isBuildSettingsExpanded = EditorGUILayout.Foldout(isBuildSettingsExpanded, "Build Settings");
+      isBuildSettingsExpanded = EditorGUILayout.Foldout (isBuildSettingsExpanded, "Build Settings");
       if (isBuildSettingsExpanded)
       {
-        GUIHelper.HInset(6, () => {
+        GUIHelper.HInset (6, () =>
+        {
           if (!PlayerSettings.virtualRealitySupported)
           {
-            EditorGUILayout.HelpBox("VR Support isn't enabled in the Player Settings", MessageType.Warning);
+            EditorGUILayout.HelpBox ("VR Support isn't enabled in the Player Settings", MessageType.Warning);
           }
           else
           {
-            EditorGUILayout.HelpBox("VR Support is enabled", MessageType.Info);
+            EditorGUILayout.HelpBox ("VR Support is enabled", MessageType.Info);
           }
 
-          PlayerSettings.virtualRealitySupported = MakeToggle(new GUIContent("Virtual Reality Support"), PlayerSettings.virtualRealitySupported);
-          PlayerSettings.bundleVersion = MakeTextBox(new GUIContent("Bundle Version"), PlayerSettings.bundleVersion);
+          PlayerSettings.virtualRealitySupported = MakeToggle (new GUIContent ("Virtual Reality Support"), PlayerSettings.virtualRealitySupported);
+          PlayerSettings.bundleVersion = MakeTextBox (new GUIContent ("Bundle Version"), PlayerSettings.bundleVersion);
 #if UNITY_5_3 || UNITY_5_4 || UNITY_5_5
-          PlayerSettings.bundleIdentifier = MakeTextBox(new GUIContent("Bundle Identifier"), PlayerSettings.bundleIdentifier);
+          PlayerSettings.bundleIdentifier = MakeTextBox (new GUIContent ("Bundle Identifier"), PlayerSettings.bundleIdentifier);
 #else
           BuildTargetGroup buildTargetGroup = EditorUserBuildSettings.selectedBuildTargetGroup;
-          PlayerSettings.SetApplicationIdentifier(
+          PlayerSettings.SetApplicationIdentifier (
             buildTargetGroup,
-            MakeTextBox(
-              new GUIContent("Bundle Identifier"),
-              PlayerSettings.GetApplicationIdentifier(buildTargetGroup)));
+            MakeTextBox (
+              new GUIContent ("Bundle Identifier"),
+              PlayerSettings.GetApplicationIdentifier (buildTargetGroup)));
 #endif
           bool canEnableARM64Support = false;
 #if UNITY_2018_1_OR_NEWER
@@ -187,52 +188,52 @@ namespace Oculus.Platform
 #endif
           if (!canEnableARM64Support)
           {
-            EditorGUILayout.HelpBox("ARM64 support requires Unity 2018.1.x or higher.", MessageType.Info);
+            EditorGUILayout.HelpBox ("ARM64 support requires Unity 2018.1.x or higher.", MessageType.Info);
             if (PlatformSettings.EnableARM64Support)
             {
               PlatformSettings.EnableARM64Support = false;
-              DisablePluginPlatform(PluginPlatform.Android64);
+              DisablePluginPlatform (PluginPlatform.Android64);
             }
           }
 
           GUI.enabled = canEnableARM64Support;
 
           var enableARM64Label = "Enable ARM64 Support [?]";
-          var enableARM64Hint = "[Experimental] If this is checked, Oculus Platform SDK support for ARM64 mobile devices will be enabled."
-      + " Support for ARM64 must also be correctly configured in the Unity Player Settings to use this feature. Requires Unity 2018.1.x or higher.";
-      bool prevEnableARM64Support = PlatformSettings.EnableARM64Support;
+          var enableARM64Hint = "[Experimental] If this is checked, Oculus Platform SDK support for ARM64 mobile devices will be enabled." +
+            " Support for ARM64 must also be correctly configured in the Unity Player Settings to use this feature. Requires Unity 2018.1.x or higher.";
+          bool prevEnableARM64Support = PlatformSettings.EnableARM64Support;
           PlatformSettings.EnableARM64Support =
-            MakeToggle(new GUIContent(enableARM64Label, enableARM64Hint), PlatformSettings.EnableARM64Support);
+            MakeToggle (new GUIContent (enableARM64Label, enableARM64Hint), PlatformSettings.EnableARM64Support);
 
           if (prevEnableARM64Support != PlatformSettings.EnableARM64Support)
           {
             if (PlatformSettings.EnableARM64Support)
             {
-              EnablePluginPlatform(PluginPlatform.Android64);
+              EnablePluginPlatform (PluginPlatform.Android64);
             }
             else
             {
-              DisablePluginPlatform(PluginPlatform.Android64);
+              DisablePluginPlatform (PluginPlatform.Android64);
             }
           }
 
           GUI.enabled = true;
         });
       }
-      EditorGUILayout.Separator();
+      EditorGUILayout.Separator ();
     }
 
     // Asyncronously fetch the access token with the given credentials
-    private void GetAccessToken()
+    private void GetAccessToken ()
     {
       if (getAccessTokenRequest != null && getAccessTokenRequest.isDone)
       {
         // Clear the password
         StandalonePlatformSettings.OculusPlatformTestUserPassword = "";
 
-        if (String.IsNullOrEmpty(getAccessTokenRequest.error))
+        if (String.IsNullOrEmpty (getAccessTokenRequest.error))
         {
-          var Response = JsonUtility.FromJson<OculusStandalonePlatformResponse>(getAccessTokenRequest.text);
+          var Response = JsonUtility.FromJson<OculusStandalonePlatformResponse> (getAccessTokenRequest.text);
           StandalonePlatformSettings.OculusPlatformTestUserAccessToken = Response.access_token;
         }
 
@@ -242,41 +243,44 @@ namespace Oculus.Platform
       }
     }
 
-    private string MakeTextBox(GUIContent label, string variable)
+    private string MakeTextBox (GUIContent label, string variable)
     {
-      return GUIHelper.MakeControlWithLabel(label, () => {
+      return GUIHelper.MakeControlWithLabel (label, () =>
+      {
         GUI.changed = false;
-        var result = EditorGUILayout.TextField(variable);
-        SetDirtyOnGUIChange();
+        var result = EditorGUILayout.TextField (variable);
+        SetDirtyOnGUIChange ();
         return result;
       });
     }
 
-    private string MakePasswordBox(GUIContent label, string variable)
+    private string MakePasswordBox (GUIContent label, string variable)
     {
-      return GUIHelper.MakeControlWithLabel(label, () => {
+      return GUIHelper.MakeControlWithLabel (label, () =>
+      {
         GUI.changed = false;
-        var result = EditorGUILayout.PasswordField(variable);
-        SetDirtyOnGUIChange();
+        var result = EditorGUILayout.PasswordField (variable);
+        SetDirtyOnGUIChange ();
         return result;
       });
     }
 
-    private bool MakeToggle(GUIContent label, bool variable)
+    private bool MakeToggle (GUIContent label, bool variable)
     {
-      return GUIHelper.MakeControlWithLabel(label, () => {
+      return GUIHelper.MakeControlWithLabel (label, () =>
+      {
         GUI.changed = false;
-        var result = EditorGUILayout.Toggle(variable);
-        SetDirtyOnGUIChange();
+        var result = EditorGUILayout.Toggle (variable);
+        SetDirtyOnGUIChange ();
         return result;
       });
     }
 
-    private void SetDirtyOnGUIChange()
+    private void SetDirtyOnGUIChange ()
     {
       if (GUI.changed)
       {
-        EditorUtility.SetDirty(PlatformSettings.Instance);
+        EditorUtility.SetDirty (PlatformSettings.Instance);
         GUI.changed = false;
       }
     }
@@ -288,30 +292,30 @@ namespace Oculus.Platform
 
     public enum PluginPlatform
     {
-        Android32,
-        Android64
+      Android32,
+      Android64
     }
 
-    private static string GetCurrentProjectPath()
+    private static string GetCurrentProjectPath ()
     {
-      return Directory.GetParent(UnityEngine.Application.dataPath).FullName;
+      return Directory.GetParent (UnityEngine.Application.dataPath).FullName;
     }
 
-    private static string GetPlatformRootPath()
+    private static string GetPlatformRootPath ()
     {
       // use the path to OculusPluginUpdaterStub as a relative path anchor point
-      var so = ScriptableObject.CreateInstance(typeof(OculusPluginUpdaterStub));
-      var script = MonoScript.FromScriptableObject(so);
-      string assetPath = AssetDatabase.GetAssetPath(script);
-      string editorDir = Directory.GetParent(assetPath).FullName;
-      string platformDir = Directory.GetParent(editorDir).FullName;
+      var so = ScriptableObject.CreateInstance (typeof (OculusPluginUpdaterStub));
+      var script = MonoScript.FromScriptableObject (so);
+      string assetPath = AssetDatabase.GetAssetPath (script);
+      string editorDir = Directory.GetParent (assetPath).FullName;
+      string platformDir = Directory.GetParent (editorDir).FullName;
 
       return platformDir;
     }
 
-    private static string GetPlatformPluginPath(PluginPlatform platform)
+    private static string GetPlatformPluginPath (PluginPlatform platform)
     {
-      string path = GetPlatformRootPath();
+      string path = GetPlatformRootPath ();
       switch (platform)
       {
         case PluginPlatform.Android32:
@@ -321,126 +325,126 @@ namespace Oculus.Platform
           path += PluginSubPathAndroid64;
           break;
         default:
-          throw new ArgumentException("Attempted to enable platform support for unsupported platform: " + platform);
+          throw new ArgumentException ("Attempted to enable platform support for unsupported platform: " + platform);
       }
 
       return path;
     }
 
     //[UnityEditor.MenuItem("Oculus/Platform/EnforcePluginPlatformSettings")]
-    public static void EnforcePluginPlatformSettings()
+    public static void EnforcePluginPlatformSettings ()
     {
-        EnforcePluginPlatformSettings(PluginPlatform.Android32);
-        EnforcePluginPlatformSettings(PluginPlatform.Android64);
+      EnforcePluginPlatformSettings (PluginPlatform.Android32);
+      EnforcePluginPlatformSettings (PluginPlatform.Android64);
     }
 
-    public static void EnforcePluginPlatformSettings(PluginPlatform platform)
+    public static void EnforcePluginPlatformSettings (PluginPlatform platform)
     {
-      string path = GetPlatformPluginPath(platform);
+      string path = GetPlatformPluginPath (platform);
 
-      if (!Directory.Exists(path) && !File.Exists(path))
+      if (!Directory.Exists (path) && !File.Exists (path))
       {
         path += PluginDisabledSuffix;
       }
 
-      if ((Directory.Exists(path)) || (File.Exists(path)))
+      if ((Directory.Exists (path)) || (File.Exists (path)))
       {
-        string basePath = GetCurrentProjectPath();
-        string relPath = path.Substring(basePath.Length + 1);
+        string basePath = GetCurrentProjectPath ();
+        string relPath = path.Substring (basePath.Length + 1);
 
-        PluginImporter pi = PluginImporter.GetAtPath(relPath) as PluginImporter;
+        PluginImporter pi = PluginImporter.GetAtPath (relPath) as PluginImporter;
         if (pi == null)
         {
           return;
         }
 
         // Disable support for all platforms, then conditionally enable desired support below
-        pi.SetCompatibleWithEditor(false);
-        pi.SetCompatibleWithAnyPlatform(false);
-        pi.SetCompatibleWithPlatform(BuildTarget.Android, false);
-        pi.SetCompatibleWithPlatform(BuildTarget.StandaloneWindows, false);
-        pi.SetCompatibleWithPlatform(BuildTarget.StandaloneWindows64, false);
-        pi.SetCompatibleWithPlatform(BuildTarget.StandaloneLinux, false);
-        pi.SetCompatibleWithPlatform(BuildTarget.StandaloneLinux64, false);
-        pi.SetCompatibleWithPlatform(BuildTarget.StandaloneLinuxUniversal, false);
+        pi.SetCompatibleWithEditor (false);
+        pi.SetCompatibleWithAnyPlatform (false);
+        pi.SetCompatibleWithPlatform (BuildTarget.Android, false);
+        pi.SetCompatibleWithPlatform (BuildTarget.StandaloneWindows, false);
+        pi.SetCompatibleWithPlatform (BuildTarget.StandaloneWindows64, false);
+        pi.SetCompatibleWithPlatform (BuildTarget.StandaloneLinux, false);
+        pi.SetCompatibleWithPlatform (BuildTarget.StandaloneLinux64, false);
+        pi.SetCompatibleWithPlatform (BuildTarget.StandaloneLinuxUniversal, false);
 #if UNITY_2017_3_OR_NEWER
-        pi.SetCompatibleWithPlatform(BuildTarget.StandaloneOSX, false);
+        pi.SetCompatibleWithPlatform (BuildTarget.StandaloneOSX, false);
 #else
-        pi.SetCompatibleWithPlatform(BuildTarget.StandaloneOSXUniversal, false);
-        pi.SetCompatibleWithPlatform(BuildTarget.StandaloneOSXIntel, false);
-        pi.SetCompatibleWithPlatform(BuildTarget.StandaloneOSXIntel64, false);
+        pi.SetCompatibleWithPlatform (BuildTarget.StandaloneOSXUniversal, false);
+        pi.SetCompatibleWithPlatform (BuildTarget.StandaloneOSXIntel, false);
+        pi.SetCompatibleWithPlatform (BuildTarget.StandaloneOSXIntel64, false);
 #endif
 
         switch (platform)
         {
           case PluginPlatform.Android32:
-            pi.SetCompatibleWithPlatform(BuildTarget.Android, true);
-            pi.SetPlatformData(BuildTarget.Android, "CPU", "ARMv7");
+            pi.SetCompatibleWithPlatform (BuildTarget.Android, true);
+            pi.SetPlatformData (BuildTarget.Android, "CPU", "ARMv7");
             break;
           case PluginPlatform.Android64:
-            pi.SetCompatibleWithPlatform(BuildTarget.Android, true);
-            pi.SetPlatformData(BuildTarget.Android, "CPU", "ARM64");
+            pi.SetCompatibleWithPlatform (BuildTarget.Android, true);
+            pi.SetPlatformData (BuildTarget.Android, "CPU", "ARM64");
             break;
           default:
-            throw new ArgumentException("Attempted to enable platform support for unsupported platform: " + platform);
+            throw new ArgumentException ("Attempted to enable platform support for unsupported platform: " + platform);
         }
 
-        AssetDatabase.ImportAsset(relPath, ImportAssetOptions.ForceUpdate);
-        AssetDatabase.SaveAssets();
-        AssetDatabase.Refresh();
-        AssetDatabase.SaveAssets();
+        AssetDatabase.ImportAsset (relPath, ImportAssetOptions.ForceUpdate);
+        AssetDatabase.SaveAssets ();
+        AssetDatabase.Refresh ();
+        AssetDatabase.SaveAssets ();
       }
     }
 
-    public static void EnablePluginPlatform(PluginPlatform platform)
+    public static void EnablePluginPlatform (PluginPlatform platform)
     {
-      string path = GetPlatformPluginPath(platform);
+      string path = GetPlatformPluginPath (platform);
       string disabledPath = path + PluginDisabledSuffix;
 
-      bool pathAlreadyExists = Directory.Exists(path) || File.Exists(path);
-      bool disabledPathDoesNotExist = !Directory.Exists(disabledPath) && !File.Exists(disabledPath);
+      bool pathAlreadyExists = Directory.Exists (path) || File.Exists (path);
+      bool disabledPathDoesNotExist = !Directory.Exists (disabledPath) && !File.Exists (disabledPath);
 
       if (pathAlreadyExists || disabledPathDoesNotExist)
       {
         return;
       }
 
-      string basePath = GetCurrentProjectPath();
-      string relPath = path.Substring(basePath.Length + 1);
+      string basePath = GetCurrentProjectPath ();
+      string relPath = path.Substring (basePath.Length + 1);
       string relDisabledPath = relPath + PluginDisabledSuffix;
 
-      AssetDatabase.MoveAsset(relDisabledPath, relPath);
-      AssetDatabase.ImportAsset(relPath, ImportAssetOptions.ForceUpdate);
-      AssetDatabase.SaveAssets();
-      AssetDatabase.Refresh();
-      AssetDatabase.SaveAssets();
+      AssetDatabase.MoveAsset (relDisabledPath, relPath);
+      AssetDatabase.ImportAsset (relPath, ImportAssetOptions.ForceUpdate);
+      AssetDatabase.SaveAssets ();
+      AssetDatabase.Refresh ();
+      AssetDatabase.SaveAssets ();
 
       // Force reserialization of platform settings meta data
-      EnforcePluginPlatformSettings(platform);
+      EnforcePluginPlatformSettings (platform);
     }
 
-    public static void DisablePluginPlatform(PluginPlatform platform)
+    public static void DisablePluginPlatform (PluginPlatform platform)
     {
-      string path = GetPlatformPluginPath(platform);
+      string path = GetPlatformPluginPath (platform);
       string disabledPath = path + PluginDisabledSuffix;
 
-      bool pathDoesNotExist = !Directory.Exists(path) && !File.Exists(path);
-      bool disabledPathAlreadyExists = Directory.Exists(disabledPath) || File.Exists(disabledPath);
+      bool pathDoesNotExist = !Directory.Exists (path) && !File.Exists (path);
+      bool disabledPathAlreadyExists = Directory.Exists (disabledPath) || File.Exists (disabledPath);
 
       if (pathDoesNotExist || disabledPathAlreadyExists)
       {
         return;
       }
 
-      string basePath = GetCurrentProjectPath();
-      string relPath = path.Substring(basePath.Length + 1);
+      string basePath = GetCurrentProjectPath ();
+      string relPath = path.Substring (basePath.Length + 1);
       string relDisabledPath = relPath + PluginDisabledSuffix;
 
-      AssetDatabase.MoveAsset(relPath, relDisabledPath);
-      AssetDatabase.ImportAsset(relDisabledPath, ImportAssetOptions.ForceUpdate);
-      AssetDatabase.SaveAssets();
-      AssetDatabase.Refresh();
-      AssetDatabase.SaveAssets();
+      AssetDatabase.MoveAsset (relPath, relDisabledPath);
+      AssetDatabase.ImportAsset (relDisabledPath, ImportAssetOptions.ForceUpdate);
+      AssetDatabase.SaveAssets ();
+      AssetDatabase.Refresh ();
+      AssetDatabase.SaveAssets ();
     }
   }
 }

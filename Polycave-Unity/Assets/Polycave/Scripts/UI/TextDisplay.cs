@@ -26,7 +26,7 @@ public class TextDisplay : MonoBehaviour
     {
         if (data is LearningSetItem) DisplayLearningItem (data as LearningSetItem);
         else if (data is ExampleSentence) DisplaySentence (data as ExampleSentence);
-        else if (data is string) DisplayKanji (data as string);
+        else if (data is Kanji) DisplayKanji (data as Kanji);
     }
 
     private void DisplayLearningItem (LearningSetItem item)
@@ -43,11 +43,11 @@ public class TextDisplay : MonoBehaviour
         return string.Join (separator, v);
     }
 
-    private void DisplayKanji (string kanji)
+    private void DisplayKanji (Kanji kanji)
     {
-        _japanese.text = kanji;
-        _reading.text = "";
-        _senses.text = "";
+        _japanese.text = kanji.kanji;
+        _reading.text = kanji.reading;
+        _senses.text = kanji.meaning;
     }
 
     private void DisplaySentence (ExampleSentence sentence)
