@@ -21,6 +21,9 @@ public class DisplayController : MonoBehaviour
 
     private DataProxy _dataProxy;
 
+    public List<Texture> skyBoxes = new List<Texture> ();
+    private Texture _currentSkybox;
+
     private static float d2r = Mathf.PI / 180f;
     public void Start ()
     {
@@ -30,6 +33,8 @@ public class DisplayController : MonoBehaviour
         _dataProxy = FindObjectOfType<DataProxy> ();
         LaserPointer lp = FindObjectOfType<LaserPointer> ();
         if (lp != null) lp.laserBeamBehavior = laserBeamBehavior;
+
+        _currentSkybox = RenderSettings.skybox.mainTexture;
     }
 
     public void OnDestroy ()
@@ -41,7 +46,7 @@ public class DisplayController : MonoBehaviour
     private void OnDataProxySelection (DataProxySelectionEvent e)
     {
         if (e.kanji != null) DisplayItem (e.kanji);
-        else if (e.item != null) DisplayItem (e.item);
+        else if (e.compound != null) DisplayItem (e.compound);
         else if (e.sentence != null) DisplayItem (e.sentence);
     }
 
@@ -49,16 +54,16 @@ public class DisplayController : MonoBehaviour
     {
         if (e.currentEvent.kanji != null)
         {
-            if (e.runeType == RuneType.Up) DisplayChoices (e.currentEvent.itemChoices);
+            if (e.runeType == RuneType.Up) DisplayChoices (e.currentEvent.compoundChoices);
         }
-        else if (e.currentEvent.item != null)
+        else if (e.currentEvent.compound != null)
         {
             if (e.runeType == RuneType.Up) DisplayChoices (e.currentEvent.sentenceChoices);
             else if (e.runeType == RuneType.Down) DisplayChoices (e.currentEvent.kanjiChoices);
         }
         else if (e.currentEvent.sentence != null)
         {
-            if (e.runeType == RuneType.Down) DisplayChoices (e.currentEvent.itemChoices);
+            if (e.runeType == RuneType.Down) DisplayChoices (e.currentEvent.compoundChoices);
         }
     }
 
@@ -66,17 +71,30 @@ public class DisplayController : MonoBehaviour
     {
         ClearDisplay ();
         float yRot = (((float) choices.Count / 2f) - 0.5f) * -previewPanelSpacing;
+        List<Texture> usedTextures = new List<Texture> ();
+        usedTextures.Add (_currentSkybox);
         foreach (T choice in choices)
         {
             GameObject go = CreateDisplay (textPreviewPrefab, yRot);
-            go.GetComponent<TextDisplay> ().DisplayData (choice);
-            go.GetComponent<Collider> ().enabled = true;
-            SelectionReactor reactor = go.GetComponent<SelectionReactor> ();
+            go.GetComponentInChildren<TextDisplay> ().DisplayData (choice);
+            go.GetComponentInChildren<Collider> ().enabled = true;
+            go.GetComponent<Bubble> ().SetTexture (GetTexture (usedTextures));
+            SelectionReactor reactor = go.GetComponentInChildren<SelectionReactor> ();
             reactor.userData = choice;
-            reactor.action = OnChoiceSelected;
-
+            reactor.action += OnBubbleSelected;
             yRot += previewPanelSpacing;
         }
+    }
+
+    private Texture GetTexture (List<Texture> usedTextures)
+    {
+        Texture tex = _currentSkybox;
+        while (usedTextures.Contains (tex))
+        {
+            tex = Randomer.FromList (skyBoxes);
+        }
+        usedTextures.Add (tex);
+        return tex;
     }
 
     public void ClearDisplay ()
@@ -107,29 +125,17 @@ public class DisplayController : MonoBehaviour
         return displayGo;
     }
 
-    public void CreateBubbleForText (string text, Texture texture, float xOffset)
-    {
-        Vector3 position = displayParent.position;
-        position.x += xOffset;
-        GameObject bubbleGO = Instantiate (bubblePrefab, position, Quaternion.identity, displayParent);
-        bubbleGO.name = $"bubble_{text}";
-        Bubble bubble = bubbleGO.GetComponent<Bubble> ();
-        bubble.Text = text;
-        bubble.SetTexture (texture);
-        SelectionReactor reactor = bubbleGO.GetComponent<SelectionReactor> ();
-        reactor.action += OnBubbleSelected;
-    }
-
     private void OnBubbleSelected (SelectionReactor reactor)
     {
         Bubble bubble = reactor.GetComponent<Bubble> ();
-        string text = bubble.Text;
         Texture texture = bubble.Texture;
-        EventBus.Instance.Raise (new BubbleEvent (text, texture));
+        EventBus.Instance.Raise (new BubbleEvent (texture, reactor.userData));
+        EventBus.Instance.AddListener<NavigationEvent> (OnNavEvent);
     }
 
-    private void OnChoiceSelected (SelectionReactor reactor)
+    private void OnNavEvent (NavigationEvent e)
     {
-        _dataProxy.SetCurrentData (reactor.userData);
+        EventBus.Instance.RemoveListener<NavigationEvent> (OnNavEvent);
+        _dataProxy.SetCurrentData (e.userData);
     }
 }

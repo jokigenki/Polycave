@@ -11,9 +11,7 @@ namespace PolyblotPlayground
 
         public List<LearningSetItem> GetItemsForKanji (Kanji kanji)
         {
-            Debug.Log ($"Finding items for kanji: {kanji.kanji}");
             List<LearningSetItem> itemsForKanji = items.Values.Where (i => i.ContainsKanji (kanji.kanji)).ToList ();
-            Debug.Log ($"items {itemsForKanji.Count}");
             return itemsForKanji;
         }
 

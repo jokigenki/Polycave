@@ -36,11 +36,11 @@ public class RuneController : MonoBehaviour
         _currentEvent = e;
 
         TextMeshProUGUI upTmp = _upButton.GetComponentInChildren<TextMeshProUGUI> ();
-        if (e.item != null) upTmp.text = "sentences";
+        if (e.compound != null) upTmp.text = "sentences";
         else if (e.kanji != null) upTmp.text = "compounds";
 
         TextMeshProUGUI dnTmp = _downButton.GetComponentInChildren<TextMeshProUGUI> ();
-        if (e.item != null) dnTmp.text = "kanji";
+        if (e.compound != null) dnTmp.text = "kanji";
         else if (e.sentence != null) dnTmp.text = "compounds";
         UpdateButtons ();
     }

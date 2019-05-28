@@ -43,7 +43,7 @@ public class DataProxy : MonoBehaviour
 
         if (onDataLoaded != null) onDataLoaded ();
 
-        LearningSetItem startItem = GetItemForCompound ("家");
+        LearningSetItem startItem = GetItemForCompound ("一");
         SetCurrentData (startItem);
     }
 
@@ -200,24 +200,24 @@ public class DataProxySelectionEvent : GameEvent
 {
     public NavType navType;
     public Kanji kanji;
-    public LearningSetItem item;
+    public LearningSetItem compound;
     public ExampleSentence sentence;
 
     public List<Kanji> kanjiChoices;
-    public List<LearningSetItem> itemChoices;
+    public List<LearningSetItem> compoundChoices;
     public List<ExampleSentence> sentenceChoices;
 
-    public DataProxySelectionEvent (Kanji kanji, NavType navType, List<LearningSetItem> itemChoices)
+    public DataProxySelectionEvent (Kanji kanji, NavType navType, List<LearningSetItem> compoundChoices)
     {
         this.navType = navType;
         this.kanji = kanji;
-        this.itemChoices = itemChoices;
+        this.compoundChoices = compoundChoices;
     }
 
-    public DataProxySelectionEvent (LearningSetItem item, NavType navType, List<Kanji> kanjiChoices, List<ExampleSentence> sentenceChoices)
+    public DataProxySelectionEvent (LearningSetItem compound, NavType navType, List<Kanji> kanjiChoices, List<ExampleSentence> sentenceChoices)
     {
         this.navType = navType;
-        this.item = item;
+        this.compound = compound;
         this.kanjiChoices = kanjiChoices;
         this.sentenceChoices = sentenceChoices;
     }
@@ -226,7 +226,7 @@ public class DataProxySelectionEvent : GameEvent
     {
         this.navType = navType;
         this.sentence = sentence;
-        this.itemChoices = itemChoices;
+        this.compoundChoices = itemChoices;
     }
 
     public DataProxySelectionEvent (DataProxyChoicesEvent e, NavType navType)
@@ -234,8 +234,8 @@ public class DataProxySelectionEvent : GameEvent
         this.navType = navType;
         this.sentence = e.currentEvent.sentence;
         this.sentenceChoices = e.currentEvent.sentenceChoices;
-        this.item = e.currentEvent.item;
-        this.itemChoices = e.currentEvent.itemChoices;
+        this.compound = e.currentEvent.compound;
+        this.compoundChoices = e.currentEvent.compoundChoices;
         this.kanji = e.currentEvent.kanji;
         this.kanjiChoices = e.currentEvent.kanjiChoices;
     }
@@ -245,8 +245,8 @@ public class DataProxySelectionEvent : GameEvent
         get
         {
             return sentence == null &&
-                ((kanji != null && itemChoices.Count > 0) ||
-                    (item != null && sentenceChoices.Count > 0));
+                ((kanji != null && compoundChoices.Count > 0) ||
+                    (compound != null && sentenceChoices.Count > 0));
         }
     }
 
@@ -255,8 +255,8 @@ public class DataProxySelectionEvent : GameEvent
         get
         {
             return kanji == null &&
-                ((item != null && kanjiChoices.Count > 0) ||
-                    (sentence != null && itemChoices.Count > 0));
+                ((compound != null && kanjiChoices.Count > 0) ||
+                    (sentence != null && compoundChoices.Count > 0));
         }
     }
 }

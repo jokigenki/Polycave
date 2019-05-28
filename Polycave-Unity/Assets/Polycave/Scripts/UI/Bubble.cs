@@ -7,7 +7,6 @@ public class Bubble : MonoBehaviour
 {
     public AnimationCurve curve = AnimationCurve.EaseInOut (0, 0, 1, 1);
     public float animateInDuration = 0.5f;
-    private TextMeshPro _text;
     private GameObject _inside;
     private GameObject _outside;
     private Texture _texture;
@@ -16,15 +15,8 @@ public class Bubble : MonoBehaviour
 
     void Awake ()
     {
-        _text = transform.Find ("Text").GetComponent<TextMeshPro> ();
         _inside = transform.Find ("SphereInside").gameObject;
         _outside = transform.Find ("SphereOutside").gameObject;
-    }
-
-    public string Text
-    {
-        get { return _text.text; }
-        set { _text.text = value; }
     }
 
     public void AnimateIn ()

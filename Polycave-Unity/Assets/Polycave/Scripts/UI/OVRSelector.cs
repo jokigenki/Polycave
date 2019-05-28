@@ -19,11 +19,11 @@ public class OVRSelector : MonoBehaviour
             RaycastHit[] hits = Physics.RaycastAll (ray, 100f);
             foreach (RaycastHit hit in hits)
             {
-                Debug.Log ($"Hit {hit.transform.name}");
+                //Debug.Log ($"Hit {hit.transform.name}");
                 SelectionReactor reactor = GetReactorForHit (hit);
                 if (reactor != null)
                 {
-                    Debug.Log ("Perform action");
+                    //Debug.Log ("Perform action");
                     reactor.PerformAction ();
                     if (!reactor.propogateHit) break;
                 }

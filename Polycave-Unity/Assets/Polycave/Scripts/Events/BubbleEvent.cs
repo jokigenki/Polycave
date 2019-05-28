@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BubbleEvent : GameEvent
 {
-    public string text;
     public Texture texture;
+    public System.Object userData;
 
-    public BubbleEvent (string text, Texture texture)
+    public BubbleEvent (Texture texture, System.Object userData)
     {
-        this.text = text;
         this.texture = texture;
+        this.userData = userData;
     }
 }
