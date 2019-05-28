@@ -13,9 +13,10 @@ public class DisplayController : MonoBehaviour
     public float characterDistance = 0.15f;
     public float displayDistance = 10f;
 
+    public LaserPointer laserPointer;
     public LaserPointer.LaserBeamBehavior laserBeamBehavior;
 
-    private DataProxy _dataProxy;
+    public DataProxy dataProxy;
 
     public List<Texture> skyBoxes = new List<Texture> ();
     private Texture _currentSkybox;
@@ -29,9 +30,7 @@ public class DisplayController : MonoBehaviour
         EventBus.Instance.AddListener<DataProxySelectionEvent> (OnDataProxySelection);
         EventBus.Instance.AddListener<DataProxyChoicesEvent> (OnDataProxyChoices);
 
-        _dataProxy = FindObjectOfType<DataProxy> ();
-        LaserPointer lp = FindObjectOfType<LaserPointer> ();
-        if (lp != null) lp.laserBeamBehavior = laserBeamBehavior;
+        laserPointer.laserBeamBehavior = laserBeamBehavior;
 
         _currentSkybox = RenderSettings.skybox.mainTexture;
     }
@@ -142,6 +141,6 @@ public class DisplayController : MonoBehaviour
     private void OnNavEvent (NavigationEvent e)
     {
         EventBus.Instance.RemoveListener<NavigationEvent> (OnNavEvent);
-        _dataProxy.SetCurrentData (e.userData);
+        dataProxy.SetCurrentData (e.userData);
     }
 }

@@ -5,9 +5,7 @@ public class OVRSelector : MonoBehaviour
     public LaserPointer pointer;
 
     void Start ()
-    {
-        pointer = FindObjectOfType<LaserPointer> ();
-    }
+    { }
 
     void Update ()
     {
