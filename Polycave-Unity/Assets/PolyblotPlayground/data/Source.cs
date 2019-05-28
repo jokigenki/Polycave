@@ -7,7 +7,7 @@ namespace PolyblotPlayground
     {
         public string id;
         public List<Dictionary<string, string>> kanji;
-        public List<Dictionary<string, string>> reading;
-        public List<Dictionary<string, string>> sense;
+        public List<Dictionary<string, string>> readings;
+        public List<Dictionary<string, string>> senses;
     }
 }

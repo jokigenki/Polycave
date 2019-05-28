@@ -921,5 +921,57 @@
         "conjugations": [
             "だ"
         ]
+    },
+    {
+        "japanese": "その人は大学の先生です",
+        "english": "That person is a teacher at the university",
+        "nouns": [
+            "人",
+            "大学",
+            "先生"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "剣道で新しい本を読みます",
+        "english": "I read a new book about kendo",
+        "nouns": [
+            "剣道",
+            "本"
+        ],
+        "conjugations": [
+            "新しい",
+            "読みます"
+        ]
+    },
+    {
+        "japanese": "私は父と一緒に雪の中で森を歩いていました。",
+        "english": "I used to walk in the forest in the snow with my father.",
+        "nouns": [
+            "私",
+            "父",
+            "一緒",
+            "雪",
+            "中",
+            "森"
+        ],
+        "conjugations": [
+            "歩いて",
+            "いました"
+        ]
+    },
+    {
+        "japanese": "家を買ったことが幸せです。",
+        "english": "I am happy to have bought a house.",
+        "nouns": [
+            "私",
+            "家",
+            "幸せ"
+        ],
+        "conjugations": [
+            "買った"
+        ]
     }
 ]

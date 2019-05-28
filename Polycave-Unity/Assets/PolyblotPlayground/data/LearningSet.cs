@@ -9,15 +9,25 @@ namespace PolyblotPlayground
         public string name;
         public Dictionary<string, LearningSetItem> items;
 
+        public LearningSetItem GetItemForCompound (string compound)
+        {
+            return items.Values.Where (i => i.HasKanji () ? i.ContainsKanjiOrReading (compound, compound) : i.ContainsKanjiOrReading (null, compound)).FirstOrDefault ();
+        }
+
         public List<LearningSetItem> GetItemsForKanji (Kanji kanji)
         {
-            List<LearningSetItem> itemsForKanji = items.Values.Where (i => i.ContainsKanji (kanji.kanji)).ToList ();
+            List<LearningSetItem> itemsForKanji = items.Values.Where (i => i.ContainsKanjiOrReading (kanji.kanji, kanji.reading)).ToList ();
+            if (itemsForKanji.Count > 5)
+            {
+                itemsForKanji = Randomer.FromList (itemsForKanji, 5);
+            }
             return itemsForKanji;
         }
 
         public List<LearningSetItem> GetItemsInKanjiList (List<string> kanji)
         {
-            return items.Values.Where (i => kanji.Contains (i.FirstKanji ())).ToList ();
+            List<LearningSetItem> allItems = new List<LearningSetItem> ();
+            return kanji.Select (k => GetItemForCompound (k)).ToList ();
         }
     }
 }

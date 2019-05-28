@@ -33,12 +33,13 @@ public class TextDisplay : MonoBehaviour
     {
         Source source = item.data.Values.First ();
         _japanese.text = JoinData (source.kanji, ", ");
-        _reading.text = JoinData (source.reading, ", ");
-        _senses.text = JoinData (source.sense, "\n");
+        _reading.text = JoinData (source.readings, ", ");
+        _senses.text = JoinData (source.senses, "\n");
     }
 
     private string JoinData (List<Dictionary<string, string>> source, string separator)
     {
+        if (source == null) return "";
         List<string> v = source.Select (k => k.Values.First ()).ToList ();
         return string.Join (separator, v);
     }

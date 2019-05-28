@@ -4,8 +4,7 @@ public class OVRSelector : MonoBehaviour
 {
     public LaserPointer pointer;
 
-    void Start ()
-    { }
+    void Start () { }
 
     void Update ()
     {
@@ -22,7 +21,7 @@ public class OVRSelector : MonoBehaviour
                 if (reactor != null)
                 {
                     //Debug.Log ("Perform action");
-                    reactor.PerformAction ();
+                    reactor.Select ();
                     if (!reactor.propogateHit) break;
                 }
             }

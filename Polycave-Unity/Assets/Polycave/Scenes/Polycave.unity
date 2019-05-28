@@ -732,7 +732,7 @@ MonoBehaviour:
   characterDistance: 0.15
   displayDistance: 10
   laserPointer: {fileID: 20250920452111339}
-  laserBeamBehavior: 2
+  laserBeamBehavior: 0
   dataProxy: {fileID: 453305159}
   skyBoxes:
   - {fileID: 2800000, guid: 611f78d9360b4394ca733c276ff9dbe7, type: 3}

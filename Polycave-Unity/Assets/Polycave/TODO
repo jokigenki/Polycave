@@ -1,18 +1,16 @@
+Conjugations are not appearing?
+
 Popup system
 
 Bag?
 
-Fix billboarding?
-
-Optimise start up/display black until ready
-
-Passing all the data around in events is a bit clunky?
-
 Buttons should layout in centre if only one
 
-It's not obvious you have to select an option.
+compounds are not ordered as their sentence
 
 Selection highlight?
+
+Add biome tags to learningsetitems and use these to display the correct panorama
 
 Links between items
 - Sentence -> Compound - Example sentences should be marked up with compounds so we know where they are. Take this list and check whether we have the compounds stored in data

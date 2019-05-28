@@ -22,7 +22,7 @@ public class MouseSelector : MonoBehaviour
                 SelectionReactor reactor = GetReactorForHit (hit);
                 if (reactor != null)
                 {
-                    reactor.PerformAction ();
+                    reactor.Select ();
                     if (!reactor.propogateHit) break;
                 }
             }

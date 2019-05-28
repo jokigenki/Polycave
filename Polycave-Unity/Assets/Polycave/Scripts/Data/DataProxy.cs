@@ -43,7 +43,9 @@ public class DataProxy : MonoBehaviour
 
         if (onDataLoaded != null) onDataLoaded ();
 
-        LearningSetItem startItem = GetItemForCompound ("一");
+        LearningSetItem startItem = extendedSet.GetItemForCompound ("一");
+        LearningSetItem iru = extendedSet.GetItemForCompound ("いる");
+        Debug.Log (iru);
         SetCurrentData (startItem);
     }
 
@@ -65,6 +67,7 @@ public class DataProxy : MonoBehaviour
         else if (data is Kanji)
         {
             _currentKanji = data as Kanji;
+            Debug.Log ($"Get compounds for {_currentKanji}");
             EventBus.Instance.Raise (new DataProxySelectionEvent (_currentKanji, NavType.Display, extendedSet.GetItemsForKanji (_currentKanji)));
         }
     }
@@ -118,11 +121,6 @@ public class DataProxy : MonoBehaviour
     {
         string path = Paths.GetLearningSetsPath ();
         yield return DataUtils.LoadJson<Dictionary<string, LearningSet>> (path, (Dictionary<string, LearningSet> sets) => { learningSets = sets; });
-    }
-
-    public LearningSetItem GetItemForCompound (string compound)
-    {
-        return extendedSet.items.Select (kv => kv.Value).Where (i => i.data.Values.First ().kanji[0]["kanji"] == compound).FirstOrDefault ();
     }
 
     public Radical GetRadicalByValue (string value)
@@ -179,7 +177,8 @@ public class DataProxy : MonoBehaviour
     public List<LearningSetItem> GetItemsForSentence (ExampleSentence sentence)
     {
         List<string> kanji = sentence.nouns.Union (sentence.conjugations.Select (c => GetDictionaryFormForConjugation (c))).ToList ();
-        return extendedSet.GetItemsInKanjiList (kanji);
+        List<LearningSetItem> items = extendedSet.GetItemsInKanjiList (kanji);
+        return items;
     }
 }
 

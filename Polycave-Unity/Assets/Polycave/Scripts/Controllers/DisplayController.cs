@@ -67,6 +67,7 @@ public class DisplayController : MonoBehaviour
 
     private void DisplayChoices<T> (List<T> choices)
     {
+        Debug.Log ($"Displaying {choices.Count} choices");
         ClearDisplay ();
         float yRot = (((float) choices.Count / 2f) - 0.5f) * -previewPanelSpacing;
         List<Texture> usedTextures = new List<Texture> ();

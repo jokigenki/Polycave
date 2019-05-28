@@ -13,6 +13,7 @@ public class Bubble : MonoBehaviour
     private SpriteRenderer _bg;
     private Texture _texture;
     private TextDisplay _textDisplay;
+    private GameObject _highlight;
     private SelectionReactor _reactor;
 
     public Texture Texture { get { return _texture; } }
@@ -21,14 +22,23 @@ public class Bubble : MonoBehaviour
     {
         _inside = transform.Find ("SphereInside").gameObject;
         _outside = transform.Find ("SphereOutside").gameObject;
-        _bg = GetComponentInChildren<SpriteRenderer> ();
-        _textDisplay = GetComponentInChildren<TextDisplay> ();
+        Transform textDisplay = transform.Find ("TextDisplay");
+        _bg = textDisplay.GetComponent<SpriteRenderer> ();
+        _textDisplay = textDisplay.GetComponent<TextDisplay> ();
+        _highlight = transform.Find ("Highlight").gameObject;
         _reactor = GetComponent<SelectionReactor> ();
+
+        SetHighlight (false);
     }
 
     public void AnimateIn ()
     {
         StartCoroutine (_AnimateIn ());
+    }
+
+    public void SetHighlight (bool value)
+    {
+        _highlight.SetActive (value);
     }
 
     private IEnumerator _AnimateIn ()
@@ -61,7 +71,7 @@ public class Bubble : MonoBehaviour
         }
     }
 
-    public void DisplayAsBubble (System.Object data, Texture texture, Action<SelectionReactor> action)
+    public void DisplayAsBubble (System.Object data, Texture texture, Action<SelectionReactor> selectionAction)
     {
         _textDisplay.DisplayData (data);
         SetTexture (texture);
@@ -69,7 +79,8 @@ public class Bubble : MonoBehaviour
         _inside.SetActive (true);
         _outside.SetActive (true);
         _reactor.userData = data;
-        _reactor.action = action;
+        _reactor.selectionAction = selectionAction;
+        SetHighlight (false);
     }
 
     public void DisplayAsTextDisplay (System.Object data)
@@ -78,6 +89,7 @@ public class Bubble : MonoBehaviour
         _bg.enabled = true;
         _inside.SetActive (false);
         _outside.SetActive (false);
+        SetHighlight (false);
     }
 
     public void SetTexture (Texture texture)
