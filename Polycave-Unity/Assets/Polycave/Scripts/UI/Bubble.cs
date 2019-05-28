@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -9,7 +10,10 @@ public class Bubble : MonoBehaviour
     public float animateInDuration = 0.5f;
     private GameObject _inside;
     private GameObject _outside;
+    private SpriteRenderer _bg;
     private Texture _texture;
+    private TextDisplay _textDisplay;
+    private SelectionReactor _reactor;
 
     public Texture Texture { get { return _texture; } }
 
@@ -17,6 +21,9 @@ public class Bubble : MonoBehaviour
     {
         _inside = transform.Find ("SphereInside").gameObject;
         _outside = transform.Find ("SphereOutside").gameObject;
+        _bg = GetComponentInChildren<SpriteRenderer> ();
+        _textDisplay = GetComponentInChildren<TextDisplay> ();
+        _reactor = GetComponent<SelectionReactor> ();
     }
 
     public void AnimateIn ()
@@ -52,6 +59,25 @@ public class Bubble : MonoBehaviour
             _outside.transform.localScale = scaleVec;
             yield return null;
         }
+    }
+
+    public void DisplayAsBubble (System.Object data, Texture texture, Action<SelectionReactor> action)
+    {
+        _textDisplay.DisplayData (data);
+        SetTexture (texture);
+        _bg.enabled = false;
+        _inside.SetActive (true);
+        _outside.SetActive (true);
+        _reactor.userData = data;
+        _reactor.action = action;
+    }
+
+    public void DisplayAsTextDisplay (System.Object data)
+    {
+        _textDisplay.DisplayData (data);
+        _bg.enabled = true;
+        _inside.SetActive (false);
+        _outside.SetActive (false);
     }
 
     public void SetTexture (Texture texture)

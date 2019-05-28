@@ -6,9 +6,7 @@ using UnityEngine;
 
 public class DisplayController : MonoBehaviour
 {
-    public GameObject bubblePrefab;
     public GameObject textDisplayPrefab;
-    public GameObject textPreviewPrefab;
     public Transform displayParent;
     public float previewPanelSpacing = 30f;
 
@@ -17,12 +15,13 @@ public class DisplayController : MonoBehaviour
 
     public LaserPointer.LaserBeamBehavior laserBeamBehavior;
 
-    private List<GameObject> _currentDisplay = new List<GameObject> ();
-
     private DataProxy _dataProxy;
 
     public List<Texture> skyBoxes = new List<Texture> ();
     private Texture _currentSkybox;
+
+    private List<GameObject> _currentDisplay = new List<GameObject> ();
+    private List<GameObject> _displayPool = new List<GameObject> ();
 
     private static float d2r = Mathf.PI / 180f;
     public void Start ()
@@ -75,13 +74,9 @@ public class DisplayController : MonoBehaviour
         usedTextures.Add (_currentSkybox);
         foreach (T choice in choices)
         {
-            GameObject go = CreateDisplay (textPreviewPrefab, yRot);
-            go.GetComponentInChildren<TextDisplay> ().DisplayData (choice);
-            go.GetComponentInChildren<Collider> ().enabled = true;
-            go.GetComponent<Bubble> ().SetTexture (GetTexture (usedTextures));
-            SelectionReactor reactor = go.GetComponentInChildren<SelectionReactor> ();
-            reactor.userData = choice;
-            reactor.action += OnBubbleSelected;
+            GameObject go = CreateDisplay (yRot);
+            Bubble bub = go.GetComponent<Bubble> ();
+            bub.DisplayAsBubble (choice, GetTexture (usedTextures), OnBubbleSelected);
             yRot += previewPanelSpacing;
         }
     }
@@ -99,30 +94,41 @@ public class DisplayController : MonoBehaviour
 
     public void ClearDisplay ()
     {
-        // TODO: animate out
         foreach (GameObject go in _currentDisplay)
         {
-            Destroy (go);
+            go.SetActive (false);
+            _displayPool.Add (go);
         }
+        _currentDisplay.Clear ();
     }
 
     public void DisplayItem<T> (T item)
     {
         ClearDisplay ();
-        GameObject go = CreateDisplay (textDisplayPrefab);
-        go.GetComponent<TextDisplay> ().DisplayData (item);
-        go.GetComponent<Collider> ().enabled = false;
+        GameObject go = CreateDisplay ();
+        Bubble bub = go.GetComponent<Bubble> ();
+        bub.DisplayAsTextDisplay (item);
     }
 
-    private GameObject CreateDisplay (GameObject prefab, float yRotation = 0)
+    private GameObject CreateDisplay (float yRotation = 0)
     {
         float rads = yRotation * d2r;
-        GameObject displayGo = Instantiate (prefab, displayParent);
+        GameObject go;
+        if (_displayPool.Count == 0)
+        {
+            go = Instantiate (textDisplayPrefab, displayParent);
+        }
+        else
+        {
+            go = _displayPool[0];
+            go.SetActive (true);
+            _displayPool.RemoveAt (0);
+        }
         Vector3 position = new Vector3 (Mathf.Sin (rads) * displayDistance, 0, Mathf.Cos (rads) * displayDistance);
-        displayGo.transform.localPosition = position;
-        displayGo.transform.localRotation = Quaternion.Euler (new Vector3 (0, yRotation, 0));
-        _currentDisplay.Add (displayGo);
-        return displayGo;
+        go.transform.localPosition = position;
+        go.transform.localRotation = Quaternion.Euler (new Vector3 (0, yRotation, 0));
+        _currentDisplay.Add (go);
+        return go;
     }
 
     private void OnBubbleSelected (SelectionReactor reactor)

@@ -181,7 +181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11437430, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
       propertyPath: EnableExpressive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11437430, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
       propertyPath: EnableBody
@@ -197,15 +197,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11437430, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
       propertyPath: ShowFirstPerson
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11437430, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
       propertyPath: CanOwnMicrophone
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11437430, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
       propertyPath: ShowThirdPerson
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437430, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: UseTransparentRenderQueue
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
@@ -821,11 +825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c119722a562f1e24bbb9834239c2dad0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 6110687031147037697, guid: 73b905fe1dcf12d4891635bd188c5bc3,
-    type: 3}
-  textDisplayPrefab: {fileID: 5697873067435770941, guid: 51cb056f3fd7f3445a1750528ce6183f,
-    type: 3}
-  textPreviewPrefab: {fileID: 6110687031147037697, guid: 73b905fe1dcf12d4891635bd188c5bc3,
+  textDisplayPrefab: {fileID: 6110687031147037697, guid: 73b905fe1dcf12d4891635bd188c5bc3,
     type: 3}
   displayParent: {fileID: 837130370}
   previewPanelSpacing: 40
