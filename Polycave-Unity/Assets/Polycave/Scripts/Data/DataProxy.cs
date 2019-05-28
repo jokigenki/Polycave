@@ -44,8 +44,6 @@ public class DataProxy : MonoBehaviour
         if (onDataLoaded != null) onDataLoaded ();
 
         LearningSetItem startItem = extendedSet.GetItemForCompound ("一");
-        LearningSetItem iru = extendedSet.GetItemForCompound ("いる");
-        Debug.Log (iru);
         SetCurrentData (startItem);
     }
 
@@ -170,14 +168,19 @@ public class DataProxy : MonoBehaviour
         if (kanji == null) kanji = item.FirstReading (); // in case of kana only, e.g. suru, coffee
         // sentences where the nouns array contains the kanji, or the conjugations array contains a conjugated form of the kanji
         // jumping through a hoop backwards!
-        return sentences.Where (s => s.nouns.Contains (kanji) ||
+        List<ExampleSentence> examples = sentences.Where (s => s.nouns.Contains (kanji) ||
             s.conjugations.Where (c => GetDictionaryFormForConjugation (c) == kanji).Count () > 0).ToList ();
+
+        if (examples.Count > 5) examples = Randomer.FromList (examples, 5);
+        return examples;
     }
 
     public List<LearningSetItem> GetItemsForSentence (ExampleSentence sentence)
     {
         List<string> kanji = sentence.nouns.Union (sentence.conjugations.Select (c => GetDictionaryFormForConjugation (c))).ToList ();
         List<LearningSetItem> items = extendedSet.GetItemsInKanjiList (kanji);
+
+        if (items.Count > 5) items = Randomer.FromList (items, 5);
         return items;
     }
 }

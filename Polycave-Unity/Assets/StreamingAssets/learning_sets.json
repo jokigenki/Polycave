@@ -2415,7 +2415,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "わたくし",
+                                "kana": "わたし",
                                 "priority": "ichi1"
                             }
                         ],
@@ -5860,9 +5860,7 @@
                         "id": "1039220",
                         "readings": [
                             {
-                                "kana": "カレンダー"
-                            },
-                            {
+                                "kana": "カレンダー",
                                 "priority": "gai1, ichi1"
                             }
                         ],
@@ -6235,6 +6233,37 @@
             "orderIndex": 190,
             "sources": [
                 "JMdict:1163400"
+            ],
+            "tags": [
+                "extended"
+            ]
+        },
+        "JsYEHW9dExy458ibJ3PN": {
+            "data": {
+                "JMdict:1362490": {
+                    "id": "1362490",
+                    "kanji": [
+                        {
+                            "kanji": "森"
+                        }
+                    ],
+                    "readings": [
+                        {
+                            "kana": "もり",
+                            "priority": "ichi1, news1, nf02"
+                        }
+                    ],
+                    "senses": [
+                        {
+                            "gloss": "forest",
+                            "partOfSpeech": " &n;"
+                        }
+                    ]
+                }
+            },
+            "orderIndex": 191,
+            "sources": [
+                "JMdict:1362490"
             ],
             "tags": [
                 "extended"
