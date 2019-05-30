@@ -1,11 +1,11 @@
 [
     {
         "japanese": "私には一人の姉妹がいます。",
-        "english": "I have one sister",
+        "english": "I have one sister.",
         "nouns": [
             "私",
             "一",
-            "人",
+            "一人",
             "姉妹"
         ],
         "conjugations": [
@@ -13,20 +13,20 @@
         ]
     },
     {
-        "japanese": "貴方は二冊の本を持っています。",
-        "english": "You have two books",
+        "japanese": "あなたは二冊の本を持っています。",
+        "english": "You have two books.",
         "nouns": [
-            "貴方",
+            "あなた",
             "二",
             "本"
         ],
         "conjugations": [
-            "持って"
+            "持っています"
         ]
     },
     {
         "japanese": "私は兄弟が三人いる。",
-        "english": "I have three brothers",
+        "english": "I have three brothers.",
         "nouns": [
             "私",
             "兄弟",
@@ -39,7 +39,7 @@
     },
     {
         "japanese": "雪は、四日間降った。",
-        "english": "It snowed for four days",
+        "english": "It snowed for four days.",
         "nouns": [
             "雪",
             "四",
@@ -52,7 +52,7 @@
     },
     {
         "japanese": "彼女は五歳です。",
-        "english": "She's five years old",
+        "english": "She's five years old.",
         "nouns": [
             "彼女",
             "五",
@@ -63,20 +63,20 @@
         ]
     },
     {
-        "japanese": "母は卵が六つ作りました。",
-        "english": "Mother has made six eggs",
+        "japanese": "母は卵を六つ買いました。",
+        "english": "Mother has bought six eggs.",
         "nouns": [
             "母",
             "卵",
             "六"
         ],
         "conjugations": [
-            "作りました"
+            "買いました"
         ]
     },
     {
         "japanese": "一週間は七日です。",
-        "english": "A week has seven days",
+        "english": "A week has seven days.",
         "nouns": [
             "一",
             "週",
@@ -89,13 +89,14 @@
         ]
     },
     {
-        "japanese": "来年八月から大学に大学します。",
-        "english": "Next August I'll be going to university to study",
+        "japanese": "来年八月から大学で勉強します。",
+        "english": "Next August I'll be going to university to study.",
         "nouns": [
             "来年",
+            "八",
             "八月",
             "大学",
-            "大学"
+            "勉強"
         ],
         "conjugations": [
             "します"
@@ -103,7 +104,7 @@
     },
     {
         "japanese": "猫に九生あり。",
-        "english": "Cats have nine lives",
+        "english": "Cats have nine lives.",
         "nouns": [
             "猫",
             "九",
@@ -114,9 +115,10 @@
         ]
     },
     {
-        "japanese": "この家には部屋が十つあります。",
-        "english": "This house has ten rooms",
+        "japanese": "この家には部屋が十あります。",
+        "english": "This house has ten rooms.",
         "nouns": [
+            "この",
             "家",
             "部屋",
             "十"
@@ -127,7 +129,7 @@
     },
     {
         "japanese": "水は摂氏零度で凍る。",
-        "english": "Water freezes at zero degrees celsius",
+        "english": "Water freezes at zero degrees celsius.",
         "nouns": [
             "水",
             "摂氏",
@@ -140,10 +142,10 @@
     },
     {
         "japanese": "来週からテストが始まる。",
-        "english": "Tests start next week",
+        "english": "Tests start next week.",
         "nouns": [
-            "週",
-            "来週"
+            "来週",
+            "テスト"
         ],
         "conjugations": [
             "始まる"
@@ -151,7 +153,7 @@
     },
     {
         "japanese": "一年には十二か月あります。",
-        "english": "A year has twelve months",
+        "english": "A year has twelve months.",
         "nouns": [
             "一",
             "年",
@@ -164,7 +166,7 @@
     },
     {
         "japanese": "今日は日曜日です。",
-        "english": "Today is Sunday",
+        "english": "Today is Sunday.",
         "nouns": [
             "今日",
             "日曜日"
@@ -185,12 +187,12 @@
         ]
     },
     {
-        "japanese": "今月新しいカレンダーを買いました",
-        "english": "I bought a new calendar this month",
+        "japanese": "今月新しいカレンダーを買いました。",
+        "english": "I bought a new calendar this month.",
         "nouns": [
             "今月",
-            "新しい",
-            "カレンダー"
+            "カレンダー",
+            "新しい"
         ],
         "conjugations": [
             "買いました"
@@ -198,7 +200,7 @@
     },
     {
         "japanese": "昨日は木曜日だった。",
-        "english": "Yesterday was Thursday",
+        "english": "Yesterday was Thursday.",
         "nouns": [
             "昨日",
             "木曜日"
@@ -209,31 +211,32 @@
     },
     {
         "japanese": "雨は月曜日から金曜日まで降った。",
-        "english": "It rained from Monday to Friday",
+        "english": "It rained from Monday to Friday.",
         "nouns": [
             "雨",
             "月曜日",
             "金曜日"
         ],
         "conjugations": [
-            "降った"
-        ]
-    },
-    {
-        "japanese": "確かに火曜日は寒かったですね。",
-        "english": "Tuesday was certainly cold",
-        "nouns": [
-            "確かに",
-            "火曜日"
-        ],
-        "conjugations": [
-            "寒かった",
+            "降った",
             "です"
         ]
     },
     {
+        "japanese": "確かに火曜日は寒かったですね。",
+        "english": "Tuesday was certainly cold.",
+        "nouns": [
+            "確",
+            "火曜日",
+            "です"
+        ],
+        "conjugations": [
+            "寒かった"
+        ]
+    },
+    {
         "japanese": "水曜日は仕事があります。",
-        "english": "I have work on Wednesday",
+        "english": "I have work on Wednesday.",
         "nouns": [
             "水曜日",
             "仕事"
@@ -243,8 +246,8 @@
         ]
     },
     {
-        "japanese": "妹は木曜日に猫を養子にしました",
-        "english": "My younger sister adopted a cat on Thursday",
+        "japanese": "妹は木曜日に猫を養子にしました。",
+        "english": "My younger sister adopted a cat on Thursday.",
         "nouns": [
             "妹",
             "木曜日",
@@ -256,8 +259,8 @@
         ]
     },
     {
-        "japanese": "金曜日は給料日です",
-        "english": "Friday is pay day",
+        "japanese": "金曜日は給料日です。",
+        "english": "Friday is payday.",
         "nouns": [
             "金曜日",
             "給料",
@@ -268,8 +271,8 @@
         ]
     },
     {
-        "japanese": "私は土曜日に友達と映画館に行きました",
-        "english": "I went to the cinema with my friend on Saturday",
+        "japanese": "私は土曜日に友達と映画館に行きました。",
+        "english": "I went to the cinema with my friend on Saturday.",
         "nouns": [
             "私",
             "土曜日",
@@ -281,8 +284,8 @@
         ]
     },
     {
-        "japanese": "日曜日に私は大抵本を読みます",
-        "english": "On Sunday I usually read a book",
+        "japanese": "日曜日に私は大抵本を読みます。",
+        "english": "On Sunday I usually read a book.",
         "nouns": [
             "日曜日",
             "私",
@@ -295,7 +298,7 @@
     },
     {
         "japanese": "一分は六十秒です。",
-        "english": "A minute is 60 seconds",
+        "english": "A minute has 60 seconds.",
         "nouns": [
             "一",
             "分",
@@ -308,7 +311,7 @@
     },
     {
         "japanese": "彼は一時間眠った。",
-        "english": "He slept for one hour",
+        "english": "He slept for one hour.",
         "nouns": [
             "彼",
             "一",
@@ -320,8 +323,8 @@
         ]
     },
     {
-        "japanese": "電車は分で出発します",
-        "english": "The train leaves in ten minutes",
+        "japanese": "電車は分で出発します。",
+        "english": "The train leaves in ten minutes.",
         "nouns": [
             "電車",
             "分",
@@ -332,8 +335,8 @@
         ]
     },
     {
-        "japanese": "三時から賢治君は剣道をします",
-        "english": "Kenji does Kendo from 3 o'clock",
+        "japanese": "三時から賢治君は剣道をします。",
+        "english": "Kenji does Kendo from 3 o'clock.",
         "nouns": [
             "三",
             "時",
@@ -344,8 +347,8 @@
         ]
     },
     {
-        "japanese": "私の時計の秒針が壊れています",
-        "english": "My watch's second hand is broken",
+        "japanese": "私の時計の秒針が壊れています。",
+        "english": "My watch's second hand is broken.",
         "nouns": [
             "私",
             "時計",
@@ -356,11 +359,11 @@
         ]
     },
     {
-        "japanese": "私は一月に足を骨折しました",
-        "english": "I broke my leg in January",
+        "japanese": "私は一月に足を骨折しました。",
+        "english": "I broke my leg in January.",
         "nouns": [
             "私",
-            "月",
+            "一月",
             "足",
             "骨折"
         ],
@@ -369,8 +372,8 @@
         ]
     },
     {
-        "japanese": "私の友達は二月に彼の家に来るでしょう",
-        "english": "My friend will come to his house in February",
+        "japanese": "私の友達は二月に彼の家に来るでしょう。",
+        "english": "My friend will come to his house in February.",
         "nouns": [
             "私",
             "友達",
@@ -379,48 +382,48 @@
             "家"
         ],
         "conjugations": [
-            "来る"
+            "来る",
+            "でしょう"
         ]
     },
     {
-        "japanese": "彼は三月に学校を終わた。",
-        "english": "He finished school in March",
+        "japanese": "彼は三月に学校を終えた。",
+        "english": "He finished school in March.",
         "nouns": [
             "彼",
             "三月",
             "学校"
         ],
         "conjugations": [
-            "終わた"
+            "終えた"
         ]
     },
     {
         "japanese": "桜は四月に咲くでしょう。",
-        "english": "The cherry blossoms will be out in April",
+        "english": "The cherry blossoms will be out in April.",
         "nouns": [
             "桜",
-            "四月"
+            "四月",
+            "咲く"
         ],
         "conjugations": [
-            "咲く",
             "でしょう"
         ]
     },
     {
-        "japanese": "五月に銀行の休日はありますか？",
-        "english": "Is there a bank holiday in May?",
+        "japanese": "五月に銀行に行きましたか。",
+        "english": "Did you go to the bank in May?",
         "nouns": [
             "五月",
-            "銀行",
-            "休日"
+            "銀行"
         ],
         "conjugations": [
-            "あります"
+            "行きました"
         ]
     },
     {
-        "japanese": "兄さんの誕生日は六月です",
-        "english": "My older brother's birthday is in June",
+        "japanese": "兄さんの誕生日は六月です。",
+        "english": "My older brother's birthday is in June.",
         "nouns": [
             "兄",
             "誕生日",
@@ -432,7 +435,7 @@
     },
     {
         "japanese": "夏休みは七月から始まる。",
-        "english": "The summer vacation begins in July",
+        "english": "The summer vacation begins in July.",
         "nouns": [
             "夏",
             "休み",
@@ -444,21 +447,21 @@
     },
     {
         "japanese": "八月は、その年の最も暑い月です。",
-        "english": "August is the hottest month of the year",
+        "english": "August is the hottest month of the year.",
         "nouns": [
             "八月",
             "年",
             "最",
-            "月"
+            "月",
+            "暑い"
         ],
         "conjugations": [
-            "です",
-            "暑い"
+            "です"
         ]
     },
     {
         "japanese": "日照りは九月まで続いた。",
-        "english": "The dry spell continued into September",
+        "english": "The dry spell continued into September.",
         "nouns": [
             "日照り",
             "九月"
@@ -468,28 +471,28 @@
         ]
     },
     {
-        "japanese": "十月は涼しい月です",
-        "english": "October is a cool month",
+        "japanese": "十月は涼しい月です。",
+        "english": "October is a cool month.",
         "nouns": [
             "十月",
-            "月"
+            "月",
+            "涼しい"
         ],
         "conjugations": [
-            "です",
-            "涼しい"
+            "です"
         ]
     },
     {
-        "japanese": "日本の森林は十一月に綺麗です",
-        "english": "Japan's forests are beautiful in November",
+        "japanese": "十一月の日本の森林は綺麗です。",
+        "english": "Japan's forests are beautiful in November.",
         "nouns": [
             "日本",
             "森林",
             "十一月"
         ],
         "conjugations": [
-            "です",
-            "綺麗"
+            "綺麗",
+            "です"
         ]
     },
     {
@@ -497,17 +500,16 @@
         "english": "Don't you think it is rather warm for December?",
         "nouns": [
             "十二月",
-            "少々"
+            "少"
         ],
         "conjugations": [
-            "して",
             "暖かい",
             "思いません"
         ]
     },
     {
-        "japanese": "右足が痛い",
-        "english": "My right leg hurts",
+        "japanese": "右足が痛い。",
+        "english": "My right leg hurts.",
         "nouns": [
             "右",
             "足"
@@ -517,8 +519,7 @@
         ]
     },
     {
-        "japanese": "頭に気をつけて！",
-        "english": "Watch your head!",
+        "japanese": "頭上に気をつけて！,Watch your head!",
         "nouns": [
             "頭",
             "気をつけて"
@@ -540,7 +541,7 @@
     },
     {
         "japanese": "食事の前に手を洗いなさい。",
-        "english": "Please wash your hands before meals",
+        "english": "Please wash your hands before meals.",
         "nouns": [
             "食事",
             "前",
@@ -552,7 +553,7 @@
     },
     {
         "japanese": "小指を切りました。",
-        "english": "I cut my little finger",
+        "english": "I cut my little finger.",
         "nouns": [
             "小",
             "指"
@@ -563,7 +564,7 @@
     },
     {
         "japanese": "運動をすると体が強くなる。",
-        "english": "Exercise makes your body strong",
+        "english": "Exercise makes your body strong.",
         "nouns": [
             "運動",
             "体"
@@ -576,23 +577,22 @@
     },
     {
         "japanese": "先生、お腹が痛いんです。",
-        "english": "Doctor, my stomach hurts",
+        "english": "Doctor, my stomach hurts.",
         "nouns": [
             "先生",
             "腹"
         ],
         "conjugations": [
-            "です",
-            "痛いん"
+            "痛いん",
+            "です"
         ]
     },
     {
         "japanese": "心臓は胸の中にある。",
-        "english": "The heart is located in the chest",
+        "english": "The heart is located in the chest.",
         "nouns": [
             "心臓",
-            "胸",
-            "中"
+            "胸中"
         ],
         "conjugations": [
             "ある"
@@ -610,7 +610,7 @@
         ]
     },
     {
-        "japanese": "夜そんなに遅くコーヒーを飲みないで。",
+        "japanese": "そんな夜遅くにコーヒーを飲まないで。",
         "english": "Don't drink coffee so late at night.",
         "nouns": [
             "夜",
@@ -618,15 +618,13 @@
         ],
         "conjugations": [
             "遅く",
-            "飲みない",
-            "で"
+            "飲みないで"
         ]
     },
     {
-        "japanese": "暑い日の生ビールの味はまた格別だ。",
-        "english": "Beer tastes especially good on a hot day",
+        "japanese": "暑い日の生ビールの味は格別だ。",
+        "english": "Beer tastes especially good on a hot day.",
         "nouns": [
-            "暑い",
             "日",
             "生",
             "ビール",
@@ -634,12 +632,13 @@
             "格別"
         ],
         "conjugations": [
+            "暑い",
             "だ"
         ]
     },
     {
         "japanese": "私は砂糖なしで紅茶を飲みます。",
-        "english": "I drink tea without sugar",
+        "english": "I drink tea without sugar.",
         "nouns": [
             "私",
             "砂糖",
@@ -651,18 +650,19 @@
     },
     {
         "japanese": "このワインすごく美味しい。",
-        "english": "This wine is extremely delicious",
+        "english": "This wine is extremely delicious.",
         "nouns": [
-            "ワイン"
+            "この",
+            "ワイン",
+            "すごく"
         ],
         "conjugations": [
-            "すごく",
             "美味しい"
         ]
     },
     {
         "japanese": "魚は水の中で暮らす。",
-        "english": "Fish live in the water",
+        "english": "Fish live in the water.",
         "nouns": [
             "魚",
             "水",
@@ -674,7 +674,7 @@
     },
     {
         "japanese": "猫は、肉より魚を好む。",
-        "english": "Cats like fish more than meat",
+        "english": "Cats like fish more than meat.",
         "nouns": [
             "猫",
             "肉",
@@ -686,7 +686,7 @@
     },
     {
         "japanese": "近頃牛肉は高い。",
-        "english": "Beef is expensive nowadays",
+        "english": "Beef is expensive nowadays.",
         "nouns": [
             "近頃",
             "牛肉"
@@ -697,7 +697,7 @@
     },
     {
         "japanese": "フォークで豚肉を食べます。",
-        "english": "I eat pork with a fork",
+        "english": "I eat pork with a fork.",
         "nouns": [
             "フォーク",
             "豚肉"
@@ -707,19 +707,19 @@
         ]
     },
     {
-        "japanese": "豚は太いです。",
-        "english": "The pig is fat",
+        "japanese": "豚は太いです",
+        "english": "The pig is fat.",
         "nouns": [
-            "豚"
+            "豚",
+            "太"
         ],
         "conjugations": [
-            "太い",
             "です"
         ]
     },
     {
         "japanese": "彼女は鶏肉を買った。",
-        "english": "She bought chicken",
+        "english": "She bought chicken.",
         "nouns": [
             "彼女",
             "鶏肉"
@@ -733,26 +733,25 @@
         "english": "Which came first, the chicken or the egg?",
         "nouns": [
             "鶏",
-            "先",
-            "卵"
+            "卵",
+            "先"
         ],
         "conjugations": []
     },
     {
-        "japanese": "看護婦は病人の世話をする",
-        "english": "Nurses take care of sick people",
+        "japanese": "看護婦は病人の世話をする。",
+        "english": "Nurses take care of sick people.",
         "nouns": [
             "看護婦",
-            "病人",
-            "世話"
+            "病人"
         ],
         "conjugations": [
-            "する"
+            "世話をする"
         ]
     },
     {
         "japanese": "私は銀行員です。",
-        "english": "I'm a bank employee",
+        "english": "I'm a bank employee.",
         "nouns": [
             "私",
             "銀行",
@@ -764,30 +763,30 @@
     },
     {
         "japanese": "警官は青いユニフォームを着ている。",
-        "english": "Police officers wear blue uniforms",
+        "english": "Police officers wear blue uniforms.",
         "nouns": [
             "警官",
-            "青い",
             "ユニフォーム"
         ],
         "conjugations": [
+            "青い",
             "着ている"
         ]
     },
     {
         "japanese": "医者はすぐに来た。",
-        "english": "The doctor came immediately",
+        "english": "The doctor came immediately.",
         "nouns": [
-            "医者"
+            "医者",
+            "すぐ"
         ],
         "conjugations": [
-            "来た",
-            "すぐ"
+            "来た"
         ]
     },
     {
         "japanese": "彼らは先生です。",
-        "english": "They are teachers",
+        "english": "They are teachers.",
         "nouns": [
             "彼ら",
             "先生"
@@ -798,7 +797,7 @@
     },
     {
         "japanese": "母は音楽が大好きです。",
-        "english": "My mother loves music",
+        "english": "My mother loves music.",
         "nouns": [
             "母",
             "音楽",
@@ -809,10 +808,10 @@
         ]
     },
     {
-        "japanese": "貴方のお父さんは背が高い。",
-        "english": "Your father is tall",
+        "japanese": "あなたのお父さんは背が高い。",
+        "english": "Your father is tall.",
         "nouns": [
-            "貴方",
+            "あなた",
             "父",
             "背"
         ],
@@ -822,7 +821,7 @@
     },
     {
         "japanese": "弟はテレビを見ている。",
-        "english": "My younger brother is watching TV",
+        "english": "My younger brother is watching TV.",
         "nouns": [
             "弟",
             "テレビ"
@@ -833,10 +832,9 @@
     },
     {
         "japanese": "妹は有名だ。",
-        "english": "My younger sister is famous",
+        "english": "My younger sister is famous.",
         "nouns": [
-            "妹",
-            "有名"
+            "妹"
         ],
         "conjugations": [
             "だ"
@@ -844,10 +842,10 @@
     },
     {
         "japanese": "姉はとても早く泳げる。",
-        "english": "My older sister swims very fast",
+        "english": "My older sister swims very fast.",
         "nouns": [
             "姉",
-            "とても"
+            "早"
         ],
         "conjugations": [
             "早く",
@@ -856,7 +854,7 @@
     },
     {
         "japanese": "兄は教師です。",
-        "english": "My older brother is a teacher",
+        "english": "My older brother is a teacher.",
         "nouns": [
             "兄",
             "教師"
@@ -866,10 +864,10 @@
         ]
     },
     {
-        "japanese": "私たちは親しい友達です。",
-        "english": "We're close friends",
+        "japanese": "私達は親しい友達です。",
+        "english": "We're close friends.",
         "nouns": [
-            "私たち",
+            "私達",
             "友達"
         ],
         "conjugations": [
@@ -879,7 +877,7 @@
     },
     {
         "japanese": "私を見なさい。",
-        "english": "Look at me",
+        "english": "Look at me.",
         "nouns": [
             "私"
         ],
@@ -900,19 +898,19 @@
     },
     {
         "japanese": "彼は良い人です。",
-        "english": "He is a nice person",
+        "english": "He is a nice person.",
         "nouns": [
             "彼",
-            "良い",
             "人"
         ],
         "conjugations": [
+            "良い",
             "です"
         ]
     },
     {
         "japanese": "彼女は猫が大好きだ。",
-        "english": "She adores cats",
+        "english": "She adores cats.",
         "nouns": [
             "彼女",
             "猫",
@@ -923,9 +921,10 @@
         ]
     },
     {
-        "japanese": "その人は大学の先生です",
-        "english": "That person is a teacher at the university",
+        "japanese": "その人は大学の先生です。",
+        "english": "That person is a teacher at the university.",
         "nouns": [
+            "その",
             "人",
             "大学",
             "先生"
@@ -935,8 +934,8 @@
         ]
     },
     {
-        "japanese": "剣道で新しい本を読みます",
-        "english": "I read a new book about kendo",
+        "japanese": "剣道についての新しい本を読みます。",
+        "english": "I read a new book about kendo.",
         "nouns": [
             "剣道",
             "本"
@@ -948,7 +947,7 @@
     },
     {
         "japanese": "私は父と一緒に雪の中で森を歩いていました。",
-        "english": "I used to walk in the forest in the snow with my father.",
+        "english": "I used to walk in the forests in the snow with my father.",
         "nouns": [
             "私",
             "父",
@@ -958,12 +957,170 @@
             "森"
         ],
         "conjugations": [
-            "歩いて",
-            "いました"
+            "歩いていました"
         ]
     },
     {
-        "japanese": "家を買ったことが幸せです。",
+        "japanese": "雪は冬に降る。",
+        "english": "Snow falls in winter.",
+        "nouns": [
+            "雪",
+            "冬"
+        ],
+        "conjugations": [
+            "降る"
+        ]
+    },
+    {
+        "japanese": "母は私たちに食事を作ります。",
+        "english": "My mother makes a meal for us.",
+        "nouns": [
+            "母",
+            "私たち",
+            "食事"
+        ],
+        "conjugations": [
+            "作ります"
+        ]
+    },
+    {
+        "japanese": "彼女は本を持っています。",
+        "english": "She is holding a book.",
+        "nouns": [
+            "彼女",
+            "本"
+        ],
+        "conjugations": [
+            "持っています"
+        ]
+    },
+    {
+        "japanese": "あの女性は私の姉です。",
+        "english": "That woman is my older sister.",
+        "nouns": [
+            "あの",
+            "女性",
+            "私",
+            "姉"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "妹は十歳です。",
+        "english": "My younger sister is ten years old.",
+        "nouns": [
+            "妹",
+            "十",
+            "歳"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "私は卵を食べました。",
+        "english": "I ate an egg.",
+        "nouns": [
+            "私",
+            "卵"
+        ],
+        "conjugations": [
+            "食べました"
+        ]
+    },
+    {
+        "japanese": "今日は何曜日ですか。",
+        "english": "What day is today?",
+        "nouns": [
+            "今日",
+            "何",
+            "日"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "彼女は九時に来る。",
+        "english": "She will come at nine.",
+        "nouns": [
+            "彼女",
+            "九",
+            "時"
+        ],
+        "conjugations": [
+            "来る"
+        ]
+    },
+    {
+        "japanese": "月が綺麗ですね。",
+        "english": "The moon looks beautiful.",
+        "nouns": [
+            "月",
+            "綺麗"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "明日は大学に行きます。",
+        "english": "I will go to the university tomorrow.",
+        "nouns": [
+            "明日",
+            "大学"
+        ],
+        "conjugations": [
+            "行きます"
+        ]
+    },
+    {
+        "japanese": "彼の手は大きい",
+        "english": "His hands are big.",
+        "nouns": [
+            "彼",
+            "手"
+        ],
+        "conjugations": [
+            "大きい"
+        ]
+    },
+    {
+        "japanese": "私は英語を勉強します。",
+        "english": "I study English.",
+        "nouns": [
+            "私",
+            "英語",
+            "勉強"
+        ],
+        "conjugations": [
+            "します"
+        ]
+    },
+    {
+        "japanese": "猫が眠っています。",
+        "english": "A cat sleeps in the house.",
+        "nouns": [
+            "猫"
+        ],
+        "conjugations": [
+            "眠っています"
+        ]
+    },
+    {
+        "japanese": "人生は短い。",
+        "english": "Life is short.",
+        "nouns": [
+            "人生"
+        ],
+        "conjugations": [
+            "短い"
+        ]
+    },
+    {
+        "japanese": "私は家を買ったことが幸せです。",
         "english": "I am happy to have bought a house.",
         "nouns": [
             "私",
@@ -971,7 +1128,966 @@
             "幸せ"
         ],
         "conjugations": [
-            "買った"
+            "買った",
+            "です"
+        ]
+    },
+    {
+        "japanese": "彼はその部屋にいます。",
+        "english": "He is in that room.",
+        "nouns": [
+            "彼",
+            "部屋"
+        ],
+        "conjugations": [
+            "います"
+        ]
+    },
+    {
+        "japanese": "朝九時ですでに摂氏二十度だった。",
+        "english": "It was already 20 degrees celsius at 9 o'clock in the morning.",
+        "nouns": [
+            "朝",
+            "九",
+            "時",
+            "摂氏",
+            "二十",
+            "度"
+        ],
+        "conjugations": [
+            "です",
+            "だった"
+        ]
+    },
+    {
+        "japanese": "今日は十度です。",
+        "english": "It's ten degrees today.",
+        "nouns": [
+            "今日",
+            "十",
+            "度"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "冬の朝は水が凍る。",
+        "english": "Water freezes on winter mornings.",
+        "nouns": [
+            "冬",
+            "朝",
+            "水"
+        ],
+        "conjugations": [
+            "凍る"
+        ]
+    },
+    {
+        "japanese": "来週会いましょう。",
+        "english": "See you next week.",
+        "nouns": [
+            "来週"
+        ],
+        "conjugations": [
+            "会いましょう"
+        ]
+    },
+    {
+        "japanese": "明日から学校が始まる。",
+        "english": "School is starting tomorrow.",
+        "nouns": [
+            "明日",
+            "学校"
+        ],
+        "conjugations": [
+            "始まる"
+        ]
+    },
+    {
+        "japanese": "朝は涼しい。",
+        "english": "It's cool in the morning.",
+        "nouns": [
+            "朝"
+        ],
+        "conjugations": [
+            "涼しい"
+        ]
+    },
+    {
+        "japanese": "雨が降り始めた。",
+        "english": "It started to rain.",
+        "nouns": [
+            "雨"
+        ],
+        "conjugations": [
+            "降り",
+            "始めた"
+        ]
+    },
+    {
+        "japanese": "確かにそうですね。",
+        "english": "That is certainly true.",
+        "nouns": [
+            "確かに"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "仕事の後に会いましょう。",
+        "english": "See you after work.",
+        "nouns": [
+            "仕事",
+            "後"
+        ],
+        "conjugations": [
+            "会いましょう"
+        ]
+    },
+    {
+        "japanese": "彼らは養子をとって親になった。",
+        "english": "They became parents by adopting.",
+        "nouns": [
+            "彼ら",
+            "養子",
+            "親"
+        ],
+        "conjugations": [
+            "なった"
+        ]
+    },
+    {
+        "japanese": "今日私は給料を受け取りました。",
+        "english": "I received my wages today.",
+        "nouns": [
+            "今日",
+            "私",
+            "給料"
+        ],
+        "conjugations": [
+            "取りました"
+        ]
+    },
+    {
+        "japanese": "今日は映画館に行きましょう。",
+        "english": "Let's go to the cinema today.",
+        "nouns": [
+            "今日",
+            "映画館"
+        ],
+        "conjugations": [
+            "行きましょう"
+        ]
+    },
+    {
+        "japanese": "後で行きます。",
+        "english": "I will go later.",
+        "nouns": [
+            "後"
+        ],
+        "conjugations": [
+            "行きます"
+        ]
+    },
+    {
+        "japanese": "学校は大抵三時に終わります。",
+        "english": "School usually finish at three.",
+        "nouns": [
+            "学校",
+            "三時"
+        ],
+        "conjugations": [
+            "終わります"
+        ]
+    },
+    {
+        "japanese": "彼は本を読むのが好きです。",
+        "english": "He likes to read books.",
+        "nouns": [
+            "彼",
+            "本"
+        ],
+        "conjugations": [
+            "読む",
+            "です"
+        ]
+    },
+    {
+        "japanese": "彼は映画館で眠っていた。",
+        "english": "He was sleeping in the cinema.",
+        "nouns": [
+            "彼",
+            "映画館"
+        ],
+        "conjugations": [
+            "眠っていた"
+        ]
+    },
+    {
+        "japanese": "電車で行きます。",
+        "english": "I will go by train.",
+        "nouns": [
+            "電車"
+        ],
+        "conjugations": [
+            "行きます"
+        ]
+    },
+    {
+        "japanese": "その電車はもうすぐ出発します。",
+        "english": "The train will depart soon.",
+        "nouns": [
+            "電車",
+            "出発"
+        ],
+        "conjugations": [
+            "します",
+            "すぐ"
+        ]
+    },
+    {
+        "japanese": "私は仕事の後に剣道をします。",
+        "english": "I do kendo after work.",
+        "nouns": [
+            "私",
+            "仕事",
+            "剣道"
+        ],
+        "conjugations": [
+            "します"
+        ]
+    },
+    {
+        "japanese": "時計が壊れた。",
+        "english": "The clock was broken.",
+        "nouns": [
+            "時計"
+        ],
+        "conjugations": [
+            "壊れた"
+        ]
+    },
+    {
+        "japanese": "時計の秒針が止まった。",
+        "english": "The clock's second hand stopped.",
+        "nouns": [
+            "時計",
+            "秒針"
+        ],
+        "conjugations": [
+            "止まった"
+        ]
+    },
+    {
+        "japanese": "骨折は痛そうだ。",
+        "english": "The bone fracture looks painful.",
+        "nouns": [
+            "骨折"
+        ],
+        "conjugations": [
+            "痛そう",
+            "だ"
+        ]
+    },
+    {
+        "japanese": "いつ学校に来ますか？",
+        "english": "When do you come to school?",
+        "nouns": [
+            "いつ",
+            "学校"
+        ],
+        "conjugations": [
+            "来ます"
+        ]
+    },
+    {
+        "japanese": "仕事が終わった。",
+        "english": "I finished working.",
+        "nouns": [
+            "仕事"
+        ],
+        "conjugations": [
+            "終わった"
+        ]
+    },
+    {
+        "japanese": "桜はもうすぐ咲きます。",
+        "english": "Sakura will bloom soon.",
+        "nouns": [
+            "桜"
+        ],
+        "conjugations": [
+            "すぐ",
+            "咲きます"
+        ]
+    },
+    {
+        "japanese": "桜は四月に咲きます。",
+        "english": "Sakura blooms in April.",
+        "nouns": [
+            "桜",
+            "四月"
+        ],
+        "conjugations": [
+            "咲きます"
+        ]
+    },
+    {
+        "japanese": "今日は銀行に行きます。",
+        "english": "I will go to the bank today.",
+        "nouns": [
+            "今日",
+            "銀行"
+        ],
+        "conjugations": [
+            "行きます"
+        ]
+    },
+    {
+        "japanese": "明日は彼女の誕生日です。",
+        "english": "Tomorrow is her birthday.",
+        "nouns": [
+            "明日",
+            "彼女",
+            "誕生日"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "日本では七月と八月が夏です。",
+        "english": "In Japan, July and August are summer.",
+        "nouns": [
+            "日本",
+            "七月",
+            "八月",
+            "夏"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "今日は暑いですね。",
+        "english": "It's hot today.",
+        "nouns": [
+            "今日"
+        ],
+        "conjugations": [
+            "暑い",
+            "です"
+        ]
+    },
+    {
+        "japanese": "日照りの後に降る雨。",
+        "english": "The rain falls after a period of dry weather.",
+        "nouns": [
+            "日照り",
+            "雨"
+        ],
+        "conjugations": [
+            "降る"
+        ]
+    },
+    {
+        "japanese": "森林は涼しい。",
+        "english": "It's cool in the forest.",
+        "nouns": [
+            "森林"
+        ],
+        "conjugations": [
+            "涼しい"
+        ]
+    },
+    {
+        "japanese": "私は日本が好きです。",
+        "english": "I like Japan.",
+        "nouns": [
+            "私",
+            "日本"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "朝の森林は格別に綺麗だ。",
+        "english": "Forest is beautiful, especially in the morning.",
+        "nouns": [
+            "朝",
+            "森林",
+            "格別"
+        ],
+        "conjugations": [
+            "綺麗",
+            "だ"
+        ]
+    },
+    {
+        "japanese": "彼女は綺麗だ。",
+        "english": "She is beautiful.",
+        "nouns": [
+            "彼女"
+        ],
+        "conjugations": [
+            "だ"
+        ]
+    },
+    {
+        "japanese": "私は少し寝ます。",
+        "english": "I will sleep a little.",
+        "nouns": [
+            "私"
+        ],
+        "conjugations": [
+            "少し",
+            "寝ます"
+        ]
+    },
+    {
+        "japanese": "その部屋は暖かかった。",
+        "english": "It was warm in the room.",
+        "nouns": [
+            "その",
+            "部屋"
+        ],
+        "conjugations": [
+            "暖かかった"
+        ]
+    },
+    {
+        "japanese": "私はそれが良いと思う。",
+        "english": "I think that's good.",
+        "nouns": [
+            "私",
+            "それ"
+        ],
+        "conjugations": [
+            "良い",
+            "思う"
+        ]
+    },
+    {
+        "japanese": "右手で持ってください。",
+        "english": "Hold it with your right hand.",
+        "nouns": [
+            "右手"
+        ],
+        "conjugations": [
+            "持って"
+        ]
+    },
+    {
+        "japanese": "左に行くと私たちの家があります。",
+        "english": "Go to the left and you will find our home.",
+        "nouns": [
+            "左",
+            "私",
+            "家"
+        ],
+        "conjugations": [
+            "あります"
+        ]
+    },
+    {
+        "japanese": "骨折は痛そうだ。",
+        "english": "The bone fracture looks painful.",
+        "nouns": [
+            "骨折"
+        ],
+        "conjugations": [
+            "痛そう",
+            "だ"
+        ]
+    },
+    {
+        "japanese": "気をつけて家に帰ってね。",
+        "english": "Take care getting home.",
+        "nouns": [
+            "家"
+        ],
+        "conjugations": [
+            "帰って"
+        ]
+    },
+    {
+        "japanese": "彼は彼女のために食事を作った。",
+        "english": "He made a meal for her.",
+        "nouns": [
+            "彼",
+            "彼女",
+            "食事"
+        ],
+        "conjugations": [
+            "作った"
+        ]
+    },
+    {
+        "japanese": "私より先に行ってください。",
+        "english": "You can go before me.",
+        "nouns": [
+            "私"
+        ],
+        "conjugations": [
+            "行って"
+        ]
+    },
+    {
+        "japanese": "手を洗いましたか？",
+        "english": "Did you wash your hands?",
+        "nouns": [
+            "手"
+        ],
+        "conjugations": [
+            "洗いました"
+        ]
+    },
+    {
+        "japanese": "その魚は小さい。",
+        "english": "That fish is small.",
+        "nouns": [
+            "その",
+            "魚"
+        ],
+        "conjugations": [
+            "小さい"
+        ]
+    },
+    {
+        "japanese": "彼女はフォークとナイフで肉を切った。",
+        "english": "She cut the meat with a knife and fork.",
+        "nouns": [
+            "彼女",
+            "フォーク",
+            "ナイフ",
+            "肉"
+        ],
+        "conjugations": [
+            "切った"
+        ]
+    },
+    {
+        "japanese": "私はあまり運動しない。",
+        "english": "I don't really exercise.",
+        "nouns": [
+            "私"
+        ],
+        "conjugations": [
+            "しない"
+        ]
+    },
+    {
+        "japanese": "私の母は強い人でした。",
+        "english": "My mother was a strong person.",
+        "nouns": [
+            "母",
+            "人"
+        ],
+        "conjugations": [
+            "強い",
+            "した"
+        ]
+    },
+    {
+        "japanese": "父は心臓病だ。",
+        "english": "My father has a heart trouble.",
+        "nouns": [
+            "父",
+            "心臓",
+            "病"
+        ],
+        "conjugations": [
+            "だ"
+        ]
+    },
+    {
+        "japanese": "その仕事は七月中ごろに終わります。",
+        "english": "That work will finish about the middle of July.",
+        "nouns": [
+            "仕事",
+            "七月",
+            "中",
+            "その"
+        ],
+        "conjugations": [
+            "終わります"
+        ]
+    },
+    {
+        "japanese": "もう夜になりました。",
+        "english": "It's already night.",
+        "nouns": [
+            "夜"
+        ],
+        "conjugations": [
+            "だ"
+        ]
+    },
+    {
+        "japanese": "もう遅いので行けません。",
+        "english": "It's too late to go.",
+        "nouns": [],
+        "conjugations": [
+            "遅い",
+            "行けません"
+        ]
+    },
+    {
+        "japanese": "彼女は朝に紅茶を飲むのが好きだ。",
+        "english": "She likes to drink tea in the morning.",
+        "nouns": [
+            "彼女",
+            "朝",
+            "紅茶"
+        ],
+        "conjugations": [
+            "飲む",
+            "だ"
+        ]
+    },
+    {
+        "japanese": "この味は好きですか？",
+        "english": "Do you like this flavour?",
+        "nouns": [
+            "この",
+            "味"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "今日の朝は格別に寒い。",
+        "english": "It is especially cold this morning.",
+        "nouns": [
+            "今日",
+            "朝",
+            "格別"
+        ],
+        "conjugations": [
+            "寒い"
+        ]
+    },
+    {
+        "japanese": "砂糖を入れた紅茶は美味しい。",
+        "english": "Tea with sugar is delicious.",
+        "nouns": [
+            "砂糖",
+            "紅茶"
+        ],
+        "conjugations": [
+            "美味しい"
+        ]
+    },
+    {
+        "japanese": "そのコーヒーは美味しかった。",
+        "english": "That coffee was delicious.",
+        "nouns": [
+            "その",
+            "コーヒー"
+        ],
+        "conjugations": [
+            "美味しかった"
+        ]
+    },
+    {
+        "japanese": "いつか森林で暮らしたい。",
+        "english": "I want to live in forest someday.",
+        "nouns": [
+            "いつか",
+            "森林"
+        ],
+        "conjugations": [
+            "暮らしたい"
+        ]
+    },
+    {
+        "japanese": "肉と魚、どちらが好きですか？",
+        "english": "Which do you like, meat or fish?",
+        "nouns": [
+            "肉",
+            "魚",
+            "好き",
+            "どちら"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "彼女は犬より猫を好む。",
+        "english": "She likes cats more than dogs.",
+        "nouns": [
+            "彼女",
+            "犬",
+            "猫"
+        ],
+        "conjugations": [
+            "好む"
+        ]
+    },
+    {
+        "japanese": "彼は背が高い, その肉は高い。",
+        "english": "He is tall, that meat is expensive.",
+        "nouns": [
+            "彼",
+            "背",
+            "肉",
+            "その"
+        ],
+        "conjugations": [
+            "高い"
+        ]
+    },
+    {
+        "japanese": "近頃よく雨が降る。",
+        "english": "Recently it rains a lot.",
+        "nouns": [
+            "雨",
+            "近頃"
+        ],
+        "conjugations": [
+            "降る"
+        ]
+    },
+    {
+        "japanese": "遅い時間に食べるのは良くない。",
+        "english": "Eating late is not good.",
+        "nouns": [
+            "時間"
+        ],
+        "conjugations": [
+            "遅い",
+            "食べる",
+            "良くない"
+        ]
+    },
+    {
+        "japanese": "彼女は少し太った。",
+        "english": "She got a little fat.",
+        "nouns": [
+            "彼女"
+        ],
+        "conjugations": [
+            "少し",
+            "太った"
+        ]
+    },
+    {
+        "japanese": "私は本を買いたい。",
+        "english": "I want to buy a book.",
+        "nouns": [
+            "私",
+            "本"
+        ],
+        "conjugations": [
+            "買いたい"
+        ]
+    },
+    {
+        "japanese": "彼は先に来た。",
+        "english": "He arrived first.",
+        "nouns": [
+            "彼"
+        ],
+        "conjugations": [
+            "来た"
+        ]
+    },
+    {
+        "japanese": "病人が眠っている。",
+        "english": "The sick person is sleeping.",
+        "nouns": [
+            "病人"
+        ],
+        "conjugations": [
+            "眠っている"
+        ]
+    },
+    {
+        "japanese": "母は子供の世話をする。",
+        "english": "Mother takes care of the kids.",
+        "nouns": [
+            "母",
+            "子供"
+        ],
+        "conjugations": [
+            "世話をする"
+        ]
+    },
+    {
+        "japanese": "水は青く見える。",
+        "english": "The water looks blue.",
+        "nouns": [
+            "水"
+        ],
+        "conjugations": [
+            "見える"
+        ]
+    },
+    {
+        "japanese": "ユニフォームを着て学校へ行きます。",
+        "english": "I go to school wearing my uniform.",
+        "nouns": [
+            "ユニフォーム",
+            "学校"
+        ],
+        "conjugations": [
+            "行きます"
+        ]
+    },
+    {
+        "japanese": "父は十二月に日本に来ます。",
+        "english": "My father will come to Japan in December.",
+        "nouns": [
+            "父",
+            "十二月",
+            "日本"
+        ],
+        "conjugations": [
+            "来ます"
+        ]
+    },
+    {
+        "japanese": "兄は部屋で音楽を聴いています。",
+        "english": "My older brother is listening music in his room.",
+        "nouns": [
+            "兄",
+            "部屋",
+            "音楽"
+        ],
+        "conjugations": [
+            "聴いています"
+        ]
+    },
+    {
+        "japanese": "その猫はとても愛らしい。",
+        "english": "That cat is very lovable.",
+        "nouns": [
+            "その",
+            "猫"
+        ],
+        "conjugations": [
+            "とても",
+            "愛らしい"
+        ]
+    },
+    {
+        "japanese": "私は夜テレビを見ます。",
+        "english": "I watch TV at night.",
+        "nouns": [
+            "私",
+            "夜",
+            "テレビ"
+        ],
+        "conjugations": [
+            "見ます"
+        ]
+    },
+    {
+        "japanese": "日本の桜は有名です。",
+        "english": "Japanese Sakura is famous.",
+        "nouns": [
+            "日本",
+            "桜",
+            "有名"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "彼はとても早く泳ぎます。",
+        "english": "He swims very fast.",
+        "nouns": [
+            "彼"
+        ],
+        "conjugations": [
+            "とても",
+            "早く",
+            "泳ぎます"
+        ]
+    },
+    {
+        "japanese": "私は泳ぐのが好きです。",
+        "english": "I like to swim.",
+        "nouns": [
+            "私",
+            "泳ぐ",
+            "好き"
+        ],
+        "conjugations": [
+            "です"
+        ]
+    },
+    {
+        "japanese": "彼女と彼は親しい友達です。",
+        "english": "He and she are close friends.",
+        "nouns": [
+            "彼女",
+            "彼",
+            "友達"
+        ],
+        "conjugations": [
+            "親しい",
+            "です"
+        ]
+    },
+    {
+        "japanese": "幸せは買うことができない。",
+        "english": "You cannot buy happiness.",
+        "nouns": [
+            "幸せ"
+        ],
+        "conjugations": [
+            "買う",
+            "できない"
+        ]
+    },
+    {
+        "japanese": "この本良いね。",
+        "english": "This book is good.",
+        "nouns": [
+            "本",
+            "この"
+        ],
+        "conjugations": [
+            "良いね"
+        ]
+    },
+    {
+        "japanese": "彼はそこにいます。",
+        "english": "He is there.",
+        "nouns": [
+            "そこ",
+            "彼"
+        ],
+        "conjugations": [
+            "います"
+        ]
+    },
+    {
+        "japanese": "来年日本に行きます。",
+        "english": "I wil go to Japan next year.",
+        "nouns": [
+            "来年",
+            "日本"
+        ],
+        "conjugations": [
+            "行きます"
+        ]
+    },
+    {
+        "japanese": "森林を歩く。",
+        "english": "I walk in the forest.",
+        "nouns": [
+            "森林"
+        ],
+        "conjugations": [
+            "歩く"
         ]
     }
 ]

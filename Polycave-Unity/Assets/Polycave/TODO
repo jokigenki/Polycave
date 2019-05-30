@@ -1,43 +1,15 @@
-Conjugations are not appearing?
+Sachi's concepts
 
-Popup system
+Romaji layer above hiragana
 
-Bag?
+If there is no kanji, the kana should appear in its place
 
-Buttons should layout in centre if only one
+Adjust text in bubbles to better fit 4 lines of text
 
-compounds are not ordered as their sentence
+Colours for kanji/word/sentence
 
-Selection highlight?
+A button to take you to a random area
 
-Add biome tags to learningsetitems and use these to display the correct panorama
+Improve look of panels
 
-Links between items
-- Sentence -> Compound - Example sentences should be marked up with compounds so we know where they are. Take this list and check whether we have the compounds stored in data
-- Compound -> Sentence - Each compound should be linked to a single sentences
-- Compound -> Kanji - Search the kanji data set for the kanji in the compound (they should all be present)
-- Kanji -> Compound - Search the compound data set for the kanji
-- Kanji -> Radical - Each kanji should contain a list of the radicals it contains
-- Radical -> Kanji - Search the kanji data set for any kanji containing this radical 
-
-1 Intro
-2 User is placed in Kanji room
-3 They "play" a game (just a popup for now)
-4 They can then move up, down or across (i.e. up to a compound, down to radicals)
-5 This is done by choosing a rune from their bag (for now just buttons)
-6 This makes the choices appear as bubbles
-7 Selecting a bubble warps the user into that bubble, and the cycle repeats from 2.
-8 The user can select a different rune to see a different choice, or cancel to remove all the choices.
-
-
-We first display a multi layer text display, which is used for sentence, compound, kanji
-We display 1 or 2 runes, up and down, sentences has only down, kanji has only up, compounds that have no kanji only have up
-Clicking a rune:
-Kanji: the display vanishes, and is replaced by bubbles containing all of the available compounds
-Compound down: the display vanishes, and bubbles animate in for each of the kanji parts of the compound
-Compound up: the display vanishes, and bubbles animate in for each available sentence
-Sentence down: the display vanishes, and each compound in the sentence is replaced by a bubble
-
-character distance is 0.15
-
-cancel rune
+Particles!

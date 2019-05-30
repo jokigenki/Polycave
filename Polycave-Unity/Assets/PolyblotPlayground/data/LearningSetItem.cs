@@ -23,7 +23,7 @@ namespace PolyblotPlayground
             bool hasKanjiList = kanjiList != null && kanjiList.Count > 0;
             if (!hasKanjiList) return false;
             List<string> compounds = kanjiList.SelectMany (k => k.Values).ToList ();
-            return compounds.FirstOrDefault (c => c.Contains (kanji)) != null;
+            return compounds.FirstOrDefault (c => c == kanji) != null;
         }
 
         public bool HasKanji ()
@@ -38,7 +38,7 @@ namespace PolyblotPlayground
             bool hasReadingList = readingList != null && readingList.Count > 0;
             if (!hasReadingList) return false;
             List<string> compounds = readingList.SelectMany (k => k.Values).ToList ();
-            return compounds.FirstOrDefault (c => c.Contains (reading)) != null;
+            return compounds.FirstOrDefault (c => c == reading) != null;
         }
 
         public string FirstKanji ()

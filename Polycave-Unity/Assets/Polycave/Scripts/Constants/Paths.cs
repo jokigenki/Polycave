@@ -9,6 +9,9 @@ public class Paths
     public static string Conjugations = "conjugations.json";
     public static string KanjiToRadicals = "kanji_radicals.json";
     public static string LearningSets = "learning_sets.json";
+    public static string KanjiList = "kanjilist.txt";
+    public static string KanaList = "kanalist.txt";
+    public static string VerbList = "verblist.txt";
 
     public static string GetRadicalsPath ()
     {
@@ -39,4 +42,20 @@ public class Paths
     {
         return Path.Combine (Application.streamingAssetsPath, LearningSets);
     }
+
+    public static string GetKanjiListPath ()
+    {
+        return Path.Combine (Application.streamingAssetsPath, KanjiList);
+    }
+
+    public static string GetKanaListPath ()
+    {
+        return Path.Combine (Application.streamingAssetsPath, KanaList);
+    }
+
+    public static string GetVerbListPath ()
+    {
+        return Path.Combine (Application.streamingAssetsPath, VerbList);
+    }
+
 }

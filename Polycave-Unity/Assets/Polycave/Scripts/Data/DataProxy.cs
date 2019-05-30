@@ -17,8 +17,9 @@ public class DataProxy : MonoBehaviour
     public List<KanjiToRadical> kanjiToRadicals = new List<KanjiToRadical> ();
     public Dictionary<string, LearningSet> learningSets = new Dictionary<string, LearningSet> ();
 
-    public Action onDataLoaded;
-
+    public List<string> kanjiList = new List<string> ();
+    public string kanaList = "";
+    public List<string> verbList = new List<string> ();
     public LearningSet extendedSet;
 
     private LearningSetItem _currentItem;
@@ -35,15 +36,33 @@ public class DataProxy : MonoBehaviour
         yield return LoadRadicals ();
         yield return LoadSentences ();
         yield return LoadKanji ();
+        yield return LoadKanjiList ();
+        yield return LoadKanaList ();
+        yield return LoadVerbList ();
         yield return LoadConjugations ();
         yield return LoadKanjiToRadicals ();
         yield return LoadLearningSets ();
 
         extendedSet = learningSets.Select (kv => kv.Value).Where (s => s.name == "extended").FirstOrDefault ();
 
-        if (onDataLoaded != null) onDataLoaded ();
+        EventBus.Instance.Raise (new DataProxyEvent (DataProxyEventType.Ready));
+        EventBus.Instance.AddListener<DataProxyEvent> (DisplayFirst);
 
-        LearningSetItem startItem = extendedSet.GetItemForCompound ("一");
+        OVRManager.HMDUnmounted += HandleHMDUnmounted;
+
+        LearningSetItem item = extendedSet.GetItemForCompound ("する");
+        Debug.Log (item);
+    }
+
+    void HandleHMDUnmounted ()
+    {
+        EventBus.Instance.Raise (new DataProxyEvent (DataProxyEventType.Reset));
+    }
+
+    public void DisplayFirst (DataProxyEvent e)
+    {
+        if (e.type != DataProxyEventType.Start) return;
+        LearningSetItem startItem = extendedSet.GetItemForCompound ("勉強");
         SetCurrentData (startItem);
     }
 
@@ -65,7 +84,6 @@ public class DataProxy : MonoBehaviour
         else if (data is Kanji)
         {
             _currentKanji = data as Kanji;
-            Debug.Log ($"Get compounds for {_currentKanji}");
             EventBus.Instance.Raise (new DataProxySelectionEvent (_currentKanji, NavType.Display, extendedSet.GetItemsForKanji (_currentKanji)));
         }
     }
@@ -85,6 +103,33 @@ public class DataProxy : MonoBehaviour
         yield return DataUtils.LoadJson<List<Kanji>> (path, (List<Kanji> list) =>
         {
             kanji = list;
+        });
+    }
+
+    public IEnumerator LoadKanjiList ()
+    {
+        string path = Paths.GetKanjiListPath ();
+        yield return DataUtils.FileToString (path, (string str) =>
+        {
+            kanjiList = str.Select (s => $"{s}").ToList ();
+        });
+    }
+
+    public IEnumerator LoadKanaList ()
+    {
+        string path = Paths.GetKanaListPath ();
+        yield return DataUtils.FileToString (path, (string str) =>
+        {
+            kanaList = str;
+        });
+    }
+
+    public IEnumerator LoadVerbList ()
+    {
+        string path = Paths.GetVerbListPath ();
+        yield return DataUtils.FileToString (path, (string str) =>
+        {
+            verbList = str.Split (',').ToList ();
         });
     }
 
@@ -180,9 +225,36 @@ public class DataProxy : MonoBehaviour
         List<string> kanji = sentence.nouns.Union (sentence.conjugations.Select (c => GetDictionaryFormForConjugation (c))).ToList ();
         List<LearningSetItem> items = extendedSet.GetItemsInKanjiList (kanji);
 
-        if (items.Count > 5) items = Randomer.FromList (items, 5);
+        if (items.Count > 5)
+        {
+            items = Randomer.FromList (items, 5);
+        }
         return items;
     }
+
+    public bool IsKanaOnly (string value)
+    {
+        foreach (char v in value)
+            if (!kanaList.Contains (v)) return false;
+        return true;
+    }
+}
+
+public class DataProxyEvent : GameEvent
+{
+    public DataProxyEventType type;
+
+    public DataProxyEvent (DataProxyEventType type)
+    {
+        this.type = type;
+    }
+}
+
+public enum DataProxyEventType
+{
+    Ready,
+    Start,
+    Reset
 }
 
 public class DataProxyChoicesEvent : GameEvent

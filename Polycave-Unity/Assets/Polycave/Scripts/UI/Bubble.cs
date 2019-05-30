@@ -12,6 +12,7 @@ public class Bubble : MonoBehaviour
     private GameObject _outside;
     private SpriteRenderer _bg;
     private Texture _texture;
+    public int environmentIndex;
     private TextDisplay _textDisplay;
     private GameObject _highlight;
     private SelectionReactor _reactor;
@@ -71,10 +72,11 @@ public class Bubble : MonoBehaviour
         }
     }
 
-    public void DisplayAsBubble (System.Object data, Texture texture, Action<SelectionReactor> selectionAction)
+    public void DisplayAsBubble (System.Object data, int environmentIndex, Texture texture, Action<SelectionReactor> selectionAction)
     {
         _textDisplay.DisplayData (data);
         SetTexture (texture);
+        this.environmentIndex = environmentIndex;
         _bg.enabled = false;
         _inside.SetActive (true);
         _outside.SetActive (true);

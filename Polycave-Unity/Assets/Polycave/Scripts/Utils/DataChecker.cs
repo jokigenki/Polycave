@@ -13,16 +13,48 @@ public class DataChecker : MonoBehaviour
     void Start ()
     {
 #if UNITY_EDITOR
-        proxy.onDataLoaded += OnDataLoaded;
+        EventBus.Instance.AddListener<DataProxyEvent> (OnDataLoaded);
 #endif
     }
 
-    public void OnDataLoaded ()
+    private void OnDataLoaded (DataProxyEvent e)
     {
-        bool passed = (TestConjugations () &&
-            //            TestNounsAndConjugationsAreInPBPLookupFile () &&
+        if (e.type != DataProxyEventType.Ready) return;
+
+        bool passed = (TestKanji () &&
+            TestConjugations () &&
+            //TestNounsAndConjugationsAreInPBPLookupFile () &&
             TestNounsAndConjugationsArePresentInLearningSets () &&
             TestLearningSets ());
+    }
+
+    private bool TestKanji ()
+    {
+        var result = proxy.kanjiList.Where (k => !proxy.kanji.Any (k2 => k == k2.kanji));
+
+        if (result.Count () == 0)
+        {
+            Debug.Log ("All kanji in list have entries");
+            return true;
+        }
+
+        string errors = $"Kanji list is missing {string.Join(", ", result)}";
+        Debug.Log (errors);
+        return false;
+    }
+
+    private void BuildVerbList ()
+    {
+        List<string> verbList = proxy.verbList;
+        verbList = verbList.Distinct ().ToList ();
+        verbList.Sort ();
+        string path = Paths.GetVerbListPath ();
+        string distinctVerbs = string.Join (",", verbList);
+        using (StreamWriter sw = new StreamWriter (path))
+        {
+            sw.Write (distinctVerbs);
+            Debug.Log ("Wrote verb file, rerun to test data.");
+        }
     }
 
     private bool TestConjugations ()
@@ -98,7 +130,7 @@ public class DataChecker : MonoBehaviour
             string[] missing = allItems.Except (extended).ToArray ();
 
             if (missing.Length == 0) errors = "";
-            else errors = $"{string.Join (",", missing)} were missing from data. ";
+            else errors = $"{string.Join (",", missing)} were missing from pbp lookup. ";
         }
 
         if (errors == "")
@@ -125,12 +157,12 @@ public class DataChecker : MonoBehaviour
         foreach (string item in allItems)
         {
             LearningSetItem lsItem = proxy.extendedSet.GetItemForCompound (item);
-            if (item == null) missingItems.Add (item);
+            if (lsItem == null) missingItems.Add (item);
         }
 
         if (missingItems.Count > 0)
         {
-            errors = $"LearningSet was missing items for {string.Join(", ", missingItems)}";
+            errors = $"LearningSet was missing {missingItems.Count} items for {string.Join(", ", missingItems)}";
         }
 
         if (errors == "")

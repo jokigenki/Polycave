@@ -18,27 +18,29 @@ public class DisplayController : MonoBehaviour
 
     public DataProxy dataProxy;
 
-    public List<Texture> skyBoxes = new List<Texture> ();
-    private Texture _currentSkybox;
-
     private List<GameObject> _currentDisplay = new List<GameObject> ();
     private List<GameObject> _displayPool = new List<GameObject> ();
+
+    private EnvironmentController _environmentController;
 
     private static float d2r = Mathf.PI / 180f;
     public void Start ()
     {
         EventBus.Instance.AddListener<DataProxySelectionEvent> (OnDataProxySelection);
         EventBus.Instance.AddListener<DataProxyChoicesEvent> (OnDataProxyChoices);
+        EventBus.Instance.AddListener<DataProxyEvent> (OnDataProxyEvent);
 
+        _environmentController = GetComponent<EnvironmentController> ();
+#if !UNITY_EDITOR
         laserPointer.laserBeamBehavior = laserBeamBehavior;
-
-        _currentSkybox = RenderSettings.skybox.mainTexture;
+#endif
     }
 
     public void OnDestroy ()
     {
         EventBus.Instance.RemoveListener<DataProxySelectionEvent> (OnDataProxySelection);
         EventBus.Instance.RemoveListener<DataProxyChoicesEvent> (OnDataProxyChoices);
+        EventBus.Instance.RemoveListener<DataProxyEvent> (OnDataProxyEvent);
     }
 
     private void OnDataProxySelection (DataProxySelectionEvent e)
@@ -65,31 +67,28 @@ public class DisplayController : MonoBehaviour
         }
     }
 
+    private void OnDataProxyEvent (DataProxyEvent e)
+    {
+        if (e.type == DataProxyEventType.Reset)
+        {
+            ClearDisplay ();
+        }
+    }
+
     private void DisplayChoices<T> (List<T> choices)
     {
-        Debug.Log ($"Displaying {choices.Count} choices");
         ClearDisplay ();
         float yRot = (((float) choices.Count / 2f) - 0.5f) * -previewPanelSpacing;
-        List<Texture> usedTextures = new List<Texture> ();
-        usedTextures.Add (_currentSkybox);
+        List<int> usedEnvironments = new List<int> ();
         foreach (T choice in choices)
         {
             GameObject go = CreateDisplay (yRot);
             Bubble bub = go.GetComponent<Bubble> ();
-            bub.DisplayAsBubble (choice, GetTexture (usedTextures), OnBubbleSelected);
+            int envIndex = _environmentController.GetEnvironmentIndex (usedEnvironments);
+            Texture tex = _environmentController.GetTextureForIndex (envIndex);
+            bub.DisplayAsBubble (choice, envIndex, tex, OnBubbleSelected);
             yRot += previewPanelSpacing;
         }
-    }
-
-    private Texture GetTexture (List<Texture> usedTextures)
-    {
-        Texture tex = _currentSkybox;
-        while (usedTextures.Contains (tex))
-        {
-            tex = Randomer.FromList (skyBoxes);
-        }
-        usedTextures.Add (tex);
-        return tex;
     }
 
     public void ClearDisplay ()
@@ -135,7 +134,7 @@ public class DisplayController : MonoBehaviour
     {
         Bubble bubble = reactor.GetComponent<Bubble> ();
         Texture texture = bubble.Texture;
-        EventBus.Instance.Raise (new BubbleEvent (texture, reactor.userData));
+        EventBus.Instance.Raise (new BubbleEvent (bubble.environmentIndex, reactor.userData));
         EventBus.Instance.AddListener<NavigationEvent> (OnNavEvent);
     }
 

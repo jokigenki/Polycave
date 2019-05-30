@@ -1367,6 +1367,35 @@
                     "extended"
                 ]
             },
+            "afsaf": {
+                "data": {
+                    "JMdict:2": {
+                        "id": "2",
+                        "kanji": [
+                            {
+                                "kanji": "十二"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "じゅうに"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "Twelve"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 2,
+                "sources": [
+                    "JMdict:2"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
             "DcfIiVPEeEdGPrBf8bH8": {
                 "data": {
                     "JMdict:1404630": {
@@ -1715,7 +1744,7 @@
                         "id": "1472800",
                         "kanji": [
                             {
-                                "kanji": "背なか"
+                                "kanji": "背中"
                             }
                         ],
                         "readings": [
@@ -1728,6 +1757,35 @@
                             {
                                 "gloss": "back (of body)",
                                 "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 54,
+                "sources": [
+                    "JMdict:1472800"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "mnzbxc": {
+                "data": {
+                    "JMdict:1472800": {
+                        "id": "1472800",
+                        "kanji": [
+                            {
+                                "kanji": "背"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "せい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "height, stature"
                             }
                         ]
                     }
@@ -1857,6 +1915,35 @@
                             {
                                 "gloss": "beef",
                                 "partOfSpeech": "&n;, &adj-no;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 58,
+                "sources": [
+                    "JMdict:1231580"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "asdasdas": {
+                "data": {
+                    "JMdict:1231580": {
+                        "id": "1231580",
+                        "kanji": [
+                            {
+                                "kanji": "肉"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "にく"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "meat, flesh"
                             }
                         ]
                     }
@@ -2832,7 +2919,7 @@
                         "id": "1294940",
                         "kanji": [
                             {
-                                "kanji": "才"
+                                "kanji": "歳"
                             }
                         ],
                         "readings": [
@@ -2940,7 +3027,7 @@
                         "id": "1547720",
                         "kanji": [
                             {
-                                "kanji": "來る"
+                                "kanji": "来る"
                             }
                         ],
                         "readings": [
@@ -3357,7 +3444,7 @@
                         "id": "1593100",
                         "kanji": [
                             {
-                                "kanji": "凍おる"
+                                "kanji": "凍る"
                             }
                         ],
                         "readings": [
@@ -3486,7 +3573,7 @@
                         "id": "1205770",
                         "kanji": [
                             {
-                                "kanji": "慥かに"
+                                "kanji": "確かに"
                             }
                         ],
                         "readings": [
@@ -3643,7 +3730,7 @@
                         "id": "1578850",
                         "kanji": [
                             {
-                                "kanji": "往く"
+                                "kanji": "行く"
                             }
                         ],
                         "readings": [
@@ -4361,7 +4448,7 @@
                         "id": "1586420",
                         "kanji": [
                             {
-                                "kanji": "暖い"
+                                "kanji": "暖かい"
                             }
                         ],
                         "readings": [
@@ -4392,7 +4479,7 @@
                         "id": "1589350",
                         "kanji": [
                             {
-                                "kanji": "念う"
+                                "kanji": "思う"
                             }
                         ],
                         "readings": [
@@ -4494,7 +4581,7 @@
                         "id": "1432680",
                         "kanji": [
                             {
-                                "kanji": "甚い"
+                                "kanji": "痛い"
                             }
                         ],
                         "readings": [
@@ -4955,7 +5042,7 @@
                         "id": "1169870",
                         "kanji": [
                             {
-                                "kanji": "呑む"
+                                "kanji": "飲む"
                             }
                         ],
                         "readings": [
@@ -5029,7 +5116,7 @@
                         "id": "1205490",
                         "kanji": [
                             {
-                                "kanji": "各別"
+                                "kanji": "格別"
                             }
                         ],
                         "readings": [
@@ -5124,7 +5211,7 @@
                         "id": "1514940",
                         "kanji": [
                             {
-                                "kanji": "暮す"
+                                "kanji": "暮らす"
                             }
                         ],
                         "readings": [
@@ -5259,7 +5346,7 @@
                         "id": "1242300",
                         "kanji": [
                             {
-                                "kanji": "近ごろ"
+                                "kanji": "近頃"
                             }
                         ],
                         "readings": [
@@ -5290,7 +5377,7 @@
                         "id": "1358280",
                         "kanji": [
                             {
-                                "kanji": "喰べる"
+                                "kanji": "食べる"
                             }
                         ],
                         "readings": [
@@ -5337,6 +5424,35 @@
                             {
                                 "gloss": "to grow fat (stout, plump), to become fat, to gain weight",
                                 "partOfSpeech": "&v5r;, &vi;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 162,
+                "sources": [
+                    "JMdict:1408220"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "asdsaafa": {
+                "data": {
+                    "JMdict:4": {
+                        "id": "4",
+                        "kanji": [
+                            {
+                                "kanji": "太"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "ふとい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "fat, thick"
                             }
                         ]
                     }
@@ -5454,6 +5570,35 @@
                     "extended"
                 ]
             },
+            "kwjehkwejhk": {
+                "data": {
+                    "JMdict:1490360": {
+                        "id": "1490360",
+                        "kanji": [
+                            {
+                                "kanji": "病"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "やまい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "illness, disease"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 165,
+                "sources": [
+                    "JMdict:1490360"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
             "I6Z00uGNgxZw9yokKY53": {
                 "data": {
                     "JMdict:2253800": {
@@ -5484,13 +5629,38 @@
                     "extended"
                 ]
             },
+            "askfjash": {
+                "data": {
+                    "JMdict:1": {
+                        "id": "1",
+                        "readings": [
+                            {
+                                "kana": "する"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to do",
+                                "partOfSpeech": "&vs-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 166,
+                "sources": [
+                    "JMdict:1"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
             "pdgldbeVmLEwAVRH6EQi": {
                 "data": {
                     "JMdict:1381390": {
                         "id": "1381390",
                         "kanji": [
                             {
-                                "kanji": "碧い"
+                                "kanji": "青い"
                             }
                         ],
                         "readings": [
@@ -5605,6 +5775,35 @@
                             {
                                 "gloss": "loveable, very likeable, like very much",
                                 "partOfSpeech": "&adj-na;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 170,
+                "sources": [
+                    "JMdict:1413660"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "asdsafasvzx": {
+                "data": {
+                    "JMdict:1413660": {
+                        "id": "1413660",
+                        "kanji": [
+                            {
+                                "kanji": "好き"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "すき"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "liking, fondness, love"
                             }
                         ]
                     }
@@ -5755,13 +5954,102 @@
                     "extended"
                 ]
             },
+            "oiuuewqr": {
+                "data": {
+                    "JMdict:1880720": {
+                        "id": "1880720",
+                        "kanji": [
+                            {
+                                "kanji": "親しい"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "したしい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "intimate, close (e.g. friend)",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 174,
+                "sources": [
+                    "JMdict:1880720"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "asldkjalskdj": {
+                "data": {
+                    "JMdict:1880720": {
+                        "id": "1880720",
+                        "kanji": [
+                            {
+                                "kanji": "親"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "おや"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "parent, parents"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 174,
+                "sources": [
+                    "JMdict:1880720"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "m0v3KLkN6kU85msVMiv9": {
+                "data": {
+                    "JMdict:1880720": {
+                        "id": "1880720",
+                        "kanji": [
+                            {
+                                "kanji": "友達"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "ともだち"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "friend",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 174,
+                "sources": [
+                    "JMdict:1880720"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
             "0ODIDuv44JFXgOVEzjU3": {
                 "data": {
                     "JMdict:1594060": {
                         "id": "1594060",
                         "kanji": [
                             {
-                                "kanji": "仕合せ"
+                                "kanji": "幸せ"
                             }
                         ],
                         "readings": [
@@ -5792,7 +6080,7 @@
                         "id": "1605820",
                         "kanji": [
                             {
-                                "kanji": "佳い"
+                                "kanji": "良い"
                             }
                         ],
                         "readings": [
@@ -6171,103 +6459,3388 @@
                 "tags": [
                     "extended"
                 ]
+            },
+            "fvrcJVuWeauVD3Qbw2Bu": {
+                "data": {
+                    "JMdict:1514320": {
+                        "id": "1514320",
+                        "kanji": [
+                            {
+                                "kanji": "歩く"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "あるく",
+                                "priority": "ichi1"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to walk",
+                                "partOfSpeech": "&v5k;, &vi;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 189,
+                "sources": [
+                    "JMdict:1514320"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "J9Y56xWyCUTG7HDHGiTg": {
+                "data": {
+                    "JMdict:1163400": {
+                        "id": "1163400",
+                        "kanji": [
+                            {
+                                "kanji": "一緒"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "いっしょ",
+                                "priority": "ichi1, news1, nf02"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "together",
+                                "partOfSpeech": " &n-adv;, &n;, &adj-no;"
+                            },
+                            {
+                                "gloss": "at the same time"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 190,
+                "sources": [
+                    "JMdict:1163400"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "JsYEHW9dExy458ibJ3PN": {
+                "data": {
+                    "JMdict:1362490": {
+                        "id": "1362490",
+                        "kanji": [
+                            {
+                                "kanji": "森"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "もり",
+                                "priority": "ichi1, news1, nf02"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "forest",
+                                "partOfSpeech": " &n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 191,
+                "sources": [
+                    "JMdict:1362490"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "cEhiyvtINZWhrlTHJawc": {
+                "data": {
+                    "JMdict:1223615": {
+                        "id": "1223615",
+                        "readings": [
+                            {
+                                "kana": "あなた"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "you (referring to someone of equal or lower status)",
+                                "partOfSpeech": "&pn;, &adj-no;"
+                            },
+                            {
+                                "gloss": "dear (what a wife calls a husband)"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 1,
+                "sources": [
+                    "JMdict:1223615"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "9buSKrAK2k7FWsQm84fj": {
+                "data": {
+                    "JMdict:1000420": {
+                        "id": "1000420",
+                        "readings": [
+                            {
+                                "kana": "あの"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "that (someone or something distant from both speaker and listener, or situation unfamiliar to both speaker and listener)",
+                                "partOfSpeech": "&adj-pn;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 2,
+                "sources": [
+                    "JMdict:1000420"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "uYb3lzfynWk3FcemqZTe": {
+                "data": {
+                    "JMdict:1576150": {
+                        "id": "1576150",
+                        "kanji": [
+                            {
+                                "kanji": "一人"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "いちにん"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "one person",
+                                "partOfSpeech": "&n;"
+                            },
+                            {
+                                "gloss": "alone, unmarried, solitary"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 3,
+                "sources": [
+                    "JMdict:1576150"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "pNRtO9TH3rkdGGjapbcY": {
+                "data": {
+                    "JMdict:1163400": {
+                        "id": "1163400",
+                        "kanji": [
+                            {
+                                "kanji": "一しょ"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "いっしょ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "together",
+                                "partOfSpeech": "&n-adv;, &n;, &adj-no;"
+                            },
+                            {
+                                "gloss": "at the same time"
+                            },
+                            {
+                                "gloss": "same, identical"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 4,
+                "sources": [
+                    "JMdict:1163400"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "pWQVxWjW2g5AwdE1Q5jT": {
+                "data": {
+                    "JMdict:1188760": {
+                        "id": "1188760",
+                        "readings": [
+                            {
+                                "kana": "いつ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "when, how soon",
+                                "partOfSpeech": "&n-adv;, &pn;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 5,
+                "sources": [
+                    "JMdict:1188760"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "hZl6Bsfj1yZsN6mEl5AW": {
+                "data": {
+                    "JMdict:1188790": {
+                        "id": "1188790",
+                        "readings": [
+                            {
+                                "kana": "いつか"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "sometime, someday, one day, some time or other, the other day, in due course, in time",
+                                "partOfSpeech": "&adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 6,
+                "sources": [
+                    "JMdict:1188790"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "pC1zUQIcxNHkwUbOvgK1": {
+                "data": {
+                    "JMdict:1300520": {
+                        "id": "1300520",
+                        "kanji": [
+                            {
+                                "kanji": "三時"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "さんじ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "3 o'clock",
+                                "partOfSpeech": "&n-adv;"
+                            },
+                            {
+                                "gloss": "3 o'clock snack"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 7,
+                "sources": [
+                    "JMdict:1300520"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "SeoPY4E7tnhxgJMXKMBQ": {
+                "data": {
+                    "JMdict:1582920": {
+                        "id": "1582920",
+                        "readings": [
+                            {
+                                "kana": "この"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "this (something or someone close to the speaker (including the speaker), or ideas expressed by the speaker)",
+                                "partOfSpeech": "&adj-pn;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 8,
+                "sources": [
+                    "JMdict:1582920"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "iCVFevx00Kl1xO5TtfYY": {
+                "data": {
+                    "JMdict:1462000": {
+                        "id": "1462000",
+                        "kanji": [
+                            {
+                                "kanji": "二十"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "にじゅう"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "twenty",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 9,
+                "sources": [
+                    "JMdict:1462000"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "ak2yPhjXPKaSdxpDWN0w": {
+                "data": {
+                    "JMdict:1368370": {
+                        "id": "1368370",
+                        "kanji": [
+                            {
+                                "kanji": "人生"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "じんせい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "(human) life (i.e. conception to death)",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 10,
+                "sources": [
+                    "JMdict:1368370"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "cuLwhhLw1rMXz1xzg4cc": {
+                "data": {
+                    "JMdict:1430610": {
+                        "id": "1430610",
+                        "readings": [
+                            {
+                                "kana": "すぐ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "immediately, at once, directly",
+                                "partOfSpeech": "&adj-na;, &adv;, &n;"
+                            },
+                            {
+                                "gloss": "soon, before long, shortly"
+                            },
+                            {
+                                "gloss": "easily, without difficulty"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 11,
+                "sources": [
+                    "JMdict:1430610"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "ONfFhvBgcQFNArxt5Kvr": {
+                "data": {
+                    "JMdict:2272830": {
+                        "id": "2272830",
+                        "readings": [
+                            {
+                                "kana": "すごく"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "awfully, very, immensely",
+                                "partOfSpeech": "&adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 12,
+                "sources": [
+                    "JMdict:2272830"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "YdNAlqS1z3YgCfRVD0Zj": {
+                "data": {
+                    "JMdict:1289100": {
+                        "id": "1289100",
+                        "kanji": [
+                            {
+                                "kanji": "今月"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "こんげつ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "this month",
+                                "partOfSpeech": "&n-adv;, &n-t;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 13,
+                "sources": [
+                    "JMdict:1289100"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "9QxCXLFE6rXZtpPUk9jB": {
+                "data": {
+                    "JMdict:1227500": {
+                        "id": "1227500",
+                        "kanji": [
+                            {
+                                "kanji": "休み"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "やすみ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "rest, recess, respite",
+                                "partOfSpeech": "&n;"
+                            },
+                            {
+                                "gloss": "vacation, holiday, absence, suspension"
+                            },
+                            {
+                                "gloss": "dormancy (of a silkworm prior to moulting)"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 14,
+                "sources": [
+                    "JMdict:1227500"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "wQ6g5KI7WViT5juTdFuq": {
+                "data": {
+                    "JMdict:1006670": {
+                        "id": "1006670",
+                        "readings": [
+                            {
+                                "kana": "そこ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "there (place relatively near listener)",
+                                "partOfSpeech": "&n;"
+                            },
+                            {
+                                "gloss": "there (place just mentioned), that place"
+                            },
+                            {
+                                "gloss": "then (of some incident just spoken of), that (of point just raised)"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 15,
+                "sources": [
+                    "JMdict:1006670"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "V2Vfc2qRpeUe1E8vHDY6": {
+                "data": {
+                    "JMdict:1006830": {
+                        "id": "1006830",
+                        "readings": [
+                            {
+                                "kana": "その"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "that (something or someone distant from the speaker, close to the listener; actions of the listener, or ideas expressed or understood by the listener), the",
+                                "partOfSpeech": "&adj-pn;"
+                            },
+                            {
+                                "gloss": "um..., er..., uh..."
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 16,
+                "sources": [
+                    "JMdict:1006830"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "dEwx6v33OxAi9HpeUxqe": {
+                "data": {
+                    "JMdict:1577100": {
+                        "id": "1577100",
+                        "kanji": [
+                            {
+                                "kanji": "何"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "なに"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "what",
+                                "partOfSpeech": "&int;, &pn;, &adj-no;"
+                            },
+                            {
+                                "gloss": "how many (followed by a counter)"
+                            },
+                            {
+                                "gloss": "you-know-what, that"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 17,
+                "sources": [
+                    "JMdict:1577100"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "JfCExcChubYfIYsfmzju": {
+                "data": {
+                    "JMdict:1006970": {
+                        "id": "1006970",
+                        "readings": [
+                            {
+                                "kana": "それ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "that (indicating an item or person near the listener, the action of the listener, or something on their mind), it",
+                                "partOfSpeech": "&n;"
+                            },
+                            {
+                                "gloss": "that time, then"
+                            },
+                            {
+                                "gloss": "there (indicating a place near the listener)"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 18,
+                "sources": [
+                    "JMdict:1006970"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "mvjSDzR9d8kUAsbNqWZd": {
+                "data": {
+                    "JMdict:1249960": {
+                        "id": "1249960",
+                        "kanji": [
+                            {
+                                "kanji": "兄弟"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "きょうだい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "siblings, brothers and sisters",
+                                "partOfSpeech": "&n;"
+                            },
+                            {
+                                "gloss": "brothers"
+                            },
+                            {
+                                "gloss": "siblings-in-law, brothers-in-law, sisters-in-law"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 19,
+                "sources": [
+                    "JMdict:1249960"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "Bq5HjoZTVYa84Q3ye75d": {
+                "data": {
+                    "JMdict:1824040": {
+                        "id": "1824040",
+                        "kanji": [
+                            {
+                                "kanji": "六十"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "むそ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "sixty",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 20,
+                "sources": [
+                    "JMdict:1824040"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "dpp4iLj5JnkQGRItVMeg": {
+                "data": {
+                    "JMdict:1628500": {
+                        "id": "1628500",
+                        "readings": [
+                            {
+                                "kana": "です"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "be, is",
+                                "partOfSpeech": "&aux;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 21,
+                "sources": [
+                    "JMdict:1628500"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "VAz1QzZ362Ie1FHKyMD7": {
+                "data": {
+                    "JMdict:1446070": {
+                        "id": "1446070",
+                        "kanji": [
+                            {
+                                "kanji": "冬"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "ふゆ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "winter",
+                                "partOfSpeech": "&n-adv;, &n-t;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 22,
+                "sources": [
+                    "JMdict:1446070"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "oTMMQUm61MVVLk68daOc": {
+                "data": {
+                    "JMdict:1079760": {
+                        "id": "1079760",
+                        "readings": [
+                            {
+                                "kana": "テスト"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "test",
+                                "partOfSpeech": "&n;, &vs;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 23,
+                "sources": [
+                    "JMdict:1079760"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "ZHoMQwxegceow575MtYh": {
+                "data": {
+                    "JMdict:1512670": {
+                        "id": "1512670",
+                        "kanji": [
+                            {
+                                "kanji": "勉強"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "べんきょう"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "study",
+                                "partOfSpeech": "&n;, &vs;"
+                            },
+                            {
+                                "gloss": "diligence"
+                            },
+                            {
+                                "gloss": "discount, reduction"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 24,
+                "sources": [
+                    "JMdict:1512670"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "xzyd3pdz93i4PAgbjugr": {
+                "data": {
+                    "JMdict:1080510": {
+                        "id": "1080510",
+                        "readings": [
+                            {
+                                "kana": "テレビ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "television, TV",
+                                "partOfSpeech": "&n;"
+                            },
+                            {
+                                "gloss": "TV program, TV programme, TV broadcast"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 25,
+                "sources": [
+                    "JMdict:1080510"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "ArewolsDIICx9PaNearJ": {
+                "data": {
+                    "JMdict:1189360": {
+                        "id": "1189360",
+                        "readings": [
+                            {
+                                "kana": "どちら"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "which way, which direction, where",
+                                "partOfSpeech": "&n;"
+                            },
+                            {
+                                "gloss": "which one (esp. of two alternatives)"
+                            },
+                            {
+                                "gloss": "who"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 26,
+                "sources": [
+                    "JMdict:1189360"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "Bttua2ZbpO1VRdxI34w2": {
+                "data": {
+                    "JMdict:1171120": {
+                        "id": "1171120",
+                        "kanji": [
+                            {
+                                "kanji": "右手"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "みぎて"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "right hand",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 27,
+                "sources": [
+                    "JMdict:1171120"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "31ndpgHfPwSKCPyh4jfl": {
+                "data": {
+                    "JMdict:1345250": {
+                        "id": "1345250",
+                        "kanji": [
+                            {
+                                "kanji": "女性"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "じょせい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "woman, female",
+                                "partOfSpeech": "&n;, &adj-no;"
+                            },
+                            {
+                                "gloss": "feminine gender"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 28,
+                "sources": [
+                    "JMdict:1345250"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "AMelXTj0zLJ7P7T5xPz8": {
+                "data": {
+                    "JMdict:1089890": {
+                        "id": "1089890",
+                        "readings": [
+                            {
+                                "kana": "ナイフ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "knife",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 29,
+                "sources": [
+                    "JMdict:1089890"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "G47kv9G84i2xI9FL4r6e": {
+                "data": {
+                    "JMdict:1110110": {
+                        "id": "1110110",
+                        "readings": [
+                            {
+                                "kana": "フォーク"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "fork",
+                                "partOfSpeech": "&n;"
+                            },
+                            {
+                                "gloss": "folk, folk song"
+                            },
+                            {
+                                "gloss": "hawk"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 30,
+                "sources": [
+                    "JMdict:1110110"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "NPcg7Xd4fNBICst0KBDQ": {
+                "data": {
+                    "JMdict:1307850": {
+                        "id": "1307850",
+                        "kanji": [
+                            {
+                                "kanji": "子供"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "こども"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "child, children",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 31,
+                "sources": [
+                    "JMdict:1307850"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "OpRWZgJO2xDvppjkhn3Y": {
+                "data": {
+                    "JMdict:2165320": {
+                        "id": "2165320",
+                        "kanji": [
+                            {
+                                "kanji": "少"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "しょう"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "small, little, few",
+                                "partOfSpeech": "&pref;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 32,
+                "sources": [
+                    "JMdict:2165320"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "yCHuJzu9Tskwz0oslJSN": {
+                "data": {
+                    "JMdict:1137430": {
+                        "id": "1137430",
+                        "readings": [
+                            {
+                                "kana": "ユニフォーム"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "uniform",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 33,
+                "sources": [
+                    "JMdict:1137430"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "1725X1wNggjEZ0Qg6bKA": {
+                "data": {
+                    "JMdict:1594060": {
+                        "id": "1594060",
+                        "kanji": [
+                            {
+                                "kanji": "仕合せ"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "しあわせ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "happiness, good fortune, luck, blessing",
+                                "partOfSpeech": "&adj-na;, &n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 34,
+                "sources": [
+                    "JMdict:1594060"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "2FfDlVySEPmHAIHqj0cQ": {
+                "data": {
+                    "JMdict:1296400": {
+                        "id": "1296400",
+                        "readings": [
+                            {
+                                "kana": "ある"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to be (usu. of inanimate objects), to exist, to live",
+                                "partOfSpeech": "&v5r-i;, &vi;"
+                            },
+                            {
+                                "gloss": "to have"
+                            },
+                            {
+                                "gloss": "to be located"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 35,
+                "sources": [
+                    "JMdict:1296400"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "9JX1I0TS8L90u3KFZhWf": {
+                "data": {
+                    "JMdict:1339500": {
+                        "id": "1339500",
+                        "readings": [
+                            {
+                                "kana": "できる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to be out of, to have no more at hand",
+                                "partOfSpeech": "&v5r;, &vt;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 36,
+                "sources": [
+                    "JMdict:1339500"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "A83RKQQMXsx71StCBs0C": {
+                "data": {
+                    "JMdict:1483090": {
+                        "id": "1483090",
+                        "kanji": [
+                            {
+                                "kanji": "彼ら"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "かれら"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "they (usually male), them",
+                                "partOfSpeech": "&pn;, &adj-no;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 37,
+                "sources": [
+                    "JMdict:1483090"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "Bnh8G8xR50wCPCQd5Vch": {
+                "data": {
+                    "JMdict:1008630": {
+                        "id": "1008630",
+                        "readings": [
+                            {
+                                "kana": "とても"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "very, awfully, exceedingly",
+                                "partOfSpeech": "&adv;"
+                            },
+                            {
+                                "gloss": "(before a negative form) (not) at all, by no means, simply (cannot)"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 38,
+                "sources": [
+                    "JMdict:1008630"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "nwvUivLeMHNxM1mlqOkp": {
+                "data": {
+                    "JMdict:1269320": {
+                        "id": "1269320",
+                        "kanji": [
+                            {
+                                "kanji": "後"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "あと"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "behind, rear",
+                                "partOfSpeech": "&n;, &adj-no;"
+                            },
+                            {
+                                "gloss": "after, later"
+                            },
+                            {
+                                "gloss": "after one's death"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 39,
+                "sources": [
+                    "JMdict:1269320"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "1fCLwhENga2aBrRQHKXo": {
+                "data": {
+                    "JMdict:1375610": {
+                        "id": "1375610",
+                        "readings": [
+                            {
+                                "kana": "なる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to become, to get, to grow, to be, to reach, to attain",
+                                "partOfSpeech": "&v5r;, &vi;"
+                            },
+                            {
+                                "gloss": "to result in, to prove to be"
+                            },
+                            {
+                                "gloss": "to consist of, to be composed of"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 40,
+                "sources": [
+                    "JMdict:1375610"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "k7kzMixVXDkdRgO5t3lz": {
+                "data": {
+                    "JMdict:1237130": {
+                        "id": "1237130",
+                        "kanji": [
+                            {
+                                "kanji": "教師"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "きょうし"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "teacher (classroom)",
+                                "partOfSpeech": "&n;, &adj-no;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 41,
+                "sources": [
+                    "JMdict:1237130"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "o200XRVDl2ymA5GPVVS7": {
+                "data": {
+                    "JMdict:1361490": {
+                        "id": "1361490",
+                        "kanji": [
+                            {
+                                "kanji": "新しい"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "あたらしい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "new, novel, fresh, recent, latest, up-to-date, modern",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 42,
+                "sources": [
+                    "JMdict:1361490"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "OavuyoDjVufwPOanxGxY": {
+                "data": {
+                    "JMdict:1956580": {
+                        "id": "1956580",
+                        "kanji": [
+                            {
+                                "kanji": "早"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "はや"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "already, now, by this time",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 43,
+                "sources": [
+                    "JMdict:1956580"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "aP3fJGrA1ZveBxEBr71h": {
+                "data": {
+                    "JMdict:1315920": {
+                        "id": "1315920",
+                        "kanji": [
+                            {
+                                "kanji": "時間"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "じかん"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "time",
+                                "partOfSpeech": "&n-adv;, &n;"
+                            },
+                            {
+                                "gloss": "hours"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 44,
+                "sources": [
+                    "JMdict:1315920"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "3S1zAAmJPhqYnk6wOJrM": {
+                "data": {
+                    "JMdict:1956280": {
+                        "id": "1956280",
+                        "kanji": [
+                            {
+                                "kanji": "最"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "さい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "the most, the extreme",
+                                "partOfSpeech": "&pref;, &adj-na;"
+                            },
+                            {
+                                "gloss": "prime, conspicuous"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 45,
+                "sources": [
+                    "JMdict:1956280"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "TwN45bnLryPEbISbTEqx": {
+                "data": {
+                    "JMdict:1428280": {
+                        "id": "1428280",
+                        "kanji": [
+                            {
+                                "kanji": "朝"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "あさ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "morning",
+                                "partOfSpeech": "&n-adv;, &n-t;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 46,
+                "sources": [
+                    "JMdict:1428280"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "8zGXDOSnnQUEzf8fR6Gi": {
+                "data": {
+                    "JMdict:1205490": {
+                        "id": "1205490",
+                        "kanji": [
+                            {
+                                "kanji": "各別"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "かくべち"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "particular, special, exceptional, especial",
+                                "partOfSpeech": "&adj-na;, &adj-no;, &n;"
+                            },
+                            {
+                                "gloss": "particularly, especially, exceptionally"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 47,
+                "sources": [
+                    "JMdict:1205490"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "JbFV7bS2veQOLtpiJ5Qy": {
+                "data": {
+                    "JMdict:1258330": {
+                        "id": "1258330",
+                        "kanji": [
+                            {
+                                "kanji": "犬"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "いぬ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "dog (Canis (lupus) familiaris)",
+                                "partOfSpeech": "&n;"
+                            },
+                            {
+                                "gloss": "snoop (i.e. a detective, a spy, etc.)"
+                            },
+                            {
+                                "gloss": "loser, asshole"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 49,
+                "sources": [
+                    "JMdict:1258330"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "jI5jvtS2sJSQgGCC5KTJ": {
+                "data": {
+                    "JMdict:2081560": {
+                        "id": "2081560",
+                        "kanji": [
+                            {
+                                "kanji": "確"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "かく"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "certain, definite",
+                                "partOfSpeech": "&adj-t;, &adv-to;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 50,
+                "sources": [
+                    "JMdict:2081560"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "hp58vYcXBCe94pBg2Tpn": {
+                "data": {
+                    "JMdict:1205770": {
+                        "id": "1205770",
+                        "kanji": [
+                            {
+                                "kanji": "慥かに"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "たしかに"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "surely, certainly",
+                                "partOfSpeech": "&adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 51,
+                "sources": [
+                    "JMdict:1205770"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "LWjXp9rH88jz8Kk2Xric": {
+                "data": {
+                    "JMdict:1311300": {
+                        "id": "1311300",
+                        "kanji": [
+                            {
+                                "kanji": "私達"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "わたしたち"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "we, us",
+                                "partOfSpeech": "&pn;, &adj-no;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 52,
+                "sources": [
+                    "JMdict:1311300"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "wZTTrS0yNiFtWkm4e31b": {
+                "data": {
+                    "JMdict:1237950": {
+                        "id": "1237950",
+                        "kanji": [
+                            {
+                                "kanji": "胸中"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "きょうちゅう"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "one's heart, one's mind, one's intentions",
+                                "partOfSpeech": "&n;, &adj-no;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 54,
+                "sources": [
+                    "JMdict:1237950"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "lawFR3XuxaCAoagUajBP": {
+                "data": {
+                    "JMdict:1501110": {
+                        "id": "1501110",
+                        "kanji": [
+                            {
+                                "kanji": "腹"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "はら"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "abdomen, belly, stomach",
+                                "partOfSpeech": "&n;"
+                            },
+                            {
+                                "gloss": "womb"
+                            },
+                            {
+                                "gloss": "one's mind, one's real intentions, one's true motive"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 55,
+                "sources": [
+                    "JMdict:1501110"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "oYKAkYJPycPoTHH7OAJr": {
+                "data": {
+                    "JMdict:1174420": {
+                        "id": "1174420",
+                        "kanji": [
+                            {
+                                "kanji": "英語"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "えいご"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "English (language)",
+                                "partOfSpeech": "&n;, &adj-no;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 56,
+                "sources": [
+                    "JMdict:1174420"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "45EiboaRoGCvqJH5wZ4g": {
+                "data": {
+                    "JMdict:1198180": {
+                        "id": "1198180",
+                        "kanji": [
+                            {
+                                "kanji": "会う"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "あう"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to meet, to encounter, to see",
+                                "partOfSpeech": "&v5u;, &vi;"
+                            },
+                            {
+                                "gloss": "to have an accident, to have a bad experience"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 58,
+                "sources": [
+                    "JMdict:1198180"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "nRe3p781u41NE1LfQPJx": {
+                "data": {
+                    "JMdict:1593100": {
+                        "id": "1593100",
+                        "kanji": [
+                            {
+                                "kanji": "凍おる"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "こおる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to freeze, to be frozen over, to congeal",
+                                "partOfSpeech": "&v5r;, &vi;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 59,
+                "sources": [
+                    "JMdict:1593100"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "mjjToZKUBBrvog3sKf1V": {
+                "data": {
+                    "JMdict:1326980": {
+                        "id": "1326980",
+                        "kanji": [
+                            {
+                                "kanji": "取る"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "とる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to take, to pick up, to harvest, to earn, to win, to choose",
+                                "partOfSpeech": "&v5r;, &vt;"
+                            },
+                            {
+                                "gloss": "to steal"
+                            },
+                            {
+                                "gloss": "to eat, to have (a meal)"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 60,
+                "sources": [
+                    "JMdict:1326980"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "xwNdacSOA3bo3WgeC3cT": {
+                "data": {
+                    "JMdict:1588880": {
+                        "id": "1588880",
+                        "kanji": [
+                            {
+                                "kanji": "大きい"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "おおきい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "big, large, great, loud",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 61,
+                "sources": [
+                    "JMdict:1588880"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "0yOfx2wDM9On32IEZvSc": {
+                "data": {
+                    "JMdict:1408180": {
+                        "id": "1408180",
+                        "kanji": [
+                            {
+                                "kanji": "太い"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "ふとい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "fat, thick",
+                                "partOfSpeech": "&adj-i;"
+                            },
+                            {
+                                "gloss": "deep (of a voice)"
+                            },
+                            {
+                                "gloss": "daring, shameless, brazen"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 62,
+                "sources": [
+                    "JMdict:1408180"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "1XZ0tqtfdSQYBIAd09Iz": {
+                "data": {
+                    "JMdict:1307500": {
+                        "id": "1307500",
+                        "kanji": [
+                            {
+                                "kanji": "始まる"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "はじまる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to begin, to start, to commence",
+                                "partOfSpeech": "&v5r;, &vi;"
+                            },
+                            {
+                                "gloss": "to happen (again), to begin (anew)"
+                            },
+                            {
+                                "gloss": "to date (from), to originate (in)"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 63,
+                "sources": [
+                    "JMdict:1307500"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "NduHnPJhVJk1QW8bVBkd": {
+                "data": {
+                    "JMdict:1210360": {
+                        "id": "1210360",
+                        "kanji": [
+                            {
+                                "kanji": "寒い"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "さぶい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "cold (e.g. weather)",
+                                "partOfSpeech": "&adj-i;"
+                            },
+                            {
+                                "gloss": "uninteresting (esp. joke), lame, dull, weak, corny"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 64,
+                "sources": [
+                    "JMdict:1210360"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "VlGS8Qm8jG5wZCwhtmag": {
+                "data": {
+                    "JMdict:1347750": {
+                        "id": "1347750",
+                        "kanji": [
+                            {
+                                "kanji": "小さい"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "ちいさい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "small, little, tiny",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 65,
+                "sources": [
+                    "JMdict:1347750"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "WDdZVGVXPTyqOZzTJylB": {
+                "data": {
+                    "JMdict:1348870": {
+                        "id": "1348870",
+                        "kanji": [
+                            {
+                                "kanji": "少し"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "すこし"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "small quantity, little, few, something",
+                                "partOfSpeech": "&adv;, &n;"
+                            },
+                            {
+                                "gloss": "little while"
+                            },
+                            {
+                                "gloss": "short distance"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 66,
+                "sources": [
+                    "JMdict:1348870"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "pXwnH706k5oumf3Q09dr": {
+                "data": {
+                    "JMdict:1221270": {
+                        "id": "1221270",
+                        "kanji": [
+                            {
+                                "kanji": "帰る"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "かえる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to return, to come home, to go home, to go back",
+                                "partOfSpeech": "&v5r;, &vi;"
+                            },
+                            {
+                                "gloss": "to leave"
+                            },
+                            {
+                                "gloss": "to get home, to get to home plate"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 67,
+                "sources": [
+                    "JMdict:1221270"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "o7ibqs3NYvcDi3DgodHk": {
+                "data": {
+                    "JMdict:1589350": {
+                        "id": "1589350",
+                        "kanji": [
+                            {
+                                "kanji": "念う"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "おもう"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to think, to consider, to believe",
+                                "partOfSpeech": "&v5u;, &vt;"
+                            },
+                            {
+                                "gloss": "to think (of doing), to plan (to do)"
+                            },
+                            {
+                                "gloss": "to judge, to assess, to regard"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 68,
+                "sources": [
+                    "JMdict:1589350"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "VkwEZgtsUM1ELL8er1Sd": {
+                "data": {
+                    "JMdict:1150510": {
+                        "id": "1150510",
+                        "kanji": [
+                            {
+                                "kanji": "愛らしい"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "あいらしい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "pretty, charming, lovely, adorable",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 69,
+                "sources": [
+                    "JMdict:1150510"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "5edOSakNl2FnLgKLH7Og": {
+                "data": {
+                    "JMdict:1400150": {
+                        "id": "1400150",
+                        "kanji": [
+                            {
+                                "kanji": "早く"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "はやく"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "early, soon",
+                                "partOfSpeech": "&adv;"
+                            },
+                            {
+                                "gloss": "quickly, swiftly, rapidly, fast"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 70,
+                "sources": [
+                    "JMdict:1400150"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "Vx1Lc4REn0HHy9wtpJ9F": {
+                "data": {
+                    "JMdict:1310620": {
+                        "id": "1310620",
+                        "kanji": [
+                            {
+                                "kanji": "止まる"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "とまる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to stop (moving), to come to a stop",
+                                "partOfSpeech": "&v5r;, &vi;"
+                            },
+                            {
+                                "gloss": "to stop (doing, working, being supplied), to come to a halt, to cease, to be stopped, to be suspended"
+                            },
+                            {
+                                "gloss": "to alight, to perch on"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 74,
+                "sources": [
+                    "JMdict:1310620"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "ggOpqTsk4qnVpDtNxv94": {
+                "data": {
+                    "JMdict:1514320": {
+                        "id": "1514320",
+                        "kanji": [
+                            {
+                                "kanji": "歩く"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "あるく"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to walk",
+                                "partOfSpeech": "&v5k;, &vi;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 75,
+                "sources": [
+                    "JMdict:1514320"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "uSW4iZC8zDInvd4W0EKz": {
+                "data": {
+                    "JMdict:1432680": {
+                        "id": "1432680",
+                        "kanji": [
+                            {
+                                "kanji": "甚い"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "いたい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "painful, sore",
+                                "partOfSpeech": "&adj-i;"
+                            },
+                            {
+                                "gloss": "exceeding"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 76,
+                "sources": [
+                    "JMdict:1432680"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "yg5fq6RS2BnOcpIv0Tqf": {
+                "data": {
+                    "JMdict:1418620": {
+                        "id": "1418620",
+                        "kanji": [
+                            {
+                                "kanji": "短い"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "みじかい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "short",
+                                "partOfSpeech": "&adj-i;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 77,
+                "sources": [
+                    "JMdict:1418620"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "KDkyApDPDUSrRJR4Shf8": {
+                "data": {
+                    "JMdict:1405790": {
+                        "id": "1405790",
+                        "kanji": [
+                            {
+                                "kanji": "続く"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "つづく"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to continue, to last, to go on",
+                                "partOfSpeech": "&v5k;, &vi;"
+                            },
+                            {
+                                "gloss": "to continue (without a break), to be unbroken"
+                            },
+                            {
+                                "gloss": "to occur again and again"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 78,
+                "sources": [
+                    "JMdict:1405790"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "Y2m2bYZKb0MoYtFBx4Pd": {
+                "data": {
+                    "JMdict:1605820": {
+                        "id": "1605820",
+                        "kanji": [
+                            {
+                                "kanji": "佳い"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "よい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "good, excellent, fine, nice, pleasant, agreeable",
+                                "partOfSpeech": "&adj-i;"
+                            },
+                            {
+                                "gloss": "sufficient (can be used to turn down an offer), ready, prepared"
+                            },
+                            {
+                                "gloss": "profitable (e.g. deal, business offer, etc.), beneficial"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 79,
+                "sources": [
+                    "JMdict:1605820"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "ItqPd17ip6aMx8RxlvzL": {
+                "data": {
+                    "JMdict:1578850": {
+                        "id": "1578850",
+                        "kanji": [
+                            {
+                                "kanji": "往く"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "いく"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to go, to move (in a direction or towards a specific location), to head (towards), to be transported (towards), to reach",
+                                "partOfSpeech": "&v5k-s;, &vi;"
+                            },
+                            {
+                                "gloss": "to proceed, to take place"
+                            },
+                            {
+                                "gloss": "to pass through, to come and go"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 80,
+                "sources": [
+                    "JMdict:1578850"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "wryQ1mHQRoMxKVE35a9D": {
+                "data": {
+                    "JMdict:1421980": {
+                        "id": "1421980",
+                        "kanji": [
+                            {
+                                "kanji": "遅く"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "おそく"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "late",
+                                "partOfSpeech": "&adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 81,
+                "sources": [
+                    "JMdict:1421980"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "LKfVMUQU5jJLs2DGHHDt": {
+                "data": {
+                    "JMdict:1381390": {
+                        "id": "1381390",
+                        "kanji": [
+                            {
+                                "kanji": "碧い"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "あおい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "blue, green",
+                                "partOfSpeech": "&adj-i;"
+                            },
+                            {
+                                "gloss": "pale"
+                            },
+                            {
+                                "gloss": "unripe, inexperienced"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 82,
+                "sources": [
+                    "JMdict:1381390"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "bbvq48eIu8A8eOOXbB8p": {
+                "data": {
+                    "JMdict:1169870": {
+                        "id": "1169870",
+                        "kanji": [
+                            {
+                                "kanji": "呑む"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "のむ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to drink, to gulp, to swallow, to take (medicine)",
+                                "partOfSpeech": "&v5m;, &vt;"
+                            },
+                            {
+                                "gloss": "to smoke (tobacco)"
+                            },
+                            {
+                                "gloss": "to engulf, to overwhelm"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 84,
+                "sources": [
+                    "JMdict:1169870"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "kTmaaWfXg8YfC48sG8sx": {
+                "data": {
+                    "JMdict:1591110": {
+                        "id": "1591110",
+                        "kanji": [
+                            {
+                                "kanji": "聴く"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "きく"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to hear",
+                                "partOfSpeech": "&v5k;,&vt;"
+                            },
+                            {
+                                "gloss": "to listen (e.g. to music)"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 85,
+                "sources": [
+                    "JMdict:1591110"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "nmFOAjPmtkxwaGBaw0ai": {
+                "data": {
+                    "JMdict:1472800": {
+                        "id": "1472800",
+                        "kanji": [
+                            {
+                                "kanji": "背なか"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "せなか"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "back (of body)",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 16,
+                "sources": [
+                    "JMdict:1472800"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "P4E8ePA6MgKHhse3EHVt": {
+                "data": {
+                    "JMdict:1360010": {
+                        "id": "1360010",
+                        "kanji": [
+                            {
+                                "kanji": "寝る"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "ねる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to lie down",
+                                "partOfSpeech": "&v1;, &vi;"
+                            },
+                            {
+                                "gloss": "to go to bed, to lie in bed"
+                            },
+                            {
+                                "gloss": "to sleep (lying down)"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 48,
+                "sources": [
+                    "JMdict:1360010"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "XErjkik9rhjvPBz6oAFi": {
+                "data": {
+                    "JMdict:1311300": {
+                        "id": "1311300",
+                        "kanji": [
+                            {
+                                "kanji": "私たち"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "わたくしたち"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "we, us",
+                                "partOfSpeech": "&pn;, &adj-no;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 1,
+                "sources": [
+                    "JMdict:1311300"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "pnGbCXQ3X5crZ4UmbeTh": {
+                "data": {
+                    "JMdict:1189360": {
+                        "id": "1189360",
+                        "kanji": [
+                            {
+                                "kanji": "何方"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "いずかた"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "which way, which direction, where",
+                                "partOfSpeech": "&n;"
+                            },
+                            {
+                                "gloss": "which one (esp. of two alternatives)"
+                            },
+                            {
+                                "gloss": "who"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 2,
+                "sources": [
+                    "JMdict:1189360"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "R9x4tshOWA7wIyie39qJ": {
+                "data": {
+                    "JMdict:1296400": {
+                        "id": "1296400",
+                        "kanji": [
+                            {
+                                "kanji": "在る"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "ある"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to be (usu. of inanimate objects), to exist, to live",
+                                "partOfSpeech": "&v5r-i;, &vi;"
+                            },
+                            {
+                                "gloss": "to have"
+                            },
+                            {
+                                "gloss": "to be located"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 3,
+                "sources": [
+                    "JMdict:1296400"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "wM8EIZVihnpE9UW3GWqG": {
+                "data": {
+                    "JMdict:1307850": {
+                        "id": "1307850",
+                        "kanji": [
+                            {
+                                "kanji": "子ども"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "こども"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "child, children",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 4,
+                "sources": [
+                    "JMdict:1307850"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "6RhmtgiJAJoyKydFNI4o": {
+                "data": {
+                    "JMdict:1594060": {
+                        "id": "1594060",
+                        "kanji": [
+                            {
+                                "kanji": "仕合せ"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "しあわせ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "happiness, good fortune, luck, blessing",
+                                "partOfSpeech": "&adj-na;, &n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 5,
+                "sources": [
+                    "JMdict:1594060"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "UBjzBaR0BD8U805AHQUr": {
+                "data": {
+                    "JMdict:1339500": {
+                        "id": "1339500",
+                        "kanji": [
+                            {
+                                "kanji": "出切る"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "できる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to be out of, to have no more at hand",
+                                "partOfSpeech": "&v5r;, &vt;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 6,
+                "sources": [
+                    "JMdict:1339500"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "IGvd8LiFaS4EdLpPhxAX": {
+                "data": {
+                    "JMdict:1205490": {
+                        "id": "1205490",
+                        "kanji": [
+                            {
+                                "kanji": "各別"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "かくべち"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "particular, special, exceptional, especial",
+                                "partOfSpeech": "&adj-na;, &adj-no;, &n;"
+                            },
+                            {
+                                "gloss": "particularly, especially, exceptionally"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 7,
+                "sources": [
+                    "JMdict:1205490"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "dAPIcIeJ4xnuzjmez4wc": {
+                "data": {
+                    "JMdict:1008630": {
+                        "id": "1008630",
+                        "kanji": [
+                            {
+                                "kanji": "迚も"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "とっても"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "very, awfully, exceedingly",
+                                "partOfSpeech": "&adv;"
+                            },
+                            {
+                                "gloss": "(before a negative form) (not) at all, by no means, simply (cannot)"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 8,
+                "sources": [
+                    "JMdict:1008630"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "Gp3fJ3JWTdNJ0LqQV9hP": {
+                "data": {
+                    "JMdict:1375610": {
+                        "id": "1375610",
+                        "kanji": [
+                            {
+                                "kanji": "成る"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "なる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to become, to get, to grow, to be, to reach, to attain",
+                                "partOfSpeech": "&v5r;, &vi;"
+                            },
+                            {
+                                "gloss": "to result in, to prove to be"
+                            },
+                            {
+                                "gloss": "to consist of, to be composed of"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 9,
+                "sources": [
+                    "JMdict:1375610"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "vnipBUDEUoMzOLZRzdEp": {
+                "data": {
+                    "JMdict:1205770": {
+                        "id": "1205770",
+                        "kanji": [
+                            {
+                                "kanji": "慥かに"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "たしかに"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "surely, certainly",
+                                "partOfSpeech": "&adv;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 11,
+                "sources": [
+                    "JMdict:1205770"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "W7KZovm8eIqPISzGMUfG": {
+                "data": {
+                    "JMdict:1472800": {
+                        "id": "1472800",
+                        "kanji": [
+                            {
+                                "kanji": "背なか"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "せなか"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "back (of body)",
+                                "partOfSpeech": "&n;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 12,
+                "sources": [
+                    "JMdict:1472800"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "FbYoOFkl2jSC5874mm49": {
+                "data": {
+                    "JMdict:1501110": {
+                        "id": "1501110",
+                        "kanji": [
+                            {
+                                "kanji": "肚"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "はら"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "abdomen, belly, stomach",
+                                "partOfSpeech": "&n;"
+                            },
+                            {
+                                "gloss": "womb"
+                            },
+                            {
+                                "gloss": "one's mind, one's real intentions, one's true motive"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 13,
+                "sources": [
+                    "JMdict:1501110"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "Jp8f8UkpwTWypkCLDNyw": {
+                "data": {
+                    "JMdict:1593100": {
+                        "id": "1593100",
+                        "kanji": [
+                            {
+                                "kanji": "凍おる"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "こおる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to freeze, to be frozen over, to congeal",
+                                "partOfSpeech": "&v5r;, &vi;"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 15,
+                "sources": [
+                    "JMdict:1593100"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "T1zAmfpm83O9MRKnsfqc": {
+                "data": {
+                    "JMdict:1360010": {
+                        "id": "1360010",
+                        "kanji": [
+                            {
+                                "kanji": "寐る"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "ねる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to lie down",
+                                "partOfSpeech": "&v1;, &vi;"
+                            },
+                            {
+                                "gloss": "to go to bed, to lie in bed"
+                            },
+                            {
+                                "gloss": "to sleep (lying down)"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 16,
+                "sources": [
+                    "JMdict:1360010"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "6dMHjDZwfw6h4APvvGRr": {
+                "data": {
+                    "JMdict:1348870": {
+                        "id": "1348870",
+                        "kanji": [
+                            {
+                                "kanji": "些し"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "すこし"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "small quantity, little, few, something",
+                                "partOfSpeech": "&adv;, &n;"
+                            },
+                            {
+                                "gloss": "little while"
+                            },
+                            {
+                                "gloss": "short distance"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 17,
+                "sources": [
+                    "JMdict:1348870"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "413Qkhg8dwD1wsbzfKL3": {
+                "data": {
+                    "JMdict:1589350": {
+                        "id": "1589350",
+                        "kanji": [
+                            {
+                                "kanji": "念う"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "おもう"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to think, to consider, to believe",
+                                "partOfSpeech": "&v5u;, &vt;"
+                            },
+                            {
+                                "gloss": "to think (of doing), to plan (to do)"
+                            },
+                            {
+                                "gloss": "to judge, to assess, to regard"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 18,
+                "sources": [
+                    "JMdict:1589350"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "JirpT7G5aclNYEkwaGsM": {
+                "data": {
+                    "JMdict:1547720": {
+                        "id": "1547720",
+                        "kanji": [
+                            {
+                                "kanji": "來る"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "くる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to come (spatially or temporally), to approach, to arrive",
+                                "partOfSpeech": "&vk;, &vi;"
+                            },
+                            {
+                                "gloss": "to come back, to do ... and come back"
+                            },
+                            {
+                                "gloss": "to come to be, to become, to get, to grow, to continue"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 21,
+                "sources": [
+                    "JMdict:1547720"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "Pd7GP3AdnKDNlP3jJaor": {
+                "data": {
+                    "JMdict:1310620": {
+                        "id": "1310620",
+                        "kanji": [
+                            {
+                                "kanji": "停まる"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "とまる"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to stop (moving), to come to a stop",
+                                "partOfSpeech": "&v5r;, &vi;"
+                            },
+                            {
+                                "gloss": "to stop (doing, working, being supplied), to come to a halt, to cease, to be stopped, to be suspended"
+                            },
+                            {
+                                "gloss": "to alight, to perch on"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 22,
+                "sources": [
+                    "JMdict:1310620"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "GkBqymzmBxVGpnUCY3AL": {
+                "data": {
+                    "JMdict:1432680": {
+                        "id": "1432680",
+                        "kanji": [
+                            {
+                                "kanji": "甚い"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "いたい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "painful, sore",
+                                "partOfSpeech": "&adj-i;"
+                            },
+                            {
+                                "gloss": "exceeding"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 23,
+                "sources": [
+                    "JMdict:1432680"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "pK4HI7Nhjrk8mRsGaQeY": {
+                "data": {
+                    "JMdict:1605820": {
+                        "id": "1605820",
+                        "kanji": [
+                            {
+                                "kanji": "佳い"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "よい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "good, excellent, fine, nice, pleasant, agreeable",
+                                "partOfSpeech": "&adj-i;"
+                            },
+                            {
+                                "gloss": "sufficient (can be used to turn down an offer), ready, prepared"
+                            },
+                            {
+                                "gloss": "profitable (e.g. deal, business offer, etc.), beneficial"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 24,
+                "sources": [
+                    "JMdict:1605820"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "boUpIBcRd1meXRKXgioO": {
+                "data": {
+                    "JMdict:1578850": {
+                        "id": "1578850",
+                        "kanji": [
+                            {
+                                "kanji": "往く"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "いく"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to go, to move (in a direction or towards a specific location), to head (towards), to be transported (towards), to reach",
+                                "partOfSpeech": "&v5k-s;, &vi;"
+                            },
+                            {
+                                "gloss": "to proceed, to take place"
+                            },
+                            {
+                                "gloss": "to pass through, to come and go"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 25,
+                "sources": [
+                    "JMdict:1578850"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "6Ifzn2pDJ0XOc7LcnCJS": {
+                "data": {
+                    "JMdict:1381390": {
+                        "id": "1381390",
+                        "kanji": [
+                            {
+                                "kanji": "碧い"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "あおい"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "blue, green",
+                                "partOfSpeech": "&adj-i;"
+                            },
+                            {
+                                "gloss": "pale"
+                            },
+                            {
+                                "gloss": "unripe, inexperienced"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 26,
+                "sources": [
+                    "JMdict:1381390"
+                ],
+                "tags": [
+                    "extended"
+                ]
+            },
+            "C1jMEKJSqYLogV1mX6eZ": {
+                "data": {
+                    "JMdict:1169870": {
+                        "id": "1169870",
+                        "kanji": [
+                            {
+                                "kanji": "呑む"
+                            }
+                        ],
+                        "readings": [
+                            {
+                                "kana": "のむ"
+                            }
+                        ],
+                        "senses": [
+                            {
+                                "gloss": "to drink, to gulp, to swallow, to take (medicine)",
+                                "partOfSpeech": "&v5m;, &vt;"
+                            },
+                            {
+                                "gloss": "to smoke (tobacco)"
+                            },
+                            {
+                                "gloss": "to engulf, to overwhelm"
+                            }
+                        ]
+                    }
+                },
+                "orderIndex": 28,
+                "sources": [
+                    "JMdict:1169870"
+                ],
+                "tags": [
+                    "extended"
+                ]
             }
-        },
-        "fvrcJVuWeauVD3Qbw2Bu": {
-            "data": {
-                "JMdict:1514320": {
-                    "id": "1514320",
-                    "kanji": [
-                        {
-                            "kanji": "歩く"
-                        }
-                    ],
-                    "readings": [
-                        {
-                            "kana": "あるく",
-                            "priority": "ichi1"
-                        }
-                    ],
-                    "senses": [
-                        {
-                            "gloss": "to walk",
-                            "partOfSpeech": "&v5k;, &vi;"
-                        }
-                    ]
-                }
-            },
-            "orderIndex": 189,
-            "sources": [
-                "JMdict:1514320"
-            ],
-            "tags": [
-                "extended"
-            ]
-        },
-        "J9Y56xWyCUTG7HDHGiTg": {
-            "data": {
-                "JMdict:1163400": {
-                    "id": "1163400",
-                    "kanji": [
-                        {
-                            "kanji": "一緒"
-                        }
-                    ],
-                    "readings": [
-                        {
-                            "kana": "いっしょ",
-                            "priority": "ichi1, news1, nf02"
-                        }
-                    ],
-                    "senses": [
-                        {
-                            "gloss": "together",
-                            "partOfSpeech": " &n-adv;, &n;, &adj-no;"
-                        },
-                        {
-                            "gloss": "at the same time"
-                        }
-                    ]
-                }
-            },
-            "orderIndex": 190,
-            "sources": [
-                "JMdict:1163400"
-            ],
-            "tags": [
-                "extended"
-            ]
-        },
-        "JsYEHW9dExy458ibJ3PN": {
-            "data": {
-                "JMdict:1362490": {
-                    "id": "1362490",
-                    "kanji": [
-                        {
-                            "kanji": "森"
-                        }
-                    ],
-                    "readings": [
-                        {
-                            "kana": "もり",
-                            "priority": "ichi1, news1, nf02"
-                        }
-                    ],
-                    "senses": [
-                        {
-                            "gloss": "forest",
-                            "partOfSpeech": " &n;"
-                        }
-                    ]
-                }
-            },
-            "orderIndex": 191,
-            "sources": [
-                "JMdict:1362490"
-            ],
-            "tags": [
-                "extended"
-            ]
         }
     }
 }

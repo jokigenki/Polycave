@@ -32,8 +32,10 @@ public class TextDisplay : MonoBehaviour
     private void DisplayLearningItem (LearningSetItem item)
     {
         Source source = item.data.Values.First ();
-        _japanese.text = JoinData (source.kanji, ", ");
-        _reading.text = JoinData (source.readings, ", ");
+        string kanji = JoinData (source.kanji, ", ");
+        string reading = JoinData (source.readings, ", ");
+        _japanese.text = kanji != "" ? kanji : reading;
+        _reading.text = kanji != "" ? reading : "";
         _senses.text = JoinData (source.senses, "\n");
     }
 

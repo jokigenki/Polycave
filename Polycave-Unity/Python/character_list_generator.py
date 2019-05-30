@@ -19,6 +19,7 @@ sys.setdefaultencoding('utf8')
 
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
 
+
 class DataGenerator:
 
     def __init__(self):
@@ -47,7 +48,7 @@ class DataGenerator:
                 pickle.dump(creds, token)
 
         self.service = build('sheets', 'v4', credentials=creds)
-        
+
     def CallSheetsAPI(self, spreadsheet_id, range_name):
         result = self.service.spreadsheets().values().get(spreadsheetId=spreadsheet_id,
                                                           range=range_name).execute()
@@ -60,12 +61,13 @@ class DataGenerator:
             print('No data found.')
         else:
             i = 0
-            print("Processing {} rows and {} columns".format(len(self.values), colMax))
+            print("Processing {} rows and {} columns".format(
+                len(self.values), colMax))
             # Iterate every character in the spreadsheet and produce an array of characters
             for row in self.values:
                 i = i + 1
-                rowMax = min(len(row), colMax) 
-                #print('------------------------------')
+                rowMax = min(len(row), colMax)
+                # print('------------------------------')
                 #print('row: {}'.format(i))
                 for col in range(0, rowMax):
                     #print('col: {}'.format(chr(col + 65)))
@@ -75,7 +77,7 @@ class DataGenerator:
                         if not c in characters:
                             characters.append(c)
                             #print('val: {}'.format(c))
-                #print('------------------------------')
+                # print('------------------------------')
 
         print("Complete with %d characters found" % (len(characters)))
 
