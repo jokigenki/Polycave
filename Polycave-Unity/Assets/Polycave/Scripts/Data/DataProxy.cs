@@ -49,9 +49,6 @@ public class DataProxy : MonoBehaviour
         EventBus.Instance.AddListener<DataProxyEvent> (DisplayFirst);
 
         OVRManager.HMDUnmounted += HandleHMDUnmounted;
-
-        LearningSetItem item = extendedSet.GetItemForCompound ("する");
-        Debug.Log (item);
     }
 
     void HandleHMDUnmounted ()
@@ -62,7 +59,7 @@ public class DataProxy : MonoBehaviour
     public void DisplayFirst (DataProxyEvent e)
     {
         if (e.type != DataProxyEventType.Start) return;
-        LearningSetItem startItem = extendedSet.GetItemForCompound ("勉強");
+        LearningSetItem startItem = extendedSet.GetItemForCompound ("一");
         SetCurrentData (startItem);
     }
 

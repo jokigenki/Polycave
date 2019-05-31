@@ -9,9 +9,13 @@ using UnityEngine.UI;
 public class CanvasController : MonoBehaviour
 {
     public List<string> introPanelText = new List<string> ();
+
+    public List<GameObject> concepts = new List<GameObject> ();
+
     private Button _upButton;
     private Button _downButton;
     private Button _backButton;
+    private Button _conceptButton;
     private TextMeshProUGUI _title;
     private GameObject _introPanel;
     private Button _introPanelNextButton;
@@ -21,12 +25,15 @@ public class CanvasController : MonoBehaviour
 
     private float _buttonPos;
     private int _introCount = 0;
+    private int _conceptIndex = 0;
+    private bool _conceptActive;
 
     void Awake ()
     {
         _upButton = transform.Find ("UpButton").GetComponent<Button> ();
         _downButton = transform.Find ("DownButton").GetComponent<Button> ();
         _backButton = transform.Find ("BackButton").GetComponent<Button> ();
+        _conceptButton = transform.Find ("ConceptButton").GetComponent<Button> ();
         _title = transform.Find ("Title").GetComponent<TextMeshProUGUI> ();
         _introPanel = transform.Find ("Panel").gameObject;
         _introPanelText = _introPanel.transform.Find ("Text").GetComponent<TextMeshProUGUI> ();
@@ -36,16 +43,25 @@ public class CanvasController : MonoBehaviour
         _upButton.onClick.AddListener (OnUpClicked);
         _downButton.onClick.AddListener (OnDownClicked);
         _backButton.onClick.AddListener (OnBackClicked);
+        _conceptButton.onClick.AddListener (OnConceptClicked);
         _buttonPos = _upButton.transform.localPosition.x;
 
-        _upButton.gameObject.SetActive (false);
-        _downButton.gameObject.SetActive (false);
-        _backButton.gameObject.SetActive (false);
+        HideConcepts (false);
+        ClearButtons ();
+
         _title.gameObject.SetActive (false);
         _introPanel.SetActive (false);
 
         EventBus.Instance.AddListener<DataProxySelectionEvent> (OnDataProxySelection);
         EventBus.Instance.AddListener<DataProxyEvent> (OnDataProxyEvent);
+    }
+
+    private void HideConcepts (bool sendEvent = true)
+    {
+        _conceptButton.gameObject.SetActive (true);
+        _conceptActive = false;
+        concepts.ForEach (c => c.SetActive (false));
+        if (sendEvent) EventBus.Instance.Raise (new EnvironmentEvent (EnvironmentEventType.HideConcept));
     }
 
     private void OnDataProxyEvent (DataProxyEvent e)
@@ -58,6 +74,8 @@ public class CanvasController : MonoBehaviour
         else if (e.type == DataProxyEventType.Reset)
         {
             _introCount = 0;
+            _conceptIndex = 0;
+            HideConcepts ();
             ClearButtons ();
             OnIntroNext ();
         }
@@ -90,12 +108,12 @@ public class CanvasController : MonoBehaviour
         _currentEvent = e;
 
         TextMeshProUGUI upTmp = _upButton.GetComponentInChildren<TextMeshProUGUI> ();
-        if (e.compound != null) upTmp.text = "sentences";
-        else if (e.kanji != null) upTmp.text = "words";
+        if (e.compound != null) upTmp.text = $"sentences ({e.sentenceChoices.Count})";
+        else if (e.kanji != null) upTmp.text = $"words ({e.compoundChoices.Count})";
 
         TextMeshProUGUI dnTmp = _downButton.GetComponentInChildren<TextMeshProUGUI> ();
-        if (e.compound != null) dnTmp.text = "kanji";
-        else if (e.sentence != null) dnTmp.text = "words";
+        if (e.compound != null) dnTmp.text = $"kanji ({e.kanjiChoices.Count})";
+        else if (e.sentence != null) dnTmp.text = $"words ({e.compoundChoices.Count})";
 
         UpdateButtons ();
         _title.gameObject.SetActive (_currentEvent.navType == NavType.Choice);
@@ -107,7 +125,8 @@ public class CanvasController : MonoBehaviour
         bool dnActive = _currentEvent.navType == NavType.Display && _currentEvent.HasDown;
         _upButton.gameObject.SetActive (upActive);
         _downButton.gameObject.SetActive (dnActive);
-        _backButton.gameObject.SetActive (_currentEvent.navType == NavType.Choice);
+        _backButton.gameObject.SetActive (_currentEvent.navType == NavType.Choice || (!_currentEvent.HasUp && !_currentEvent.HasDown));
+        _conceptButton.gameObject.SetActive (true);
 
         if (upActive && dnActive)
         {
@@ -126,6 +145,7 @@ public class CanvasController : MonoBehaviour
         _upButton.gameObject.SetActive (false);
         _downButton.gameObject.SetActive (false);
         _backButton.gameObject.SetActive (false);
+        _conceptButton.gameObject.SetActive (false);
     }
 
     private void SetButtonX (Button btn, float x)
@@ -176,9 +196,26 @@ public class CanvasController : MonoBehaviour
 
     private void OnBackClicked ()
     {
+        if (_conceptActive)
+        {
+            HideConcepts ();
+            return;
+        }
         _currentEvent.navType = NavType.Display;
         EventBus.Instance.Raise (_currentEvent);
         UpdateButtons ();
+    }
+
+    private void OnConceptClicked ()
+    {
+        ClearButtons ();
+        _conceptActive = true;
+        concepts[_conceptIndex].SetActive (true);
+        _backButton.gameObject.SetActive (true);
+        _conceptIndex++;
+        if (_conceptIndex >= concepts.Count) _conceptIndex = 0;
+
+        EventBus.Instance.Raise (new EnvironmentEvent (EnvironmentEventType.ShowConcept));
     }
 }
 
@@ -193,4 +230,20 @@ public enum NavType
 {
     Display,
     Choice
+}
+
+public class EnvironmentEvent : GameEvent
+{
+    public EnvironmentEventType type;
+
+    public EnvironmentEvent (EnvironmentEventType type)
+    {
+        this.type = type;
+    }
+}
+
+public enum EnvironmentEventType
+{
+    HideConcept,
+    ShowConcept
 }

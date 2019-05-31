@@ -10,20 +10,21 @@ namespace PolyblotPlayground
         public List<string> sources;
         public List<string> tags;
 
-        public bool ContainsKanjiOrReading (string kanji, string reading)
+        public bool ContainsKanjiOrReading (string kanji, string reading, bool exactMatch)
         {
-            if (string.IsNullOrEmpty (kanji)) return ContainsReading (reading);
-            return ContainsKanji (kanji);
+            if (string.IsNullOrEmpty (kanji)) return ContainsReading (reading, exactMatch);
+            return ContainsKanji (kanji, exactMatch);
         }
 
-        private bool ContainsKanji (string kanji)
+        private bool ContainsKanji (string kanji, bool exactMatch)
         {
             if (kanji == null) return false;
             List<Dictionary<string, string>> kanjiList = data?.First ().Value.kanji;
             bool hasKanjiList = kanjiList != null && kanjiList.Count > 0;
             if (!hasKanjiList) return false;
             List<string> compounds = kanjiList.SelectMany (k => k.Values).ToList ();
-            return compounds.FirstOrDefault (c => c == kanji) != null;
+            if (exactMatch) return compounds.FirstOrDefault (c => c == kanji) != null;
+            else return compounds.FirstOrDefault (c => c.Contains (kanji)) != null;
         }
 
         public bool HasKanji ()
@@ -32,13 +33,14 @@ namespace PolyblotPlayground
             return kanjiList != null && kanjiList.Count > 0;
         }
 
-        private bool ContainsReading (string reading)
+        private bool ContainsReading (string reading, bool exactMatch)
         {
             List<Dictionary<string, string>> readingList = data?.First ().Value.readings;
             bool hasReadingList = readingList != null && readingList.Count > 0;
             if (!hasReadingList) return false;
             List<string> compounds = readingList.SelectMany (k => k.Values).ToList ();
-            return compounds.FirstOrDefault (c => c == reading) != null;
+            if (exactMatch) return compounds.FirstOrDefault (c => c == reading) != null;
+            else return compounds.FirstOrDefault (c => c.Contains (reading)) != null;
         }
 
         public string FirstKanji ()

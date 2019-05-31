@@ -10,6 +10,10 @@ public class DisplayController : MonoBehaviour
     public Transform displayParent;
     public float previewPanelSpacing = 30f;
 
+    public Color kanjiColour;
+    public Color compoundColour;
+    public Color sentenceColour;
+
     public float characterDistance = 0.15f;
     public float displayDistance = 10f;
 
@@ -29,6 +33,7 @@ public class DisplayController : MonoBehaviour
         EventBus.Instance.AddListener<DataProxySelectionEvent> (OnDataProxySelection);
         EventBus.Instance.AddListener<DataProxyChoicesEvent> (OnDataProxyChoices);
         EventBus.Instance.AddListener<DataProxyEvent> (OnDataProxyEvent);
+        EventBus.Instance.AddListener<EnvironmentEvent> (OnEnvironmentEvent);
 
         _environmentController = GetComponent<EnvironmentController> ();
 #if !UNITY_EDITOR
@@ -41,6 +46,19 @@ public class DisplayController : MonoBehaviour
         EventBus.Instance.RemoveListener<DataProxySelectionEvent> (OnDataProxySelection);
         EventBus.Instance.RemoveListener<DataProxyChoicesEvent> (OnDataProxyChoices);
         EventBus.Instance.RemoveListener<DataProxyEvent> (OnDataProxyEvent);
+        EventBus.Instance.RemoveListener<EnvironmentEvent> (OnEnvironmentEvent);
+    }
+
+    private void OnEnvironmentEvent (EnvironmentEvent e)
+    {
+        if (e.type == EnvironmentEventType.HideConcept)
+        {
+            displayParent.gameObject.SetActive (true);
+        }
+        else if (e.type == EnvironmentEventType.ShowConcept)
+        {
+            displayParent.gameObject.SetActive (false);
+        }
     }
 
     private void OnDataProxySelection (DataProxySelectionEvent e)
@@ -106,7 +124,15 @@ public class DisplayController : MonoBehaviour
         ClearDisplay ();
         GameObject go = CreateDisplay ();
         Bubble bub = go.GetComponent<Bubble> ();
-        bub.DisplayAsTextDisplay (item);
+        bub.DisplayAsTextDisplay (item, GetColourForItem (item));
+    }
+
+    private Color GetColourForItem<T> (T item)
+    {
+        if (item is LearningSetItem) return compoundColour;
+        if (item is Kanji) return kanjiColour;
+        if (item is ExampleSentence) return sentenceColour;
+        return Color.white;
     }
 
     private GameObject CreateDisplay (float yRotation = 0)

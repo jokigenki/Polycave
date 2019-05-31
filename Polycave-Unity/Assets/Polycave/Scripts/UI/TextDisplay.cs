@@ -11,7 +11,6 @@ public class TextDisplay : MonoBehaviour
     private TextMeshPro _reading;
     private TextMeshPro _senses;
     private SpriteRenderer _spriteRenderer;
-    private VerticalLayoutGroup _vlg;
 
     private void Awake ()
     {
@@ -19,7 +18,6 @@ public class TextDisplay : MonoBehaviour
         _reading = transform.Find ("Reading").GetComponent<TextMeshPro> ();
         _senses = transform.Find ("Senses").GetComponent<TextMeshPro> ();
         _spriteRenderer = GetComponent<SpriteRenderer> ();
-        _vlg = GetComponent<VerticalLayoutGroup> ();
     }
 
     public void DisplayData<T> (T data)

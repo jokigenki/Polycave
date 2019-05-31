@@ -14,7 +14,7 @@ public class Bubble : MonoBehaviour
     private Texture _texture;
     public int environmentIndex;
     private TextDisplay _textDisplay;
-    private GameObject _highlight;
+    private SpriteRenderer _highlight;
     private SelectionReactor _reactor;
 
     public Texture Texture { get { return _texture; } }
@@ -26,10 +26,10 @@ public class Bubble : MonoBehaviour
         Transform textDisplay = transform.Find ("TextDisplay");
         _bg = textDisplay.GetComponent<SpriteRenderer> ();
         _textDisplay = textDisplay.GetComponent<TextDisplay> ();
-        _highlight = transform.Find ("Highlight").gameObject;
+        _highlight = transform.Find ("Highlight").GetComponent<SpriteRenderer> ();
         _reactor = GetComponent<SelectionReactor> ();
 
-        SetHighlight (false);
+        SetHighlight (false, Color.white);
     }
 
     public void AnimateIn ()
@@ -37,9 +37,11 @@ public class Bubble : MonoBehaviour
         StartCoroutine (_AnimateIn ());
     }
 
-    public void SetHighlight (bool value)
+    public void SetHighlight (bool value, Color color)
     {
-        _highlight.SetActive (value);
+        Debug.Log ($"Setting high light to {value} {color}");
+        _highlight.color = color;
+        _highlight.gameObject.SetActive (value);
     }
 
     private IEnumerator _AnimateIn ()
@@ -82,16 +84,16 @@ public class Bubble : MonoBehaviour
         _outside.SetActive (true);
         _reactor.userData = data;
         _reactor.selectionAction = selectionAction;
-        SetHighlight (false);
+        SetHighlight (false, Color.white);
     }
 
-    public void DisplayAsTextDisplay (System.Object data)
+    public void DisplayAsTextDisplay (System.Object data, Color color)
     {
         _textDisplay.DisplayData (data);
         _bg.enabled = true;
         _inside.SetActive (false);
         _outside.SetActive (false);
-        SetHighlight (false);
+        SetHighlight (true, color);
     }
 
     public void SetTexture (Texture texture)

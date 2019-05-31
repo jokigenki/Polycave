@@ -11,12 +11,12 @@ namespace PolyblotPlayground
 
         public LearningSetItem GetItemForCompound (string compound)
         {
-            return items.Values.Where (i => i.HasKanji () ? i.ContainsKanjiOrReading (compound, compound) : i.ContainsKanjiOrReading (null, compound)).FirstOrDefault ();
+            return items.Values.Where (i => i.HasKanji () ? i.ContainsKanjiOrReading (compound, compound, true) : i.ContainsKanjiOrReading (null, compound, true)).FirstOrDefault ();
         }
 
         public List<LearningSetItem> GetItemsForKanji (Kanji kanji)
         {
-            List<LearningSetItem> itemsForKanji = items.Values.Where (i => i.ContainsKanjiOrReading (kanji.kanji, kanji.reading)).ToList ();
+            List<LearningSetItem> itemsForKanji = items.Values.Where (i => i.ContainsKanjiOrReading (kanji.kanji, kanji.reading, false)).ToList ();
             if (itemsForKanji.Count > 5)
             {
                 itemsForKanji = Randomer.FromList (itemsForKanji, 5);
