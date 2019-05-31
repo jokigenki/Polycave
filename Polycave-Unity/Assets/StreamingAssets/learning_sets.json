@@ -209,7 +209,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "い"
+                                "kana": "ご"
                             }
                         ],
                         "senses": [
@@ -239,7 +239,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "む"
+                                "kana": "ろく"
                             }
                         ],
                         "senses": [
@@ -396,7 +396,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "ぜろ"
+                                "kana": "れい"
                             }
                         ],
                         "senses": [
@@ -836,7 +836,7 @@
                         "id": "1315840",
                         "kanji": [
                             {
-                                "kanji": "刻"
+                                "kanji": "時"
                             }
                         ],
                         "readings": [
@@ -1026,36 +1026,6 @@
                     "extended"
                 ]
             },
-            "e7MmHFSMfrikuTssCuRK": {
-                "data": {
-                    "JMdict:1461570": {
-                        "id": "1461570",
-                        "kanji": [
-                            {
-                                "kanji": "二月"
-                            }
-                        ],
-                        "readings": [
-                            {
-                                "kana": "ふたつき"
-                            }
-                        ],
-                        "senses": [
-                            {
-                                "gloss": "two months",
-                                "partOfSpeech": "&n;"
-                            }
-                        ]
-                    }
-                },
-                "orderIndex": 33,
-                "sources": [
-                    "JMdict:1461570"
-                ],
-                "tags": [
-                    "extended"
-                ]
-            },
             "bJm260M47fm16a2PRe8N": {
                 "data": {
                     "JMdict:1300250": {
@@ -1082,36 +1052,6 @@
                 "orderIndex": 34,
                 "sources": [
                     "JMdict:1300250"
-                ],
-                "tags": [
-                    "extended"
-                ]
-            },
-            "YX1CYEXnInQPSs2Ozb1C": {
-                "data": {
-                    "JMdict:1300260": {
-                        "id": "1300260",
-                        "kanji": [
-                            {
-                                "kanji": "三月"
-                            }
-                        ],
-                        "readings": [
-                            {
-                                "kana": "みつき"
-                            }
-                        ],
-                        "senses": [
-                            {
-                                "gloss": "three months",
-                                "partOfSpeech": "&n;"
-                            }
-                        ]
-                    }
-                },
-                "orderIndex": 35,
-                "sources": [
-                    "JMdict:1300260"
                 ],
                 "tags": [
                     "extended"
@@ -1174,39 +1114,6 @@
                 "orderIndex": 37,
                 "sources": [
                     "JMdict:1268170"
-                ],
-                "tags": [
-                    "extended"
-                ]
-            },
-            "kwa5SXMENMGVldyRzrOq": {
-                "data": {
-                    "JMdict:1299600": {
-                        "id": "1299600",
-                        "kanji": [
-                            {
-                                "kanji": "五月"
-                            }
-                        ],
-                        "readings": [
-                            {
-                                "kana": "さつき"
-                            }
-                        ],
-                        "senses": [
-                            {
-                                "gloss": "fifth month of the lunar calendar",
-                                "partOfSpeech": "&n;"
-                            },
-                            {
-                                "gloss": "satsuki azalea (Rhododendron indicum)"
-                            }
-                        ]
-                    }
-                },
-                "orderIndex": 38,
-                "sources": [
-                    "JMdict:1299600"
                 ],
                 "tags": [
                     "extended"
@@ -1402,7 +1309,7 @@
                         "id": "1404630",
                         "kanji": [
                             {
-                                "kanji": "肢"
+                                "kanji": "足"
                             }
                         ],
                         "readings": [
@@ -1428,36 +1335,6 @@
                 "orderIndex": 44,
                 "sources": [
                     "JMdict:1404630"
-                ],
-                "tags": [
-                    "extended"
-                ]
-            },
-            "QbCLZdtF8NwqGgr0Xyak": {
-                "data": {
-                    "JMdict:2412230": {
-                        "id": "2412230",
-                        "kanji": [
-                            {
-                                "kanji": "足"
-                            }
-                        ],
-                        "readings": [
-                            {
-                                "kana": "そく"
-                            }
-                        ],
-                        "senses": [
-                            {
-                                "gloss": "counter for pairs (of socks, shoes, etc.)",
-                                "partOfSpeech": "&suf;, &ctr;"
-                            }
-                        ]
-                    }
-                },
-                "orderIndex": 45,
-                "sources": [
-                    "JMdict:2412230"
                 ],
                 "tags": [
                     "extended"
@@ -1615,7 +1492,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "おゆび"
+                                "kana": "ゆび"
                             }
                         ],
                         "senses": [
@@ -1677,7 +1554,7 @@
                         "id": "1002610",
                         "kanji": [
                             {
-                                "kanji": "お中"
+                                "kanji": "お腹"
                             }
                         ],
                         "readings": [
@@ -1713,7 +1590,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "むな"
+                                "kana": "むね"
                             }
                         ],
                         "senses": [
@@ -1840,7 +1717,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "み"
+                                "kana": "みず"
                             }
                         ],
                         "senses": [
@@ -1876,7 +1753,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "うお",
+                                "kana": "さかな",
                                 "priority": "ichi2"
                             }
                         ],
@@ -1967,7 +1844,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "とんにく"
+                                "kana": "ぶたにく"
                             }
                         ],
                         "senses": [
@@ -1986,40 +1863,6 @@
                     "extended"
                 ]
             },
-            "U3MRzTbbSAxp9tlAHxSG": {
-                "data": {
-                    "JMdict:1457390": {
-                        "id": "1457390",
-                        "kanji": [
-                            {
-                                "kanji": "豕"
-                            }
-                        ],
-                        "readings": [
-                            {
-                                "kana": "ぶた",
-                                "priority": "ichi1, news1, nf13"
-                            }
-                        ],
-                        "senses": [
-                            {
-                                "gloss": "pig (Sus scrofa domesticus)",
-                                "partOfSpeech": "&n;"
-                            },
-                            {
-                                "gloss": "fat person"
-                            }
-                        ]
-                    }
-                },
-                "orderIndex": 60,
-                "sources": [
-                    "JMdict:1457390"
-                ],
-                "tags": [
-                    "extended"
-                ]
-            },
             "46zNaznJ7FFXcj563Dqi": {
                 "data": {
                     "JMdict:2763370": {
@@ -2031,7 +1874,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "とん"
+                                "kana": "ぶた"
                             }
                         ],
                         "senses": [
@@ -2061,7 +1904,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "けいにく",
+                                "kana": "とりにく",
                                 "priority": "news1, nf23"
                             }
                         ],
@@ -2092,7 +1935,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "かけ"
+                                "kana": "とり"
                             }
                         ],
                         "senses": [
@@ -2249,7 +2092,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "せんじょう"
+                                "kana": "せんせい"
                             }
                         ],
                         "senses": [
@@ -2285,7 +2128,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "あも"
+                                "kana": "はは"
                             }
                         ],
                         "senses": [
@@ -2315,7 +2158,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "あて"
+                                "kana": "ちち"
                             }
                         ],
                         "senses": [
@@ -2345,7 +2188,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "おと"
+                                "kana": "おとうと"
                             }
                         ],
                         "senses": [
@@ -2891,7 +2734,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "じょ"
+                                "kana": "おんな"
                             }
                         ],
                         "senses": [
@@ -3277,7 +3120,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "しょう"
+                                "kana": "なま"
                             }
                         ],
                         "senses": [
@@ -3846,7 +3689,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "ねぶる"
+                                "kana": "ねむる"
                             }
                         ],
                         "senses": [
@@ -4725,7 +4568,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "こ"
+                                "kana": "しょう"
                             }
                         ],
                         "senses": [
@@ -4980,7 +4823,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "よ"
+                                "kana": "よる"
                             }
                         ],
                         "senses": [
@@ -5121,7 +4964,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "かくべち"
+                                "kana": "かくべつ"
                             }
                         ],
                         "senses": [
@@ -6440,7 +6283,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "しめい",
+                                "kana": "しまい",
                                 "priority": "ichi1, news1, nf08"
                             }
                         ],
@@ -6648,7 +6491,7 @@
                         "id": "1163400",
                         "kanji": [
                             {
-                                "kanji": "一しょ"
+                                "kanji": "一緒"
                             }
                         ],
                         "readings": [
@@ -7141,7 +6984,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "むそ"
+                                "kana": "ろくじゅう"
                             }
                         ],
                         "senses": [
@@ -7942,12 +7785,12 @@
                         "id": "1205490",
                         "kanji": [
                             {
-                                "kanji": "各別"
+                                "kanji": "格別"
                             }
                         ],
                         "readings": [
                             {
-                                "kana": "かくべち"
+                                "kana": "かくべつ"
                             }
                         ],
                         "senses": [
@@ -8016,7 +7859,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "かく"
+                                "kana": "たしか"
                             }
                         ],
                         "senses": [
@@ -8403,7 +8246,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "さぶい"
+                                "kana": "さむい"
                             }
                         ],
                         "senses": [
@@ -8533,7 +8376,7 @@
                         "id": "1589350",
                         "kanji": [
                             {
-                                "kanji": "念う"
+                                "kanji": "思う"
                             }
                         ],
                         "readings": [
@@ -8797,7 +8640,7 @@
                         "id": "1605820",
                         "kanji": [
                             {
-                                "kanji": "佳い"
+                                "kanji": "良い"
                             }
                         ],
                         "readings": [
@@ -8833,7 +8676,7 @@
                         "id": "1578850",
                         "kanji": [
                             {
-                                "kanji": "往く"
+                                "kanji": "行く"
                             }
                         ],
                         "readings": [
@@ -8899,7 +8742,7 @@
                         "id": "1381390",
                         "kanji": [
                             {
-                                "kanji": "碧い"
+                                "kanji": "青い"
                             }
                         ],
                         "readings": [
@@ -9075,7 +8918,7 @@
                         ],
                         "readings": [
                             {
-                                "kana": "わたくしたち"
+                                "kana": "わたしたち"
                             }
                         ],
                         "senses": [
@@ -9232,7 +9075,7 @@
                         "id": "1339500",
                         "kanji": [
                             {
-                                "kanji": "出切る"
+                                "kanji": "出来る"
                             }
                         ],
                         "readings": [
