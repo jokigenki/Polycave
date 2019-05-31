@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using HiraKana;
 using PolyblotPlayground;
 using TMPro;
 using UnityEngine;
@@ -32,8 +33,10 @@ public class TextDisplay : MonoBehaviour
         Source source = item.data.Values.First ();
         string kanji = JoinData (source.kanji, ", ");
         string reading = JoinData (source.readings, ", ");
-        _japanese.text = kanji != "" ? kanji : reading;
-        _reading.text = kanji != "" ? reading : "";
+        string romaji = new KanaTools ().HiraganaToRomaji (reading);
+        string fullReading = $"{romaji}\n{reading}";
+        _japanese.text = kanji != "" ? kanji : fullReading;
+        _reading.text = kanji != "" ? fullReading : "";
         _senses.text = JoinData (source.senses, "\n");
     }
 
