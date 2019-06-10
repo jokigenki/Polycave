@@ -16,6 +16,8 @@ public class CanvasController : MonoBehaviour
     private Button _downButton;
     private Button _backButton;
     private Button _conceptButton;
+    private Button _nextButton;
+    private Button _prevButton;
     private TextMeshProUGUI _title;
     private GameObject _introPanel;
     private Button _introPanelNextButton;
@@ -34,6 +36,8 @@ public class CanvasController : MonoBehaviour
         _downButton = transform.Find ("DownButton").GetComponent<Button> ();
         _backButton = transform.Find ("BackButton").GetComponent<Button> ();
         _conceptButton = transform.Find ("ConceptButton").GetComponent<Button> ();
+        _nextButton = transform.Find ("NextButton").GetComponent<Button> ();
+        _prevButton = transform.Find ("PrevButton").GetComponent<Button> ();
         _title = transform.Find ("Title").GetComponent<TextMeshProUGUI> ();
         _introPanel = transform.Find ("Panel").gameObject;
         _introPanelText = _introPanel.transform.Find ("Text").GetComponent<TextMeshProUGUI> ();
@@ -44,6 +48,8 @@ public class CanvasController : MonoBehaviour
         _downButton.onClick.AddListener (OnDownClicked);
         _backButton.onClick.AddListener (OnBackClicked);
         _conceptButton.onClick.AddListener (OnConceptClicked);
+        _nextButton.onClick.AddListener (OnNextConcept);
+        _prevButton.onClick.AddListener (OnPrevConcept);
         _buttonPos = _upButton.transform.localPosition.x;
 
         HideConcepts (false);
@@ -61,6 +67,8 @@ public class CanvasController : MonoBehaviour
         _conceptButton.gameObject.SetActive (true);
         _conceptActive = false;
         concepts.ForEach (c => c.SetActive (false));
+        _nextButton.gameObject.SetActive (false);
+        _prevButton.gameObject.SetActive (false);
         if (sendEvent) EventBus.Instance.Raise (new EnvironmentEvent (EnvironmentEventType.HideConcept));
     }
 
@@ -146,6 +154,8 @@ public class CanvasController : MonoBehaviour
         _downButton.gameObject.SetActive (false);
         _backButton.gameObject.SetActive (false);
         _conceptButton.gameObject.SetActive (false);
+        _nextButton.gameObject.SetActive (false);
+        _prevButton.gameObject.SetActive (false);
     }
 
     private void SetButtonX (Button btn, float x)
@@ -199,7 +209,6 @@ public class CanvasController : MonoBehaviour
         if (_conceptActive)
         {
             HideConcepts ();
-            return;
         }
         _currentEvent.navType = NavType.Display;
         EventBus.Instance.Raise (_currentEvent);
@@ -212,10 +221,27 @@ public class CanvasController : MonoBehaviour
         _conceptActive = true;
         concepts[_conceptIndex].SetActive (true);
         _backButton.gameObject.SetActive (true);
-        _conceptIndex++;
+        _nextButton.gameObject.SetActive (true);
+        _prevButton.gameObject.SetActive (true);
         if (_conceptIndex >= concepts.Count) _conceptIndex = 0;
 
         EventBus.Instance.Raise (new EnvironmentEvent (EnvironmentEventType.ShowConcept));
+    }
+
+    private void OnNextConcept ()
+    {
+        concepts[_conceptIndex].SetActive (false);
+        _conceptIndex++;
+        if (_conceptIndex >= concepts.Count) _conceptIndex = 0;
+        concepts[_conceptIndex].SetActive (true);
+    }
+
+    private void OnPrevConcept ()
+    {
+        concepts[_conceptIndex].SetActive (false);
+        _conceptIndex--;
+        concepts[_conceptIndex].SetActive (true);
+        if (_conceptIndex < 0) _conceptIndex = concepts.Count - 1;
     }
 }
 

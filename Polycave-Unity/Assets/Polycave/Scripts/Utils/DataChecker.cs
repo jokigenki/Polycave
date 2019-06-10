@@ -22,10 +22,11 @@ public class DataChecker : MonoBehaviour
         if (e.type != DataProxyEventType.Ready) return;
 
         bool passed = (TestKanji () &&
-            TestConjugations () &&
-            //TestNounsAndConjugationsAreInPBPLookupFile () &&
-            TestNounsAndConjugationsArePresentInLearningSets () &&
-            TestLearningSets ());
+                TestConjugations () &&
+                //TestNounsAndConjugationsAreInPBPLookupFile () &&
+                TestNounsAndConjugationsArePresentInLearningSets () &&
+                TestLearningSets ()) &&
+            TestNoDuplicatesInLearningSets ();
     }
 
     private bool TestKanji ()
@@ -208,6 +209,44 @@ public class DataChecker : MonoBehaviour
         if (errors == "")
         {
             Debug.Log ("No errors in learning sets");
+            return true;
+        }
+
+        Debug.Log (errors);
+        return false;
+    }
+
+    public bool TestNoDuplicatesInLearningSets ()
+    {
+        string errors = "";
+
+        List<string> check = new List<string> ();
+        List<LearningSetItem> duplicates = new List<LearningSetItem> ();
+        List<LearningSetItem> items = proxy.extendedSet.items.Select (i => i.Value).ToList ();
+        foreach (LearningSetItem item in items)
+        {
+            string kanji = item.FirstKanji ();
+            if (kanji != null)
+            {
+                if (check.Contains (kanji)) duplicates.Add (item);
+                check.Add (kanji);
+            }
+            else
+            {
+                string reading = item.FirstReading ();
+                if (check.Contains (reading)) duplicates.Add (item);
+                check.Add (reading);
+            }
+        }
+
+        if (duplicates.Count > 0)
+        {
+            errors = $"These items had duplicates in the learning set: {string.Join (" / ", duplicates)}";
+        }
+
+        if (errors == "")
+        {
+            Debug.Log ("No duplicates in learning sets");
             return true;
         }
 

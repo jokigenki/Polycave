@@ -10,7 +10,7 @@ public class OVRSelector : MonoBehaviour
     {
         if (pointer == null) return;
 
-        if (OVRInput.GetDown (OVRInput.Button.PrimaryIndexTrigger, OVRInput.Controller.RTrackedRemote))
+        if (OVRInput.GetDown (OVRInput.Button.Any, OVRInput.Controller.RTrackedRemote) || OVRInput.GetDown (OVRInput.Button.Back, OVRInput.Controller.RTrackedRemote))
         {
             Ray ray = new Ray (pointer.StartPoint, pointer.Forward);
             RaycastHit[] hits = Physics.RaycastAll (ray, 100f);
